@@ -1,0 +1,14 @@
+<Doughs>
+  <!--
+  ########## Add items to traders##########
+  -->
+
+  <!-- Add new items to traders
+  Keep the volume of higher value items low to encourage crafting
+  -->
+  <append xpath="/traders/trader_item_groups/trader_item_group[@name='thrownAmmo']">
+    <item name="doughsthrownGrenadeSteel" count="1,4"/>
+    <item name="doughsthrownGrenadeContactSteel" count="1,2"/>
+  </append>
+
+</Doughs>

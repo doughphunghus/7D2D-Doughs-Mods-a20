@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Doughs Buff Grenades" />
+		<Description value="Adds 2 steel grenades that are more powerful than the vanilla ones." />
+		<Author value="Doughphunghus" />
+		<Version value="20.0-b233.1.0.0" />
+    <Website value="https://github.com/doughphunghus" />
+	</ModInfo>
+</xml>
