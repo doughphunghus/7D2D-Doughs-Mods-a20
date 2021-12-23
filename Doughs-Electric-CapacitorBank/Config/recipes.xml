@@ -1,0 +1,17 @@
+<Doughs>
+  <append xpath="/recipes">
+
+    <!-- DOUGH:
+    No crafting of doughsCapacitor for now. "too hard" in real life
+    and we don't have real worldish materials anyway.
+    Leyden jars and such not really an option
+    -->
+
+    <recipe name="doughsCapacitorBank" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+    	<ingredient name="resourceForgedIron" count="2"/>
+    	<ingredient name="resourceElectricParts" count="2"/>
+    	<ingredient name="resourceScrapPolymers" count="4"/>
+    </recipe>
+
+  </append>
+</Doughs>

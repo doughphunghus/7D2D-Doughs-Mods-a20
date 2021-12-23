@@ -1,0 +1,6 @@
+Key,Source,Context,UsedInMainMenu,NoTranslate,english
+doughsCapacitor,items,Item,,,"Capacitor",,,,,,,,,,,,,,
+doughsCapacitorDesc,items,Item,,,"A large high energy capacitor, though these will not hold a lot of charge to power devices for much longer than a few seconds but they charge almost instantly.\nYou may have to be creative to use them.",,,,,,,,,,,,,,
+doughsCapacitorBank,items,Item,,,"Capacitor Bank",,,,,,,,,,,,,,
+doughsCapacitorBankTip,Journal Tip,,,,"Capacitors are like instant charging but very fast discharging batteries.\nPut them into a Capacitor Bank and use just like a battery bank for charging and discharging, but they do not power anything very long.\nWith some creativity you can make cheap short acting triggers for temporary alarms or circuit break detectors, among other things, without using other expensive items that generate electricity.",,,,,,,,,,,,,,
+doughsCapacitorBankTip_title,Journal Tip,,,,"Capacitors",,,,,,,,,,,,,,

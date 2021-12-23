@@ -1,0 +1,10 @@
+<Doughs>
+
+  <!-- Add items to existing perks -->
+  <append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']">
+    <effect_group>
+      <!-- Can put all unlockables in 1 var or make each a seperate line -->
+      <passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="doughsCapacitorBank"/>
+    </effect_group>
+  </append>
+</Doughs>

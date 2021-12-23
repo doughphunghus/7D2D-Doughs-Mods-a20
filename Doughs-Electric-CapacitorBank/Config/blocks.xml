@@ -1,0 +1,74 @@
+<Doughs>
+
+
+  <append xpath="/blocks">
+    <block name="doughsCapacitorBank"> <!-- DOUGH: Maybe a 1-3 slot battery bank in future? -->
+    	<property name="CreativeMode" value="Player"/>
+    	<property name="Class" value="BatteryBank"/>
+    	<property name="Material" value="Mmetal_weak"/>
+    	<property name="StabilitySupport" value="false"/>
+    	<property name="Shape" value="ModelEntity"/>
+    	<property name="Mesh" value="models"/>
+    	<property name="Path" value="solid"/>
+
+      <!-- relayPrefab -->
+      <property name="CustomIcon" value="decoComputerDeskTopPC"/>
+    	<property name="Model" value="Entities/Electrical/deskTopPCPrefab"/> <property name="HandleFace" value="Bottom"/>
+    	<property name="ImposterDontBlock" value="true"/>
+    	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+    	<property name="DescriptionKey" value="powerSourceDesc"/>
+    	<property name="UnlockedBy" value="perkAdvancedEngineering,batterybankSchematic"/> <!-- DOUGH: Git rid of schematic! -->
+    	<property name="MaxPower" value="100"/>
+    	<property name="InputPerTick" value="5"/>
+    	<property name="ChargePerInput" value="1"/>
+    	<property name="OutputPerStack" value="50"/>
+    	<property name="OutputPerCharge" value="90"/>
+
+		<!-- special customiations-->
+    	<property name="SlotItem" value="doughsCapacitor"/>
+		<property name="PickupJournalEntry" value="doughsCapacitorBankTip"/>
+		
+    	<property name="Group" value="Science"/>
+    	<property class="RepairItems">
+    		<property name="resourceForgedIron" value="2"/>
+    		<property name="resourceElectricParts" value="2"/>
+    		<property name="resourceElectricParts" value="1"/>
+    		<property name="resourceScrapPolymers" value="2"/>
+    	</property>
+    	<drop event="Harvest" name="resourceScrapIron" count="20" tag="allHarvest"/>
+    	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+    	<drop event="Harvest" name="resourceForgedIron" count="3" tag="salvageHarvest"/>
+    	<drop event="Harvest" name="resourceElectricParts" count="1,2" tag="salvageHarvest"/>
+    	<drop event="Harvest" name="resourceElectricParts" count="1,2" prob="0.6" tag="salvageHarvest"/>
+    	<drop event="Harvest" name="resourceScrapPolymers" count="1,2" tag="salvageHarvest"/>
+    	<drop event="Destroy" count="0"/>
+    	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+    	<property name="Stacknumber" value="10"/>
+    	<property name="TakeDelay" value="5"/>
+    	<property name="EconomicValue" value="100"/>
+    	<property name="FilterTags" value="fdecor,felectrical"/>
+    	<property name="SortOrder1" value="70a0"/>
+    </block>
+  </append>
+
+  <!-- Add capacitor to all refrigeration systems -->
+  <append xpath="/blocks/block[@name='airConditioner']">
+    <drop event="Destroy" name="doughsCapacitor" count="1" prob="0.2" tag="salvageHarvest"/>
+  </append>
+  <append xpath="/blocks/block[@name='cntMicrowaveOvenVer1Open']">
+    <drop event="Destroy" name="doughsCapacitor" count="1" prob="0.05" tag="salvageHarvest"/>
+  </append>
+  <append xpath="/blocks/block[@name='cntRetroFridgeVer1Closed']">
+    <drop event="Destroy" name="doughsCapacitor" count="1" prob="0.1" tag="salvageHarvest"/>
+  </append>
+  <append xpath="/blocks/block[@name='cntFreezerMaster']">
+    <drop event="Destroy" name="doughsCapacitor" count="1" prob="0.3" tag="salvageHarvest"/>
+  </append>
+  <append xpath="/blocks/block[@name='cntIceMachine']">
+    <drop event="Destroy" name="doughsCapacitor" count="1" prob="0.5" tag="salvageHarvest"/>
+  </append>
+  <append xpath="/blocks/block[@name='cntBeerCooler']">
+    <drop event="Destroy" name="doughsCapacitor" count="1" prob="0.08" tag="salvageHarvest"/>
+  </append>
+
+</Doughs>
