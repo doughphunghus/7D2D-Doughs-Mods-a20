@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Doughs Nerf Backpack Carry Capacity" />
+		<Description value="Drops unblocked/unburdoned carrying capacity backpack slots from 27 to 12" />
+		<Author value="Doughphunghus" />
+		<Version value="a20.0-b238.1.0.0" />
+    <Website value="https://github.com/doughphunghus" />
+	</ModInfo>
+</xml>
