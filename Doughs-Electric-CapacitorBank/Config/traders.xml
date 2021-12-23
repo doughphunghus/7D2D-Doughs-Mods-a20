@@ -1,0 +1,14 @@
+<Doughs>
+  <!--
+  ########## Add items to traders##########
+  -->
+
+  <!-- Add new items to traders
+  Keep the volume of higher value items low to encourage crafting
+  -->
+  <append xpath="/traders/trader_item_groups/trader_item_group[@name='traderElectrical']">
+    <item name="doughsCapacitor" count="1,2" prob="1.0"/>
+    <item name="doughsCapacitorBank" count="1,2" prob="1.0"/>
+  </append>
+
+</Doughs>

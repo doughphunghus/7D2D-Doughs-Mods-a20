@@ -1,0 +1,70 @@
+
+<Doughs>
+
+<!--
+########## Mod vanilla items ##########
+-->
+
+
+<!--
+########## New items ##########
+-->
+<append xpath="/items">
+  <item name="doughsCapacitor">
+  	<property name="HoldType" value="45"/>
+
+    <property name="CustomIconTint" value="669999"/> <!-- DOUGH: Dark grey. Darken to look more ironish.  Cannot lighten for steel -->
+    <property name="TintColor" value="102,153,153"/> <!-- DOUGH: Dark grey. RGB. Tints the item in the hand -->
+    <property name="CustomIcon" value="modGunSoundSuppressorSilencer"/>
+	<property name="PickupJournalEntry" value="doughsCapacitorBankTip"/>
+
+  	<property name="Tags" value="junk"/>
+  	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+  	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+  	<!-- <property name="UnlockedBy" value="perkGreaseMonkey"/> --> <!-- DOUGH: Cannot craft -->
+  	<property name="Material" value="MresourcePaper"/>
+  	<property name="Stacknumber" value="10"/>
+  	<property name="Weight" value="10"/>
+  	<property name="EconomicValue" value="20"/>
+  	<property name="Group" value="Resources"/>
+  	<property name="DegradationBreaksAfter" value="false"/>
+  	<property name="ShowQuality" value="true"/>
+  	<property class="Attributes">
+  		<property name="DegradationMax" value="2,10"/> <!-- needed for electrical calculations -->
+  		<property name="BatteryMaxLoadInVolts" value="24, 36"/>
+  		<property name="BatteryDischargeTimeInMinutes" value="1,2"/>
+  	</property>
+  	<effect_group>
+  		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+  		<passive_effect name="DegradationMax" operation="base_set" value="2,10" tier="1,6"/>
+  	</effect_group>
+  </item>
+
+<!-- DOUGH: Figure out later how to merge this. Maybe do more electronics?
+  <item name="doughsCapacitorBankSchematic">
+  	<property name="Extends" value="schematicNoQualityMaster"/>
+  	<property name="CreativeMode" value="Player"/>
+  	<property name="CustomIcon" value="decoComputerDeskTopPC"/>
+  	<property name="Unlocks" value="doughsCapacitorBank"/>
+  	<effect_group tiered="false">
+  		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="doughsCapacitorBank" operation="set" value="1"/>
+  		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+  	</effect_group>
+  </item>
+-->
+</append>
+
+<!--
+########## Schematics to unlock new items ##########
+-->
+<!-- DOUGH: You make battery banks, you can make capacitor banks -->
+<append xpath="/items/item[@name='batterybankSchematic']/effect_group">
+  <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="doughsCapacitorBank" operation="set" value="1"/>
+</append>
+
+<append xpath="/items/item[@name='batterybankSchematic']/property[@name='Unlocks']/@value">,doughsCapacitorBank</append>
+
+<!--
+########## Schematics to unlock new items ##########
+-->
+</Doughs>
