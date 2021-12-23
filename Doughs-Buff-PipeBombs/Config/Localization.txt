@@ -1,0 +1,13 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+doughsThrownAmmoPipeBombSteel,items,Gun,,,"Steel Pipe Bomb (Ammo)",,,,,,,,,,,,,,
+doughsThrownAmmoPipeBombSteelDesc,items,Gun,,,"Light with the secondary action & throw with the primary action.\nDue to being made of steel these are heavier so they are harder to throw. They can also do a large amount of damage to the environment.",,,,,,,,,,,,,,
+doughsResourceSteelPipeBombParts,items,Item,,,"Steel Pipe Bomb Parts",,,,,,,,,,,,,,
+doughsResourceSteelPipeBombPartsDesc,items,Item,,,"A specially made short steel pipe. Can be used to make steel pipe bombs.",,,,,,,,,,,,,,
+doughsThrownAmmoPipeBombBrass,items,Gun,,,"Brass Pipe Bomb (Ammo)",,,,,,,,,,,,,,
+doughsThrownAmmoPipeBombBrassDesc,items,Gun,,,"Light with the secondary action & throw with the primary action.\nDue to these being brass these are about as heavy as iron pipe bombs. They are unlikely to do a large amount of damage to the environment.",,,,,,,,,,,,,,
+doughsResourceBrassPipeBombParts,items,Item,,,"Brass Pipe Bomb Parts",,,,,,,,,,,,,,
+doughsResourceBrassPipeBombPartsDesc,items,Item,,,"A specially made short brass pipe. Can be used to make brass pipe bombs.",,,,,,,,,,,,,,
+doughsThrownAmmoPipeBombPlastic,items,Gun,,,"Plastic Pipe Bomb (Ammo)",,,,,,,,,,,,,,
+doughsThrownAmmoPipeBombPlasticDesc,items,Gun,,,"Light with the secondary action & throw with the primary action.\nThese are very light and are mostly useful to stun or draw out zeds.",,,,,,,,,,,,,,
+doughsResourcePlasticPipeBombParts,items,Item,,,"Plastic Pipe Bomb Parts",,,,,,,,,,,,,,
+doughsResourcePlasticPipeBombPartsDesc,items,Item,,,"A specially made short plastic pipe. Can be used to make plastic pipe bombs.",,,,,,,,,,,,,,

@@ -1,0 +1,23 @@
+<Doughs>
+  <!--
+  ########## Mod vanilla items ##########
+  -->
+
+
+  <!-- Add new pipe bombs everywhere vanilla ones can be found -->
+  <append xpath="/lootcontainers/lootgroup[@name='groupWeaponsT1_Demolitionist']">
+    <item name="doughsThrownAmmoPipeBombPlastic" count="1,2"/>
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='groupWeaponsT2_Demolitionist']">
+    <item name="doughsThrownAmmoPipeBombSteel" count="1,2"/>
+    <item name="doughsThrownAmmoPipeBombBrass" count="1,4"/>
+  </append>
+
+  <!-- Trader quest rewards -->
+  <append xpath="/lootcontainers/lootgroup[@name='groupQuestAmmo']">
+    <item name="doughsThrownAmmoPipeBombSteel" count="5" loot_prob_template="QuestT3Prob"/>
+    <item name="doughsThrownAmmoPipeBombBrass" count="10" loot_prob_template="QuestT2Prob"/>
+  </append>
+
+</Doughs>
