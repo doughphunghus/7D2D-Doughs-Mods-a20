@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Doughs One Hour Of Daylight" />
+		<Description value="Changes the Game UI so you can select down to 0 hours of daylight ... and up to 24" />
+		<Author value="Doughphunghus" />
+		<Version value="20.0-b233.1.0.0" />
+    <Website value="https://github.com/doughphunghus" />
+	</ModInfo>
+</xml>
