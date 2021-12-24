@@ -1,0 +1,35 @@
+<Doughs>
+  <!--
+  ########## Add items to traders##########
+  -->
+
+  <!-- Add new items to traders
+  Keep the volume of higher value items low to encourage crafting
+  -->
+
+  <!-- cannedfood -->
+  <append xpath="/traders/trader_item_groups/trader_item_group[@name='foodCandy']">
+    <item name="doughsFoodTurkishDelight" count="1,4" prob="0.05"/>
+  </append>
+  <append xpath="/traders/trader_item_groups/trader_item_group[@name='foodSupplies']">
+    <item name="doughsFoodButter" count="1,4" prob="0.08"/>
+    <item name="doughsFoodFlour" count="1,4" prob="0.1"/>
+    <item name="doughsFoodSaltyExtract" count="1,10" prob="0.08"/>
+    <item name="doughsFoodCreamOfTartar" count="1,10" prob="0.1"/>
+    <item name="doughsFoodSweetExtract" count="1,10" prob="0.08"/>
+    <item name="doughsFoodCookingOil" count="1,4" prob="0.1"/>
+    <item name="doughsFoodBouillonCube" count="1,4" prob="0.1"/>
+  </append>
+  <append xpath="/traders/trader_item_groups/trader_item_group[@name='preparedFood']">
+    <item name="doughsFoodHardTack" count="1,10" prob="0.05"/>
+    <item name="doughsFoodBeefJerky" count="1,10" prob="0.15"/>
+    <item name="doughsFoodBread" count="1,4" prob="0.08"/>
+    <item name="doughsFoodCheese" count="1,2" prob="0.1"/>
+  </append>
+  <append xpath="/traders/trader_item_groups/trader_item_group[@name='preparedDrink']">
+    <item name="doughsDrinkBottomShelfRedWine" count="1,4" prob="0.1"/>
+    <item name="doughsDrinkMilk" count="1,2" prob="0.08"/>
+    <item name="doughsDrinkCream" count="1,2" prob="0.05"/>
+  </append>
+
+</Doughs>

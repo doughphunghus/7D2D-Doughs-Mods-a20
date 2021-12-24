@@ -1,0 +1,115 @@
+<Doughs>
+  <!--
+  ########## Looting items ##########
+  # Low percentage for stuff you should be crafting!
+  # Not everything should be found in loot, REQUIRE a LOT more CRAFTING as this mod has its own seperate perk tree
+  -->
+
+  <!-- stove/oven, cooking pots and pans rotten food -->
+  <append xpath="/lootcontainers/lootgroup[@name='groupOven']"> <!-- Loot probability is high for everything in vanilla -->
+    <item name="doughsFood_RuninedFoodBurned_Scraps" count="1,2" prob="1"/>
+    <item name="doughsFood_RuninedFoodBurned_Carcass" count="1,2" prob="0.6"/> <!-- Biggest -->
+    <item name="doughsFood_RuninedFoodBurned_Meat" count="1,2" prob="0.8"/>
+  </append>
+  <append xpath="/lootcontainers/lootgroup[@name='groupGrills']">
+    <item name="doughsFood_RuninedFoodBurned_Meat" count="1,2" prob="0.6"/>
+    <item name="doughsFood_RuninedFoodBurned_Scraps" count="1,5" prob="0.1"/>
+    <item name="doughsFood_RuninedFoodCold_GrilledMeat" count="1,2" prob="0.1"/>
+  </append>
+
+  <!-- A20_Food_Trash -->
+  <append xpath="/lootcontainers/lootgroup[@name='groupFoodTrash']"> <!-- bones, empty jars, rotting food -->
+    <item name="doughsFood_RuninedFoodCold_BaconAndEggs" count="1,2" prob="0.1"/>
+    <item name="doughsFood_RuninedFoodCold_BoiledMeat" count="1,2" prob="0.1"/>
+    <item name="doughsFood_RuninedFoodCold_Egg" count="1,4" prob="0.1"/>
+    <item name="doughsFood_RuninedFoodCold_GrilledMeat" count="1,2" prob="0.1"/>
+    <item name="doughsFood_RuninedFoodCold_Dessert" count="1,3" prob="0.1"/>
+  </append>
+
+  <!-- A20_Food_Ingredients_Groups -->
+  <append xpath="/lootcontainers/lootgroup[@name='groupIngredientsCommon']"> <!-- seeds/flours things that go bad very slowly-->
+    <item name="doughsFoodFlour" count="1,2" prob="0.08"/>
+    <item name="doughsFoodBouillonCube" count="1,2" prob="0.08"/>
+    <item name="doughsFoodCookingOil" count="1,2" prob="0.08"/>
+  </append>
+  <append xpath="/lootcontainers/lootgroup[@name='groupIngredientsUncommon']"> <!-- vegetables/things that go bad slowly -->
+    <item name="doughsFoodCreamOfTartar" count="1,2" prob="0.08"/>
+    <item name="doughsFood_RuninedFoodCold_BoiledMeat" count="1,2" prob="0.1"/>
+    <item name="doughsFood_RuninedFoodHot_Potato" count="1,6" prob="0.1"/>
+    <item name="doughsFood_RuninedFoodHot_Bread" count="1,2" prob="0.1"/>
+    <item name="doughsFood_RuninedFoodHot_Yam" count="1,8" prob="0.1"/>
+    <item name="doughsFood_RuninedFoodHot_BrusslesSprouts" count="1,12" prob="0.1"/>
+    <item name="doughsFood_RuninedFoodHot_Carrot" count="1,6" prob="0.1"/>
+  </append>
+  <append xpath="/lootcontainers/lootgroup[@name='groupIngredientsRare']"> <!-- meat/proteins. things that go bad quickly -->
+    <item name="doughsFoodRawSweetBread" count="1,2" prob="0.1"/>
+    <item name="doughsFoodButter" count="1,2" prob="0.1"/>
+    <item name="doughsFoodCheese" count="1,2" prob="0.1"/> <!-- meh, this is a tough one for "shelf life" BUT a high end item for my mod -->
+  </append>
+
+  <!-- A20_Food_Groups -->
+  <append xpath="/lootcontainers/lootgroup[@name='groupFoodCommon']"> <!-- canned vegetables/fruit/charred meat -->
+    <item name="doughsFood_RuninedFoodCold_GrilledMeat" count="1,2" prob="0.1"/>
+  </append>
+  <append xpath="/lootcontainers/lootgroup[@name='groupFoodPileCommon']"> <!-- canned fruit/veg some meat. charred meat -->
+    <item name="doughsFoodHardTack" count="1,2" prob="0.1"/>
+    <item name="doughsFoodBeefJerky" count="1,2" prob="0.1"/>
+    <item name="doughsFoodTurkishDelight" count="1,2" prob="0.08"/>
+  </append>
+  <append xpath="/lootcontainers/lootgroup[@name='groupFoodUncommon']"> <!-- canned meat/protein based without preservatives -->
+    <item name="doughsFood_RuninedFoodCold_Egg" count="1,4" prob="0.1"/>
+    <item name="doughsFood_RuninedFoodCold_BaconAndEggs" count="1,2" prob="0.1"/>
+  </append>
+
+  <!-- whole pies, etc -->
+  <!-- <append xpath="/lootcontainers/lootgroup[@name='groupFoodRare']">
+  </append> -->
+
+  <!-- A20_Drink_Groups -->
+  <!-- basic jars/nasty water -->
+  <!-- <append xpath="/lootcontainers/lootgroup[@name='groupDrinksCommon']">
+  </append> -->
+
+  <append xpath="/lootcontainers/lootgroup[@name='groupDrinksUncommon']"> <!-- beers and teas -->
+    <item name="doughsDrinkBottomShelfRedWine" count="1,2" prob="0.1"/>
+    <item name="doughsDrinkRawMilk" count="1,2" prob="0.05"/>
+  </append>
+
+  <!-- anything else -->
+  <!-- <append xpath="/lootcontainers/lootgroup[@name='groupDrinksRare']">
+  </append> -->
+
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWw
+
+<!-- T0_Schematics -->
+  <append xpath="/lootcontainers/lootgroup[@name='perkBooksT0']"> <!-- These are actually books in this mod -->
+    <item name="doughsFoodBasicExtractingSchematic"/>
+    <item name="doughsSeedToastingSchematic"/>
+    <item name="doughsDrinkMilkProcessingSchematic"/>
+    <item name="doughsFoodBreadSchematic"/>
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT0']"> <!-- All food -->
+    <item name="doughsSeedFlouringSchematic"/>
+    <item name="doughsFoodPemmicanSchematic"/>
+    <item name="doughsFoodPopCornSchematic" prob=".8"/>
+    <item name="doughsDrinkSweetNutMilkSchematic"/>
+    <item name="doughsFoodButterOfTheGodsSchematic" prob=".8"/>
+    <item name="doughsFoodBoneMarrowSchematic"/>
+  </append>
+  <append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT1']"> <!-- All food -->
+    <item name="doughsFoodCheeseSchematic"/>
+    <item name="doughsFoodIceCreamSchematic" prob=".6"/>
+    <item name="doughsFoodButterSchematic"/>
+    <item name="doughsFoodBoiledSweetBreadSchematic"/>
+  </append>
+  <append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT2']"> <!-- All food -->
+    <item name="doughsFoodEggSouffleSchematic" prob=".6"/>
+    <item name="doughsFoodSweetCornBlueberryMuffinSchematic"/>
+    <item name="doughsFoodPotatoesDauphinoiseSchematic"/>
+    <item name="doughsFoodCroqueMonsieurSchematic" prob=".6"/>
+    <item name="doughsFoodBoeufBourguignonSchematic"/>
+    <item name="doughsFoodTurkishDelightSchematic"/>
+  </append>
+
+</Doughs>

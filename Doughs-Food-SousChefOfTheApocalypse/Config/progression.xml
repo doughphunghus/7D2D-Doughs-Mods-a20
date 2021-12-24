@@ -1,0 +1,39 @@
+<Doughs>
+
+  <!-- Add new perks -->
+  <append xpath="/progression/perks">
+
+    <perk name="perkDoughsSousChef" parent="skillStrengthGeneral" name_key="perkDoughsSousChefName" desc_key="perkDoughsSousChefDesc" icon="ui_game_symbol_spatula">
+  		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="1" desc_key="reqStrengthLevel01"/></level_requirements>
+  		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="3" desc_key="reqStrengthLevel03"/></level_requirements>
+  		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
+  		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="7" desc_key="reqStrengthLevel07"/></level_requirements>
+  		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="10" desc_key="reqStrengthLevel10"/></level_requirements>
+
+  		<effect_group>
+  			<passive_effect name="CraftingTier" operation="base_set" level="0,5" value="0,5" tags="perkDoughsSousChef"/><!-- fake crafting perk that is used to scale resources -->
+  			<passive_effect name="CraftingTime" operation="perc_add" level="1,5" value="-.1,-.5" tags="perkDoughsSousChef"/>
+
+  			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1"
+  				tags="doughsFoodButteredToast,doughsFoodSauteedMushrooms,doughsFoodHardTack,doughsFoodBeefJerky,doughsFoodPineSeedToasted,doughsFoodAcornSeedToasted,doughsFoodPumpkinSeedToasted,doughsFoodPopCorn,doughsFoodScrapsAuJus"/>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,5" value="1"
+  				tags="doughsFoodPemmican,doughsFoodBoiledSweetBread,doughsFoodSaltyExtract,doughsFoodSweetExtract,doughsFoodCookingOil,doughsFoodCreamOfTartar,doughsFoodBoneMarrow,doughsFoodFlour,doughsFoodAuJus"/>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1"
+  				tags="doughsDrinkMilk,doughsDrinkCream,doughsDrinkSweetNutMilk,doughsFoodIceCream,doughsFoodRedWineBlueberrySorbet,doughsFoodTurkishDelight,doughsFoodSweetBreadCuisine"/>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,5" value="1"
+  				tags="doughsFoodMilkCurds,doughsFoodButter,doughsFoodButterOfTheGods,doughsFoodBreadBatter,doughsFoodBread,doughsFoodCheese,doughsFoodSteakAndPotatoCuisine,doughsFoodRoastBeefAuJus"/>
+        <passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1"
+  				tags="doughsFoodEggSouffle,doughsFoodSweetCornBlueberryMuffin,doughsFoodPotatoesDauphinoise,doughsFoodCroqueMonsieur,doughsFoodBoeufBourguignon"/>
+
+  			<effect_description level="1" desc_key="perkDoughsSousChefRank1Desc" long_desc_key="perkDoughsSousChefRank1LongDesc"/>
+  			<effect_description level="2" desc_key="perkDoughsSousChefRank2Desc" long_desc_key="perkDoughsSousChefRank2LongDesc"/>
+  			<effect_description level="3" desc_key="perkDoughsSousChefRank3Desc" long_desc_key="perkDoughsSousChefRank3LongDesc"/>
+  			<effect_description level="4" desc_key="perkDoughsSousChefRank4Desc" long_desc_key="perkDoughsSousChefRank4LongDesc"/>
+  			<effect_description level="5" desc_key="perkDoughsSousChefRank5Desc" long_desc_key="perkDoughsSousChefRank5LongDesc"/>
+  		</effect_group>
+  	</perk>
+
+
+
+  </append>
+</Doughs>

@@ -1,0 +1,116 @@
+<Doughs>
+  <!-- Override icons and colors -->
+  <set xpath="/items/item[@name='doughsFoodSweetCornBlueberryMuffin']/property[@name='CustomIcon']/@value">doughsFoodSweetCornBlueberryMuffin</set>
+  <remove xpath="/items/item[@name='doughsFoodSweetCornBlueberryMuffin']/property[@name='CustomIconTint']"/>
+
+  <set xpath="/items/item[@name='doughsFoodBread']/property[@name='CustomIcon']/@value">doughsFoodBread</set>
+  <remove xpath="/items/item[@name='doughsFoodBread']/property[@name='CustomIconTint']"/>
+
+  <set xpath="/items/item[@name='doughsFood_RuninedFoodHot_Potato']/property[@name='CustomIcon']/@value">doughsFood_RuninedFoodHot_Potato</set>
+  <remove xpath="/items/item[@name='doughsFood_RuninedFoodHot_Potato']/property[@name='CustomIconTint']"/>
+
+  <set xpath="/items/item[@name='doughsFoodCheese']/property[@name='CustomIcon']/@value">doughsFoodCheese</set>
+  <remove xpath="/items/item[@name='doughsFoodCheese']/property[@name='CustomIconTint']"/>
+
+  <set xpath="/items/item[@name='doughsFood_RuninedFoodCold_Dessert']/property[@name='CustomIcon']/@value">doughsFood_RuninedFoodCold_Dessert</set>
+  <!-- <remove xpath="/items/item[@name='doughsFood_RuninedFoodCold_Dessert']/property[@name='CustomIconTint']"/> -->
+
+  <set xpath="/items/item[@name='doughsFoodCroqueMonsieur']/property[@name='CustomIcon']/@value">doughsFoodCroqueMonsieur</set>
+  <remove xpath="/items/item[@name='doughsFoodCroqueMonsieur']/property[@name='CustomIconTint']"/>
+
+  <set xpath="/items/item[@name='doughsFood_RuninedFoodHot_Bread']/property[@name='CustomIcon']/@value">doughsFood_RuninedFoodHot_Bread</set>
+  <remove xpath="/items/item[@name='doughsFood_RuninedFoodHot_Bread']/property[@name='CustomIconTint']"/>
+
+  <set xpath="/items/item[@name='doughsFoodButteredToast']/property[@name='CustomIcon']/@value">doughsFoodButteredToast</set>
+  <remove xpath="/items/item[@name='doughsFoodButteredToast']/property[@name='CustomIconTint']"/>
+
+  <set xpath="/items/item[@name='doughsFoodPemmican']/property[@name='CustomIcon']/@value">doughsFoodPemmican</set>
+  <remove xpath="/items/item[@name='doughsFoodPemmican']/property[@name='CustomIconTint']"/>
+
+  <set xpath="/items/item[@name='doughsFoodCreamOfTartar']/property[@name='CustomIcon']/@value">doughsFoodCreamOfTartar</set>
+  <remove xpath="/items/item[@name='doughsFoodCreamOfTartar']/property[@name='CustomIconTint']"/>
+
+  <set xpath="/items/item[@name='doughsFoodSauteedMushrooms']/property[@name='CustomIcon']/@value">doughsFoodSauteedMushrooms</set>
+  <remove xpath="/items/item[@name='doughsFoodSauteedMushrooms']/property[@name='CustomIconTint']"/>
+
+  <set xpath="/items/item[@name='doughsFoodBoeufBourguignon']/property[@name='CustomIcon']/@value">doughsFoodBoeufBourguignon</set>
+  <remove xpath="/items/item[@name='doughsFoodBoeufBourguignon']/property[@name='CustomIconTint']"/>
+
+  <set xpath="/items/item[@name='doughsFoodPopCorn']/property[@name='CustomIcon']/@value">doughsFoodPopCorn</set>
+  <remove xpath="/items/item[@name='doughsFoodPopCorn']/property[@name='CustomIconTint']"/>
+
+  <set xpath="/items/item[@name='doughsDrinkBottomShelfRedWine']/property[@name='CustomIcon']/@value">doughsDrinkBottomShelfRedWine</set>
+  <remove xpath="/items/item[@name='doughsDrinkBottomShelfRedWine']/property[@name='CustomIconTint']"/>
+
+  <set xpath="/items/item[@name='doughsFoodTurkishDelight']/property[@name='CustomIcon']/@value">doughsFoodTurkishDelight</set>
+  <remove xpath="/items/item[@name='doughsFoodTurkishDelight']/property[@name='CustomIconTint']"/>
+
+  <set xpath="/items/item[@name='doughsFoodButter']/property[@name='CustomIcon']/@value">doughsFoodButter</set>
+  <remove xpath="/items/item[@name='doughsFoodButter']/property[@name='CustomIconTint']"/>
+
+  <set xpath="/items/item[@name='doughsFoodCookingOil']/property[@name='CustomIcon']/@value">doughsFoodCookingOil</set>
+  <remove xpath="/items/item[@name='doughsFoodCookingOil']/property[@name='CustomIconTint']"/>
+
+  <set xpath="/items/item[@name='doughsFoodBeefJerky']/property[@name='CustomIcon']/@value">doughsFoodBeefJerky</set>
+  <remove xpath="/items/item[@name='doughsFoodBeefJerky']/property[@name='CustomIconTint']"/>
+
+  <set xpath="/items/item[@name='doughsFoodSaltyExtract']/property[@name='CustomIcon']/@value">doughsFoodSaltyExtract</set>
+  <remove xpath="/items/item[@name='doughsFoodSaltyExtract']/property[@name='CustomIconTint']"/>
+
+  <set xpath="/items/item[@name='doughsFoodSweetExtract']/property[@name='CustomIcon']/@value">doughsFoodSweetExtract</set>
+  <remove xpath="/items/item[@name='doughsFoodSweetExtract']/property[@name='CustomIconTint']"/>
+
+  <set xpath="/items/item[@name='doughsFoodFoodScraps']/property[@name='CustomIcon']/@value">doughsFoodFoodScraps</set>
+  <remove xpath="/items/item[@name='doughsFoodFoodScraps']/property[@name='CustomIconTint']"/>
+
+  <set xpath="/items/item[@name='doughsFoodMeatScraps']/property[@name='CustomIcon']/@value">doughsFoodMeatScraps</set>
+  <remove xpath="/items/item[@name='doughsFoodMeatScraps']/property[@name='CustomIconTint']"/>
+
+  <set xpath="/items/item[@name='doughsFoodFlour']/property[@name='CustomIcon']/@value">doughsFoodFlour</set>
+  <remove xpath="/items/item[@name='doughsFoodFlour']/property[@name='CustomIconTint']"/>
+
+  <set xpath="/items/item[@name='doughsFoodScrapsAuJus']/property[@name='CustomIcon']/@value">doughsFoodScrapsAuJus</set>
+  <remove xpath="/items/item[@name='doughsFoodScrapsAuJus']/property[@name='CustomIconTint']"/>
+
+  <set xpath="/items/item[@name='doughsFoodAuJus']/property[@name='CustomIcon']/@value">doughsFoodAuJus</set>
+  <remove xpath="/items/item[@name='doughsFoodAuJus']/property[@name='CustomIconTint']"/>
+
+  <set xpath="/items/item[@name='doughsFoodPineSeedToasted']/property[@name='CustomIcon']/@value">doughsFoodPineSeedToasted</set>
+  <remove xpath="/items/item[@name='doughsFoodPineSeedToasted']/property[@name='CustomIconTint']"/>
+
+
+  <!-- TODO
+  doughsFoodHardTack
+  doughsFoodIceCream
+
+  doughsFoodAcornSeedToasted
+  doughsFoodPumpkinSeedToasted
+
+  doughsFoodBouillonCube
+  doughsFood_RuninedFoodBurned_Scraps
+  doughsFood_RuninedFoodBurned_Carcass
+  doughsFood_RuninedFoodCold_BaconAndEggs
+  doughsFood_RuninedFoodCold_BoiledMeat
+  doughsFood_RuninedFoodCold_Egg
+  doughsFood_RuninedFoodCold_GrilledMeat
+  doughsFood_RuninedFoodHot_Yam
+  doughsFood_RuninedFoodHot_BrusslesSprouts
+  doughsFood_RuninedFoodHot_Carrot
+  doughsFoodRedWineBlueberrySorbet
+  doughsFoodSteakAndPotatoCuisine
+  doughsFoodBoneMarrow
+  doughsFoodRawSweetBread
+  doughsFoodBoiledSweetBread
+  doughsFoodSweetBreadCuisine
+  doughsDrinkSweetNutMilk
+  doughsDrinkRawMilk
+  doughsDrinkMilk
+  doughsDrinkCream
+  doughsFoodMilkCurds
+  doughsFoodButterOfTheGods
+  doughsFoodBreadBatter
+  doughsFoodRoastBeefAuJus
+  doughsFoodEggSouffle
+  doughsFoodPotatoesDauphinoise
+  -->
+</Doughs>

@@ -1,0 +1,336 @@
+<Doughs>
+  <append xpath="/recipes">
+
+    <!-- Scraps -->
+    <recipe name="doughsFoodMeatScraps" count="1" tags="perkDoughsSousChef">
+      <ingredient name="doughsFood_RuninedFoodBurned_Scraps" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodMeatScraps" count="2" tags="perkDoughsSousChef">
+      <ingredient name="doughsFood_RuninedFoodBurned_Meat" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodMeatScraps" count="2" tags="perkDoughsSousChef">
+      <ingredient name="doughsFood_RuninedFoodCold_BoiledMeat" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodMeatScraps" count="2" tags="perkDoughsSousChef">
+      <ingredient name="doughsFood_RuninedFoodCold_GrilledMeat" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodMeatScraps" count="6" tags="perkDoughsSousChef">
+      <ingredient name="doughsFood_RuninedFoodBurned_Carcass" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodMeatScraps" count="1" tags="perkDoughsSousChef">
+      <ingredient name="doughsFood_RuninedFoodCold_BaconAndEggs" count="1"/>
+    </recipe>
+
+    <recipe name="doughsFoodFoodScraps" count="1" tags="perkDoughsSousChef">
+      <ingredient name="doughsFood_RuninedFoodCold_Egg" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodFoodScraps" count="1" tags="perkDoughsSousChef">
+      <ingredient name="doughsFood_RuninedFoodCold_Dessert" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodFoodScraps" count="3" tags="perkDoughsSousChef">
+      <ingredient name="doughsFood_RuninedFoodHot_Potato" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodFoodScraps" count="3" tags="perkDoughsSousChef">
+      <ingredient name="doughsFood_RuninedFoodHot_Bread" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodFoodScraps" count="2" tags="perkDoughsSousChef">
+      <ingredient name="doughsFood_RuninedFoodHot_Yam" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodFoodScraps" count="1" tags="perkDoughsSousChef">
+      <ingredient name="doughsFood_RuninedFoodHot_BrusslesSprouts" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodFoodScraps" count="2" tags="perkDoughsSousChef">
+      <ingredient name="doughsFood_RuninedFoodHot_Carrot" count="1"/>
+    </recipe>
+
+    <!-- Food -->
+    <recipe name="doughsFoodScrapsAuJus" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="doughsFoodMeatScraps" count="3"/>
+      <ingredient name="doughsFoodFoodScraps" count="3"/>
+      <ingredient name="resourceAnimalFat" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/> <!-- Yeah, make them boil it first. take some time -->
+    </recipe>
+    <recipe name="doughsFoodScrapsAuJus" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="doughsFoodMeatScraps" count="5"/>
+      <ingredient name="doughsFoodFoodScraps" count="5"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/> <!-- Yeah, make them boil it first. take some time -->
+    </recipe>
+    <recipe name="doughsFoodScrapsAuJus" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="doughsFoodMeatScraps" count="10"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/> <!-- Yeah, make them boil it first. take some time -->
+    </recipe>
+    <recipe name="doughsFoodScrapsAuJus" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="doughsFoodFoodScraps" count="10"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/> <!-- Yeah, make them boil it first. take some time -->
+    </recipe>
+
+    <recipe name="doughsFoodAuJus" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="doughsFoodScrapsAuJus" count="2"/>
+      <ingredient name="doughsFoodFlour" count="2"/>
+      <ingredient name="doughsFoodSaltyExtract" count="1"/>
+      <ingredient name="resourceAnimalFat" count="1"/>
+      <ingredient name="doughsDrinkBottomShelfRedWine" count="1"/>
+    </recipe>
+
+    <recipe name="doughsFoodPumpkinSeedToasted" count="5" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="plantedPumpkin1" count="5"/>
+    	<ingredient name="resourceAnimalFat" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodPineSeedToasted" count="5" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="treePlantedMountainPine1m" count="5"/>
+      <ingredient name="resourceAnimalFat" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodAcornSeedToasted" count="5" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="treePlantedOak1m" count="5"/>
+      <ingredient name="resourceAnimalFat" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+      <ingredient name="resourceCloth" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodFlour" count="1" craft_area="workbench" tags="perkDoughsSousChef,workbenchCrafting,learnable" >
+      <ingredient name="doughsFoodPineSeedToasted" count="30"/>
+      <ingredient name="resourceCloth" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodFlour" count="1" craft_area="workbench" tags="perkDoughsSousChef,workbenchCrafting,learnable" >
+      <ingredient name="doughsFoodAcornSeedToasted" count="10"/>
+      <ingredient name="resourceCloth" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodFlour" count="1" craft_area="workbench" tags="perkDoughsSousChef,workbenchCrafting,learnable" >
+      <ingredient name="foodCornMeal" count="1"/>
+    </recipe>
+
+    <recipe name="doughsFoodCookingOil" count="1" craft_area="workbench" tags="perkDoughsSousChef,workbenchCrafting,learnable" >
+      <ingredient name="doughsFoodPineSeedToasted" count="16"/>
+      <ingredient name="resourceCloth" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodCookingOil" count="1" craft_area="workbench" tags="perkDoughsSousChef,workbenchCrafting,learnable" >
+      <ingredient name="doughsFoodAcornSeedToasted" count="12"/>
+      <ingredient name="resourceCloth" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodCookingOil" count="1" craft_area="workbench" tags="perkDoughsSousChef,workbenchCrafting,learnable" >
+      <ingredient name="doughsFoodPumpkinSeedToasted" count="20"/>
+      <ingredient name="resourceCloth" count="1"/>
+    </recipe>
+
+    <recipe name="doughsFoodSaltyExtract" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="foodCanMiso" count="1"/>
+      <ingredient name="resourceCloth" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodSaltyExtract" count="2" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="foodCanStock" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodSaltyExtract" count="4" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="doughsFoodBouillonCube" count="1"/>
+    </recipe>
+
+    <recipe name="doughsFoodSweetExtract" count="6" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="foodHoney" count="1"/>
+      <ingredient name="resourceCloth" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodSweetExtract" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="foodCanPears" count="1"/>
+      <ingredient name="resourceCloth" count="1"/>
+    </recipe>
+
+    <recipe name="doughsFoodCreamOfTartar" count="2" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="doughsDrinkBottomShelfRedWine" count="1"/>
+      <ingredient name="resourceCloth" count="1"/>
+    </recipe>
+
+    <recipe name="doughsFoodBoneMarrow" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="resourceBone" count="2"/>
+    </recipe>
+
+    <recipe name="doughsFoodHardTack" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="doughsFoodFlour" count="8"/>
+      <ingredient name="doughsFoodSaltyExtract" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+
+    <recipe name="doughsFoodBeefJerky" count="3" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkDoughsSousChef,learnable">
+      <ingredient name="foodRawMeat" count="1"/>
+      <ingredient name="doughsFoodSaltyExtract" count="2"/>
+    </recipe>
+
+    <recipe name="doughsFoodTurkishDelight" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkDoughsSousChef,learnable">
+      <ingredient name="doughsFoodSweetExtract" count="10"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+      <ingredient name="doughsFoodFlour" count="1"/>
+      <ingredient name="doughsFoodCreamOfTartar" count="1"/>
+      <ingredient name="foodCropBlueberries" count="10"/>
+    </recipe>
+
+    <recipe name="doughsFoodPemmican" count="2" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="doughsFoodBeefJerky" count="2"/>
+      <ingredient name="resourceAnimalFat" count="1"/>
+      <ingredient name="foodCropBlueberries" count="10"/>
+    </recipe>
+
+    <recipe name="doughsFoodPopCorn" count="4" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="foodCornOnTheCob" count="2"/>
+      <ingredient name="resourceAnimalFat" count="1"/>
+      <ingredient name="doughsFoodSaltyExtract" count="2"/>
+    </recipe>
+    <recipe name="doughsFoodPopCorn" count="2" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="foodCornOnTheCob" count="1"/>
+      <ingredient name="doughsFoodCookingOil" count="1"/>
+      <ingredient name="doughsFoodSaltyExtract" count="1"/>
+    </recipe>
+
+    <recipe name="doughsFoodBoiledSweetBread" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="doughsFoodRawSweetBread" count="2"/>
+      <ingredient name="drinkJarBoiledWater" count="6"/>
+      <ingredient name="doughsFoodSaltyExtract" count="1"/>
+      <ingredient name="doughsFoodCookingOil" count="1"/>
+    </recipe>
+
+    <recipe name="doughsFoodSweetBreadCuisine" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="doughsFoodBoiledSweetBread" count="2"/>
+      <ingredient name="doughsFoodSauteedMushrooms" count="3"/>
+      <ingredient name="doughsFoodSaltyExtract" count="1"/>
+      <ingredient name="doughsDrinkCream" count="1"/>
+    </recipe>
+
+    <recipe name="doughsDrinkSweetNutMilk" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="doughsFoodSweetExtract" count="3"/>
+      <ingredient name="doughsFoodFlour" count="6"/>
+      <ingredient name="drinkJarEmpty" count="1"/>
+    </recipe>
+
+    <recipe name="doughsDrinkMilk" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="doughsDrinkRawMilk" count="2"/>
+      <ingredient name="resourceAcid" count="1"/>
+      <ingredient name="resourceCloth" count="1"/>
+      <ingredient name="drinkJarEmpty" count="1"/>
+    </recipe>
+
+    <recipe name="doughsDrinkCream" count="1" craft_area="workbench" tags="perkDoughsSousChef,workbenchCrafting,learnable" >
+      <ingredient name="doughsDrinkMilk" count="6"/>
+      <ingredient name="drinkJarEmpty" count="1"/>
+    </recipe>
+
+    <recipe name="doughsFoodSauteedMushrooms" count="6" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable" >
+      <ingredient name="foodCropMushrooms" count="6"/>
+      <ingredient name="doughsFoodButter" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodSauteedMushrooms" count="6" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable" >
+      <ingredient name="foodCropMushrooms" count="6"/>
+      <ingredient name="doughsFoodCookingOil" count="1"/>
+    </recipe>
+
+    <recipe name="doughsFoodButteredToast" count="12" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable" >
+      <ingredient name="doughsFoodBread" count="1"/>
+      <ingredient name="doughsFoodButter" count="4"/>
+    </recipe>
+
+    <recipe name="doughsFoodRedWineBlueberrySorbet" count="12" craft_area="workbench" tags="perkDoughsSousChef,workbenchCrafting,learnable" >
+      <ingredient name="doughsFoodSweetExtract" count="10"/>
+      <ingredient name="doughsDrinkBottomShelfRedWine" count="1"/>
+      <ingredient name="resourceSnowBall" count="10"/>
+      <ingredient name="foodCropBlueberries" count="30"/>
+    </recipe>
+
+    <recipe name="doughsFoodButter" count="1" craft_area="workbench" tags="perkDoughsSousChef,workbenchCrafting,learnable" >
+      <ingredient name="doughsDrinkCream" count="4"/>
+      <ingredient name="resourcePaper" count="1"/>
+    </recipe>
+
+    <recipe name="doughsFoodButterOfTheGods" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable" >
+      <ingredient name="doughsFoodButter" count="1"/>
+      <ingredient name="doughsFoodSaltyExtract" count="1"/>
+      <ingredient name="doughsFoodBoneMarrow" count="2"/>
+      <ingredient name="foodCropMushrooms" count="2"/>
+      <ingredient name="resourcePaper" count="1"/>
+    </recipe>
+
+    <recipe name="doughsFoodMilkCurds" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="doughsDrinkMilk" count="10"/>
+      <ingredient name="resourceCloth" count="20"/>
+      <ingredient name="resourceAcid" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="10"/>
+    </recipe>
+
+    <recipe name="doughsFoodRoastBeefAuJus" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="doughsFoodAuJus" count="1"/>
+      <ingredient name="doughsFoodCheese" count="1"/>
+      <ingredient name="doughsFoodButteredToast" count="2"/> <!-- because it sounds good, and a whole bread loaf is overkill -->
+      <ingredient name="doughsFoodBeefJerky" count="8"/> <!-- Welll... it neds the Au Jus to moisten it. and its in strips. and you have another use for it. and I dont want to make roast beef pieces -->
+    </recipe>
+
+    <recipe name="doughsFoodCheese" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="doughsFoodMilkCurds" count="2"/>
+      <ingredient name="resourceCloth" count="20"/>
+      <ingredient name="doughsFoodSaltyExtract" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="10"/>
+    </recipe>
+
+    <recipe name="doughsFoodEggSouffle" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="foodEgg" count="5"/>
+      <ingredient name="doughsFoodButter" count="2"/>
+      <ingredient name="doughsFoodFlour" count="1"/>
+      <ingredient name="doughsDrinkMilk" count="1"/>
+      <ingredient name="doughsFoodSaltyExtract" count="1"/>
+    </recipe>
+
+    <recipe name="doughsFoodPotatoesDauphinoise" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="foodCropPotato" count="5"/>
+      <ingredient name="doughsFoodButter" count="2"/>
+      <ingredient name="doughsFoodCheese" count="2"/>
+      <ingredient name="doughsDrinkCream" count="1"/>
+      <ingredient name="doughsFoodSaltyExtract" count="1"/>
+    </recipe>
+
+    <recipe name="doughsFoodCroqueMonsieur" count="4" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="doughsFoodBread" count="1"/>
+      <ingredient name="doughsFoodCheese" count="2"/>
+      <ingredient name="doughsFoodBeefJerky" count="8"/>
+      <ingredient name="doughsFoodFlour" count="1"/>
+      <ingredient name="doughsDrinkMilk" count="2"/>
+    </recipe>
+
+    <recipe name="doughsFoodBoeufBourguignon" count="4" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="doughsDrinkBottomShelfRedWine" count="1"/>
+      <ingredient name="foodMeatStew" count="1"/>
+      <ingredient name="doughsFoodBeefJerky" count="8"/>
+      <ingredient name="doughsFoodFlour" count="1"/>
+      <ingredient name="doughsFoodSauteedMushrooms" count="8"/>
+    </recipe>
+
+    <recipe name="doughsFoodBreadBatter" count="1" craft_area="workbench" tags="perkDoughsSousChef,workbenchCrafting,learnable">
+      <ingredient name="foodEgg" count="2"/>
+      <ingredient name="doughsFoodCreamOfTartar" count="1"/>
+      <ingredient name="doughsFoodFlour" count="2"/>
+      <ingredient name="doughsDrinkMilk" count="2"/>
+      <ingredient name="doughsFoodSweetExtract" count="4"/>
+    </recipe>
+
+    <recipe name="doughsFoodSteakAndPotatoCuisine" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="foodSteakAndPotato" count="1"/>
+      <ingredient name="doughsFoodButterOfTheGods" count="1"/>
+      <ingredient name="doughsFoodSaltyExtract" count="1"/>
+    </recipe>
+
+    <recipe name="doughsFoodBread" count="1" craft_area="workbench" tags="perkDoughsSousChef,workbenchCrafting,learnable">
+      <ingredient name="doughsFoodCookingOil" count="1"/>
+      <ingredient name="doughsFoodBreadBatter" count="1"/>
+      <ingredient name="doughsFoodSaltyExtract" count="1"/>
+      <ingredient name="doughsFoodButter" count="1"/>
+    </recipe>
+
+    <recipe name="doughsFoodSweetCornBlueberryMuffin" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="doughsFoodBreadBatter" count="1"/>
+      <ingredient name="doughsFoodButter" count="1"/>
+      <ingredient name="foodCropBlueberries" count="20"/>
+      <ingredient name="doughsDrinkCream" count="1"/>
+      <ingredient name="foodCornMeal" count="5"/>
+    </recipe>
+
+    <recipe name="doughsFoodIceCream" count="1" craft_area="workbench" tags="perkDoughsSousChef,workbenchCrafting,learnable">
+      <ingredient name="foodEgg" count="5"/>
+      <ingredient name="doughsDrinkMilk" count="2"/>
+      <ingredient name="doughsFoodSweetExtract" count="4"/>
+      <ingredient name="resourceSnowBall" count="50"/>
+      <ingredient name="doughsDrinkCream" count="2"/>
+    </recipe>
+
+  </append>
+</Doughs>
