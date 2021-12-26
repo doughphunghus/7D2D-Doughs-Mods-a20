@@ -2,7 +2,7 @@
 <xml>
     <ModInfo>
         <Name value="Doughs-UI-Remove-PlayerItemsFromCompass" />
-        <Description value="This modlet removes player owned items from the compass." />
+        <Description value="This modlet removes player owned items from the compass unless you are standing on them (see notes for reasons)." />
         <Author value="Doughphunghus" />
         <Version value="a20.0-b238.1.0.0" />
     </ModInfo>
