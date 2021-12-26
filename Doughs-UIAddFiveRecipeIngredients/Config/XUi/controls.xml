@@ -1,0 +1,23 @@
+<configs>
+  <!-- Remove existing ingredient_row definition.  3 rectangles -->
+  <remove xpath="/controls/ingredient_row" />
+
+  <!-- Add new ingredient_row definition.  2 rectangles (removed last one which is a column to the right), 1/2 the width, text made smaller, etc. -->
+  <append xpath="/controls">
+    <ingredient_row>
+      <rect name="row" width="225" height="50" controller="IngredientEntry">
+        <rect depth="2" width="65" height="48">
+          <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,2" width="71" height="53" color="[black]" type="sliced" fillcenter="false" />
+
+          <sprite color="[lightGrey]" type="sliced" />
+          <sprite depth="2" name="icon" width="56" height="40" atlas="ItemIconAtlas" sprite="{itemicon}" color="{itemicontint}" pos="30,-20" pivot="center" foregroundlayer="true"/>
+        </rect>
+        <rect depth="2" width="158" height="48" pos="68,0">
+          <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,2" width="158" height="53" color="[black]" type="sliced" fillcenter="false" />
+          <sprite color="[lightGrey]" type="sliced" />
+          <label depth="3" name="name" pos="80,-20" width="157" height="26" font_size="19" color="[labelColor]" justify="left" pivot="center" text="{itemname} {haveneedcount}"/>
+        </rect>
+      </rect>
+    </ingredient_row>
+   </append>
+ </configs>

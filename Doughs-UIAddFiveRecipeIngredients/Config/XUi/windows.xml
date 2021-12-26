@@ -1,0 +1,14 @@
+<configs>
+  <!-- Remove existing ingredients rect.  Only 1 column, 5 fixed visible ingredients -->
+  <remove xpath="/windows/window[@name='craftingInfoPanel']/rect[@name='contentCraftingInfo']/rect[@name='ingredients']" />
+
+  <!-- Add new ingredients rect.  2 columns, 10 fixed visible ingredients -->
+  <insertAfter xpath="/windows/window[@name='craftingInfoPanel']/rect[@name='contentCraftingInfo']/rect[@name='description']" >
+    <rect depth="1" pos="153,-95" name="ingredients" width="447" height="264" visible="{showingredients}">
+      <grid rows="5" cols="2" width="450" height="231" cell_height="50" cell_width="227" repeat_content="true" controller="IngredientList" arrangement="vertical">
+        <ingredient_row/>
+      </grid>
+    </rect>
+
+  </insertAfter>
+</configs>
