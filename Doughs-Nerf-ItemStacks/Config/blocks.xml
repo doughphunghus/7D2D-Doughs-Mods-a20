@@ -1,0 +1,145 @@
+<Doughs>
+  <set xpath="/blocks/block[@name='officeChair01']/property[@name='Stacknumber']/@value">2</set>  <!-- DOUGH: Default = 10 -->
+  <set xpath="/blocks/block[@name='woodChair1']/property[@name='Stacknumber']/@value">2</set>  <!-- DOUGH: Default = 10 -->
+  <set xpath="/blocks/block[@name='oldChair1']/property[@name='Stacknumber']/@value">2</set>  <!-- DOUGH: Default = 10 -->
+  <set xpath="/blocks/block[@name='barracksChair']/property[@name='Stacknumber']/@value">3</set>  <!-- DOUGH: Default = 10 -->
+  <set xpath="/blocks/block[@name='tv']/property[@name='Stacknumber']/@value">1</set>  <!-- DOUGH: Default = 3 -->
+  <set xpath="/blocks/block[@name='bedroll']/property[@name='Stacknumber']/@value">2</set>  <!-- DOUGH: Default = 10 -->
+  <set xpath="/blocks/block[@name='wallTorchLightPlayer']/property[@name='Stacknumber']/@value">2</set>  <!-- DOUGH: Default = 50 -->
+  <set xpath="/blocks/block[@name='candleWallLightPlayer']/property[@name='Stacknumber']/@value">4</set>  <!-- DOUGH: Default = 50 -->
+  <set xpath="/blocks/block[@name='burningBarrelPlayer']/property[@name='Stacknumber']/@value">1</set>  <!-- DOUGH: Default = 50 -->
+  <set xpath="/blocks/block[@name='dartTrap']/property[@name='Stacknumber']/@value">1</set>  <!-- DOUGH: Default = 10 -->
+  <set xpath="/blocks/block[@name='bladeTrap']/property[@name='Stacknumber']/@value">1</set>  <!-- DOUGH: Default = 10 -->
+  <set xpath="/blocks/block[@name='autoTurret']/property[@name='Stacknumber']/@value">1</set>  <!-- DOUGH: Default = 10 -->
+  <set xpath="/blocks/block[@name='rScrapIronPlateMine']/property[@name='Stacknumber']/@value">3</set>  <!-- DOUGH: Default = 25 -->
+  <set xpath="/blocks/block[@name='mineCookingPot']/property[@name='Stacknumber']/@value">2</set>  <!-- DOUGH: Default = 25 -->
+  <set xpath="/blocks/block[@name='mineHubcap']/property[@name='Stacknumber']/@value">2</set>  <!-- DOUGH: Default = 25 -->
+  <set xpath="/blocks/block[@name='mineAirFilter']/property[@name='Stacknumber']/@value">2</set>  <!-- DOUGH: Default = 25 -->
+
+  <append xpath="/blocks/block[@name='treePlant02']" > <!-- potted plant -->
+  	<property name="Stacknumber" value="2"/>
+  </append>
+  <append xpath="/blocks/block[@name='lanternLight_player']" > <!--  -->
+  	<property name="Stacknumber" value="2"/>
+  </append>
+  <append xpath="/blocks/block[@name='hayBaleSquare']" > <!-- a20: was hayBale -->
+  	<property name="Stacknumber" value="1"/>
+  </append>
+  <append xpath="/blocks/block[@name='hayBaleRound']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="1"/>
+  </append>
+   <append xpath="/blocks/block[@name='electrictimerrelay']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="5"/>
+  </append>
+   <append xpath="/blocks/block[@name='motionsensor']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="4"/>
+  </append>
+   <append xpath="/blocks/block[@name='tripwirepost']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="6"/>
+  </append>
+   <append xpath="/blocks/block[@name='pressureplateLong']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="1"/>
+  </append>
+   <append xpath="/blocks/block[@name='pressureplate']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="2"/>
+  </append>
+   <append xpath="/blocks/block[@name='switch']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="6"/>
+  </append>
+   <append xpath="/blocks/block[@name='electricwirerelay']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="5"/>
+  </append>
+   <append xpath="/blocks/block[@name='lanternLight_player']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="3"/>
+  </append>
+   <append xpath="/blocks/block[@name='ceilingLight01_player']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="10"/>
+  </append>
+   <append xpath="/blocks/block[@name='spotlightPlayer']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="1"/>
+  </append>
+  <append xpath="/blocks/block[@name='speaker']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="6"/>
+  </append>
+  <append xpath="/blocks/block[@name='electricfencepost']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="6"/>
+  </append>
+   <append xpath="/blocks/block[@name='secureDoorWooden']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="1"/>
+  </append>
+   <append xpath="/blocks/block[@name='secureReinforcedDoorWooden']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="1"/>
+  </append>
+   <append xpath="/blocks/block[@name='metalReinforcedDoorWooden']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="1"/>
+  </append>
+   <append xpath="/blocks/block[@name='ironDoor1_v1']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="1"/>
+  </append>
+   <append xpath="/blocks/block[@name='vaultDoor01']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="1"/>
+  </append>
+   <append xpath="/blocks/block[@name='vaultDoor03']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="1"/>
+  </append>
+   <append xpath="/blocks/block[@name='cellarDoorDoubleWood']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="1"/>
+  </append>
+     <append xpath="/blocks/block[@name='cellarDoorDoubleIron']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="1"/>
+  </append>
+     <append xpath="/blocks/block[@name='cellarDoorDoubleSteel']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="1"/>
+  </append>
+     <append xpath="/blocks/block[@name='shuttersWood01']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="1"/>
+  </append>
+     <append xpath="/blocks/block[@name='commercialDoor1_v1']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="1"/>
+  </append>
+     <append xpath="/blocks/block[@name='commercialDoor1_v3']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="1"/>
+  </append>
+     <append xpath="/blocks/block[@name='houseFrontDoor1_v1']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="1"/>
+  </append>
+     <append xpath="/blocks/block[@name='garageDoorMetal_v1']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="1"/>
+  </append>
+     <append xpath="/blocks/block[@name='garageDoorMetal_v3']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="1"/>
+  </append>
+     <append xpath="/blocks/block[@name='garageDoorMetal_v1Powered']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="1"/>
+  </append>
+   <append xpath="/blocks/block[@name='garageDoorHousePlayer']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="1"/>
+  </append>
+     <append xpath="/blocks/block[@name='garageDoorHouseBrown']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="1"/>
+  </append>
+     <append xpath="/blocks/block[@name='garageDoorIndustrial']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="1"/>
+  </append>
+     <append xpath="/blocks/block[@name='garageDoorIndustrial_Powered']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="1"/>
+  </append>
+     <append xpath="/blocks/block[@name='rollUpDoor3x3White']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="1"/>
+  </append>
+     <append xpath="/blocks/block[@name='rollUpDoor5x4White']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="1"/>
+  </append>
+     <append xpath="/blocks/block[@name='rollUpDoor7x4White']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="1"/>
+  </append>
+     <append xpath="/blocks/block[@name='woodHatch1_v1']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="2"/>
+  </append>
+     <append xpath="/blocks/block[@name='scrapHatch_v1']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="2"/>
+  </append>
+  <append xpath="/blocks/block[@name='metalReinforcedWoodDrawBridge']" > <!-- a20: New -->
+  	<property name="Stacknumber" value="1"/>
+  </append>
+</Doughs>

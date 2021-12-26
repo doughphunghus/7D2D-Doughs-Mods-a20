@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Doughs Nerf Item Stacks" />
+		<Description value="Lowers the numbers of items that can stack in a single storage slot." />
+		<Author value="Doughphunghus" />
+		<Version value="a20.0-b238.1.0.0" />
+    <Website value="https://github.com/doughphunghus" />
+	</ModInfo>
+</xml>
