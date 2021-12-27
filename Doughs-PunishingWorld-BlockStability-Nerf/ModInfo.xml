@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Doughs PunishingWorld Nerf Block Stability" />
+		<Description value="Lowers block stability glue of several block types. All in game buildings or parts of them not built with this in mind may collapse very easily." />
+		<Author value="Doughphunghus" />
+		<Version value="a20.0-b238.1.0.0" />
+    <Website value="https://github.com/doughphunghus" />
+	</ModInfo>
+</xml>
