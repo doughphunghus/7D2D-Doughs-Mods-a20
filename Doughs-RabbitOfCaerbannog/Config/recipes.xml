@@ -1,0 +1,15 @@
+<Doughs>
+
+  <append xpath="/recipes">
+    <!-- DOUGH: Make it as silly as possible. Maybe add like 10 steps later ?-->
+    <recipe name="doughs-khelldonHolyHandGrenade" count="1" craft_area="workbench" tags="workbenchCrafting">
+    	<ingredient name="doughsAnimalRabbbitFleshOfCaerbannog" count="1"/>
+    	<ingredient name="foodCanSham" count="1"/>
+      <ingredient name="ammoRocketFrag" count="2"/>
+      <ingredient name="resourceDoorKnob" count="1"/>
+      <ingredient name="resourceDuctTape" count="1"/>
+    </recipe>
+
+  </append>
+
+</Doughs>

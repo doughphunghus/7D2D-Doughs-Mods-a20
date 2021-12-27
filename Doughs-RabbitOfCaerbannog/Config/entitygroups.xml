@@ -1,0 +1,264 @@
+<Doughs>
+
+  <!--
+  ########## Mod vanilla groups ##########
+  -->
+
+  <!-- DOUGH: High spawn rates -->
+  <append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.07"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.05"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.05"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight2']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.05"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='ZombieBadassGroup']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.05"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='ZombieAnimalsGroup']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.05"/>
+  </append>
+
+  <!-- DOUGH: Med spawn rates -->
+  <append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesert']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.02"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsSnow']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.02"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsForest']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.02"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsBurntForest']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.02"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='ZombiesNight']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.02"/>
+  </append>
+
+  <!-- DOUGH: Low spawn rates -->
+  <append xpath="/entitygroups/entitygroup[@name='AnimalsFarm']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.01"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='AnimalsSmall']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.01"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='ZombiesHoard']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.01"/>
+  </append>
+
+  <!-- Caves were removed, but they have promised to bring them back -->
+  <append xpath="/entitygroups/entitygroup[@name='ZombiesCave']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".2"/>
+  </append>
+
+  <!-- Add to badassOnlyHordeStage -->
+  <append xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS3']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".01"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS51']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".01"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS112']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".05"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS242']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".05"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS386']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".05"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS524']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".05"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS724']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".07"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS905']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".07"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS1003']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".07"/>
+  </append>
+
+  <!-- Add to badassHordeStage -->
+  <append xpath="/entitygroups/entitygroup[@name='badassHordeStageGS21']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".01"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='badassHordeStageGS40']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".01"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='badassHordeStageGS95']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".03"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='badassHordeStageGS130']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".03"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='badassHordeStageGS217']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".03"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='badassHordeStageGS325']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".05"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='badassHordeStageGS419']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".05"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='badassHordeStageGS524']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".05"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='badassHordeStageGS600']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".07"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='badassHordeStageGS724']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".07"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='badassHordeStageGS858']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".1"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='badassHordeStageGS1003']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".1"/>
+  </append>
+
+  <!-- Add to feralHordeStage -->
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS49']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".01"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS49']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".01"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS59']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".015"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS80']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".015"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS109']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".02"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS140']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".02"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS188']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".02"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS255']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".05"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS312']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".05"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS389']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".07"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS463']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".07"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS530']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".1"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS600']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".1"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS662']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".1"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS769']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".1"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS870']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".1"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS986']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".1"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1058']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".1"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1143']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".1"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1231']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".1"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1347']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".15"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1425']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".15"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1587']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".15"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1684']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".15"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1768']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".15"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1868']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".15"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1940']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".15"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2028']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".2"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2132']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".2"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2284']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".2"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2423']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".2"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2564']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".2"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2692']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".2"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2821']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".2"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2936']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".3"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3069']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".3"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3187']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".3"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3289']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".3"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3410']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".4"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3479']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".4"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3549']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".4"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3672']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".5"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3796']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".6"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3958']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".7"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS4086']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".8"/>
+  </append>
+
+</Doughs>

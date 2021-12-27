@@ -1,0 +1,107 @@
+<Doughs>
+
+  <!--
+  ########## Mod vanilla items ##########
+  -->
+
+  <!--
+  ########## New items ##########
+  -->
+  <append xpath="/entity_classes">
+
+    <!-- DOUGH: Copying from Base Rabbit Entity, then modeling after Bear-->
+    <entity_class name="doughsAnimalRabbbitOfCaerbannog" extends="animalTemplateHostile"> <!-- DOUGH: Changed -->
+
+    	<property name="Tags" value="entity,animal,hostile,rabbit,perkAT03"/> <!-- DOUGH: Changed -->
+    	<property name="MapIcon" value="ui_game_symbol_tracking_rabbit"/>
+    	<property name="TrackerIcon" value="ui_game_symbol_tracking_rabbit"/>
+      <!-- <property name="ModelType" value="Standard"/> --> <!-- DOUGH: Added -->
+    	<property name="Class" value="EntityEnemyAnimal"/> <!-- DOUGH: THIS CANNOT BE RABBIT. Will cause it to not attack -->
+    	<property name="Prefab" value="/Entities/Animals/Rabbit/RABBIT"/>
+    	<property name="Mesh" value=""/>
+
+    	<property name="PhysicsBody" value="rabbit"/>
+    	<property name="Mass" value="12"/>
+    	<property name="Weight" value="10"/>
+
+      <!-- DOUGH: Just use all the sounds so they're all overriden -->
+      <!-- <property name="SoundRandom" value="Animals/rabbitpain"/>  -->
+      <property name="SoundAlert" value="Animals/rabbitpain"/>
+    	<property name="SoundHurt" value="Animals/rabbitpain"/>
+    	<property name="SoundDeath" value="Animals/Bear/beardeath"/> <!-- DOUGH: Changed :) -->
+      <property name="SoundAttack" value="Animals/rabbitpain"/> <!-- DOUGH: Added -->
+      <!--  <property name="SoundSense" value="Animals/rabbitpain"/> -->
+      <!-- <property name="SoundGiveUp" value="Animals/rabbitpain"/> -->
+
+      <property name="ReplaceMaterial0" value="#@modfolder:Resources/CaerbannogTextures.unity3d?rabbit"/> <!-- DOUGH: Added -->
+
+    	<property name="HasRagdoll" value="false"/>
+
+      <!-- DOUGH: AITask* + Target*, no runaway -->
+      <property name="AITask-1" value="Leap"/> <!-- DOUGH: Jump! -->
+    	<property name="AITask-2" value="BreakBlock"/>
+    	<property name="AITask-3" value="DestroyArea"/>
+    	<property name="AITask-4" value="Territorial"/>
+      <!-- DOUGH: Changed -->
+    	<property name="AITask-5" value="ApproachAndAttackTarget" data="class=EntityPlayer,30,EntityNPC,30"/>
+    	<property name="AITask-6" value="ApproachSpot"/>
+    	<property name="AITask-7" value="Look"/>
+    	<property name="AITask-8" value="Wander"/>
+      <property name="AITarget-1" value="SetAsTargetIfHurt"/>
+      <!-- DOUGH: If this BlockIf is set, it will not attack (unless) attacked, otherwise it attacks when it sees you -->
+      <!-- <property name="AITarget-2" value="BlockIf" data="condition=alert e 0"/> -->
+      <property name="AITarget-2" value="BlockingTargetTask"/>
+
+      <!-- DOUGH: Changed
+      Attack almost everything
+      Remove EntityZombie as they will attack the horde they spawn in
+      Make player wider range of attack, like animalDireWolf
+      Note: MAke detection ~12 blocks as this you can run away from. If  15 its really hard to run away
+      -->
+      <property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,20,15,EntityNPC,15,10,EntityEnemyAnimal,10,3"/>
+      <!-- DOUGH: Eat your corpse like a zombie..except this is the last target-->
+      <property name="AITarget-4" value="SetNearestCorpseAsTarget" data="class=EntityPlayer"/>
+
+    	<!-- Gameplay -->
+      <!-- DOUGH: Run like a mountain lion. Can barely run away from it -->
+      <property name="MoveSpeed" value=".6"/> <!-- DOUGH: Added -->
+      <property name="MoveSpeedAggro" value="2.1, 2.3"/> <!-- DOUGH: Added -->
+      <property name="CanClimbLadders" value="true"/> <!-- DOUGH: Addded. haha -->
+
+      <!-- DOUGH: Jump! -->
+      <property name="JumpDelay" value=".1"/>
+      <property name="JumpMaxDistance" value="11, 13"/> <!-- DOUGH: Jump like zombieSpiderFeral -->
+
+      <!-- Stealth --> <!-- DOUGH: Addded like dog -->
+      <property name="SmellAlertThreshold" value="5"/> <!-- for awake zombies -->
+
+      <!-- DOUGH: Addded hit like a boss -->
+      <property name="HandItem" value="meleeHandBossGrace"/>
+
+      <property name="ExperienceGain" value="5123"/> <!-- DOUGH: Changed. XP strong . number is for the count of the grenade in the movie-->
+      <property name="DeadBodyHitPoints" value="500"/> <!-- DOUGH: Changed. -->
+
+      <!-- DOUGH:
+          Want to drop at least one doughsAnimalRabbbitFleshOfCaerbannog
+          if you can get it
+          Also: Removed all normal flesh from harvesting
+      -->
+      <drop event="Harvest" name="doughsAnimalRabbbitFleshOfCaerbannog" count="1" tag="allToolsHarvest"/>
+
+    	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="2"/>
+    	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="4"/>
+    	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="2"/>
+    	<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
+    	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+
+      <effect_group name="Base Effects">
+        <passive_effect name="EntityDamage" operation="perc_add" value=".4"/> <!-- DOUGH: Added. Feral damage -->
+        <passive_effect name="HealthMax" operation="base_set" value="500"/> <!-- DOUGH: Changed. -->
+        <passive_effect name="HealthMax" operation="perc_add" value="1"/> <!-- DOUGH: Changed. Zombie HP scale -->
+      </effect_group>
+
+    </entity_class>
+
+  </append>
+
+</Doughs>

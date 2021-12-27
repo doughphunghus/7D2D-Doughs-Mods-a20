@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Doughs Rabbbit Of Caerbannog" />
+		<Description value="Adds Rabbbits Of Caerbannog and the sacred grenade to be rid of them. Run away! Run away!" />
+		<Author value="Doughphunghus" />
+		<Version value="a20.0-b233.1.0.0" />
+    <Website value="https://github.com/doughphunghus" />
+	</ModInfo>
+</xml>

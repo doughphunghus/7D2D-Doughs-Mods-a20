@@ -1,0 +1,91 @@
+<Doughs>
+
+<append xpath="/items">
+
+  <item name="doughsAnimalRabbbitFleshOfCaerbannog">
+    <property name="Extends" value="foodRottingFlesh"/>
+
+    <property name="CustomIcon" value="foodRottingFlesh"/> <!-- DOUGH: Icon is required -->
+    <property name="CustomIconTint" value="990000"/> <!-- DOUGH: Darken to look more reddish. -->
+    <property name="TintColor" value="153,0,0"/> <!-- DOUGH: RGB. Tints the item in the hand -->
+    <property name="DescriptionKey" value="doughsAnimalRabbbitFleshOfCaerbannogDesc"/>
+
+  	<property name="Stacknumber" value="1"/> <!-- STK food -->
+  	<property name="EconomicValue" value="5000"/> <!-- DOUGH: worth a lot, but cannot sell... hee hee -->
+  	<property name="EconomicBundleSize" value="1"/>
+  	<property name="SellableToTrader" value="false"/>
+  	<property name="CraftingIngredientExp" value="1000"/> <!-- DOUGH: A lot -->
+  	<property name="CraftingIngredientTime" value="1000"/> <!-- DOUGH: A long time ;) -->
+	<effect_group tiered="false" name="Food Tier 0">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="-3"/><display_value name="foodHealthAmount" value="-3"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+		<!-- DOUGH: Don't eat this thing. Make it 3 percent not sickness for added silliness -->
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="97"/><display_value name="dDysenteryRisk" value=".97"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryCatchFood">
+			<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+		</triggered_effect>
+	</effect_group>
+
+  </item>
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - The Holy Hand Grenade of Antioch - model and skin by me -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+<!-- DOUGH: Make a little less boomy as Khelldons origional explosion, while majestic,
+ can freeze the game for a few seconds.
+ -->
+<item name="doughs-khelldonHolyHandGrenade">
+	<property name="Tags" value="weapon,perkExplosiveWeapons"/>
+	<property name="DisplayType" value="ammoGrenade"/>
+	<property name="CustomIcon" value="doughs-khelldonHolyHandGrenadeIcon"/>
+	<property name="DescriptionKey" value="doughs-khelldonHolyHandGrenadeDesc"/>
+	<property name="Meshfile" value="#@modfolder:Resources/doughs-khelldonHolyHandGrenade.unity3d?khelldonHolyHandGrenadePrefab"/>
+	<property name="HoldType" value="40"/>
+	<property name="Class" value="ItemClassTimeBomb"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Weight" value="5"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="Explosion.BlockDamage" value="10000"/>
+	<property name="Explosion.EntityDamage" value="8000"/>
+	<property name="Explosion.ParticleIndex" value="1"/>
+	<property name="Explosion.RadiusBlocks" value="15"/> <!-- DOUGH: Khelldons = 35 -->
+	<property name="Explosion.RadiusEntities" value="20"/>
+	<property name="Explosion.BlastPower" value="700"/>
+	<property name="Explosion.DamageBonus.stone" value="90"/>
+	<property name="Explosion.DamageBonus.metal" value="90"/>
+	<property name="Explosion.DamageBonus.earth" value="180"/>
+	<property name="Explosion.DamageBonus.water" value="90"/>
+	<property name="Explosion.DamageBonus.wood" value="90"/>
+	<property name="FuseTime" value="20000"/>
+	<property name="ExplodeOnHit" value="true"/>
+	<property name="SellableToTrader" value="false"/> <!-- DOUGH: Good idea -->
+	<property class="Action0">
+		<property name="Class" value="ThrowAway"/>
+		<property name="Delay" value="1.2"/>
+		<property name="Explosion.ParticleIndex" value="1"/>
+		<property name="Throw_strength_default" value="14"/>
+		<property name="Throw_strength_max" value="50"/>
+		<property name="Max_strain_time" value="1.5"/>
+		<property name="Sound_start" value="khelldonHeavenVoice"/>
+	</property>
+	<property name="ThrowableDecoy" value="true"/>
+	<property name="DropScale" value="3"/>
+	<property name="Group" value="Ammo/Weapons"/>
+	<effect_group tiered="false">
+		<triggered_effect name="onProjectileImpact" action="AddBuff" target="positionAOE" range="4" buff="buffBurningMolotov"/>
+    <display_value name="dExDamageBlock" value="10000"/>
+    <display_value name="dExDamageEntity" value="8000"/>
+    <display_value name="dExRadius" value="15"/> <!-- DOUGH: Khelldons = 35 -->
+    <display_value name="dFuseTime" value="20000"/>
+	</effect_group>
+</item>
+
+</append>
+
+</Doughs>

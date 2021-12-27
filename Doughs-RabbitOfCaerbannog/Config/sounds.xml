@@ -1,0 +1,22 @@
+<Doughs>
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Heavenly Voice - once a free sound but edited by me -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+<!-- TODO: Experiment with rabbit sounds -->
+
+<append xpath="/Sounds">
+  <SoundDataNode name="khelldonHeavenVoice">
+    <AudioSource name="Sounds/AudioSource_Interact"/>
+  	<AudioClip ClipName="#@modfolder:Resources/doughs-khelldonHolyHandGrenadeAudio.unity3d?khelldonHolyHandGrenade"/>
+  	<LocalCrouchVolumeScale name="1.0"/>
+    <CrouchNoiseScale name="0.5"/>
+    <NoiseScale name="1"/>
+    <MaxVoices name="3"/>
+    <MaxRepeatRate name="0.01"/>
+  </SoundDataNode>
+</append>
+</Doughs>

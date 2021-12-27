@@ -1,0 +1,6 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+doughsAnimalRabbbitOfCaerbannog,entityclasses,Entity,,,"Rabbit Of Caerbannog",,,,,,,,,,,,,,
+doughsAnimalRabbbitFleshOfCaerbannog,items,Food,,,"Rabbit Flesh Of The Caerbannog",,,,,,,,,,,,,,
+doughsAnimalRabbbitFleshOfCaerbannogDesc,items,Food,,,"Extremely delicious but a Very Very Very high chance of food poisoning.\n\nYou would have to be pretty stupid to eat this. but still its tempting being so delicious and all. Would be a shame to let it go to waste, really. Perhaps just a nibble?",,,,,,,,,,,,,,
+doughs-khelldonHolyHandGrenade,items,Gun,,,"The Holy Hand Grenade of Antioch",,,,,,,,,,,,,,
+doughs-khelldonHolyHandGrenadeDesc,items,Gun,,,"Bless this, O Lord, that with it thou mayst blow thine enemies to tiny bits, in thy mercy.",,,,,,,,,,,,,,
