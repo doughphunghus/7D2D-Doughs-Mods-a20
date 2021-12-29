@@ -1,0 +1,37 @@
+<Doughs>
+  <append xpath="/buffs">
+
+    <!-- Basically a very weak sugar butts but can be added on top of sugar butts -->
+    <!-- NOTE: ALSO tie the names to the item names! -->
+    <buff name="doughs_buffDrugBreathMints" name_key="doughs_UselessItem_BreathMints" description_key="doughs_UselessItem_BreathMintsDesc" icon="ui_game_symbol_wind"> <!-- ha ha.. wind ..-->
+      <stack_type value="replace"/><duration value="0"/>
+      <display_value value=".doughs_drugBreathMintsDisplay"/><display_value_format value="time"/>
+      <!-- Increases Better Barter by ? for 1 minutes. -->
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$doughs_drugBreathMintsDuration" operation="subtract" value="@$MetabolismDuration"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".doughs_drugBreathMintsDisplay" operation="set" value="@$doughs_drugBreathMintsDuration"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".doughs_drugBreathMintsDisplay" operation="divide" value="@$MetabolismDuration"/>
+      </effect_group>
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="doughs_drugBreathMintsButts">
+          <requirement name="CVarCompare" cvar="$doughs_drugBreathMintsDuration" operation="LTE" value="0"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".doughs_drugBreathMintsDisplay" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$doughs_drugBreathMintsDuration" operation="set" value="0"/>
+      </effect_group>
+      <effect_group>
+        <passive_effect name="BarteringBuying" operation="base_add" value="0.03"/> <!-- Make really small since it can be stacked (duration) and with other buffs. probably 3% -->
+        <passive_effect name="BarteringSelling" operation="base_add" value="0.03"/> <!-- Make really small since it can be stacked (duration)  with other buffs. probably 3% -->
+      </effect_group>
+    </buff>
+
+  </append>
+
+  <!--
+  APPEND to GOD mode buffs to properly clear out any buffs above!
+  -->
+  <append xpath="/buffs/buff[@name='god']/effect_group">
+    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$doughs_drugBreathMintsDuration" operation="set" value="0"/>
+  </append>
+
+</Doughs>

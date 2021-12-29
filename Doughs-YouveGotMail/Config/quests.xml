@@ -1,0 +1,53 @@
+<Doughs>
+  <append xpath="/quests">
+
+    <!-- Treasure quests: Geocaching
+    NOTE: Make them look/read identical do you don't know what you're going to get until you dig
+    -->
+    <quest id="doughs_treasure_quest_001"> <!-- DOUGH: Copied from Sarahs treasure map -->
+      <property name="name_key" value="doughs_treasure_quest_001"/> <!-- DOUGH: top title when reading/accepting -->
+      <property name="subtitle_key" value="doughs_treasure_quest_001"/> <!-- DOUGH: top title when reading/accepting -->
+      <property name="description_key" value="doughs_treasure_quest_001_offer"/> <!-- DOUGH: Body of treasure map when reading/accepting -->
+      <property name="icon" value="ui_game_symbol_map"/>
+      <property name="repeatable" value="true"/>
+      <property name="category_key" value="treasure"/>
+      <property name="offer_key" value="doughs_treasure_quest_001_offer"/> <!-- DOUGH: Body of treasure map when reading/accepting -->
+      <property name="difficulty" value="medium"/> <!-- DOUGH: This shows when reading/accepting -->
+      <property name="shareable" value="false"/>
+
+      <objective type="TreasureChest">
+        <property name="block" value="doughs_cntTreasureChest"/> <!-- DOUGH: Custom loot container -->
+        <property name="distance" value="500-1250"/>
+        <property name="default_radius" value="9"/>
+        <property name="nav_object" value="treasure" />
+        <property name="direct_nav_object" value="treasure_direct" />
+        <property name="blocks_per_reduction" value="10" />
+        <property name="radius_reduction_sound" value="ui_radius_shrink" />
+      </objective>
+    </quest>
+
+    <quest id="doughs_treasure_quest_002"> <!-- Identical to 1, exept loot -->
+      <property name="name_key" value="doughs_treasure_quest_001"/> <!-- DOUGH: top title when reading/accepting -->
+      <property name="subtitle_key" value="doughs_treasure_quest_001"/> <!-- DOUGH: top title when reading/accepting -->
+      <property name="description_key" value="doughs_treasure_quest_001_offer"/> <!-- DOUGH: Body of treasure map when reading/accepting -->
+      <property name="icon" value="ui_game_symbol_map"/>
+      <property name="repeatable" value="true"/>
+      <property name="category_key" value="treasure"/>
+      <property name="offer_key" value="doughs_treasure_quest_001_offer"/> <!-- DOUGH: Body of treasure map when reading/accepting -->
+      <property name="difficulty" value="medium"/> <!-- DOUGH: This shows when reading/accepting -->
+      <property name="shareable" value="false"/>
+
+      <objective type="TreasureChest">
+        <property name="block" value="cntBuriedLootStashChestInsecure"/> <!-- DOUGH: "Low value" vanilla loot (not hero chest)-->
+        <property name="distance" value="500-1250"/>
+        <property name="default_radius" value="9"/>
+        <property name="nav_object" value="treasure" />
+        <property name="direct_nav_object" value="treasure_direct" />
+        <property name="blocks_per_reduction" value="10" />
+        <property name="radius_reduction_sound" value="ui_radius_shrink" />
+      </objective>
+    </quest>
+
+</append>
+
+</Doughs>

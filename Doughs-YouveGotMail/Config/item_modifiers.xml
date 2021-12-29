@@ -1,0 +1,26 @@
+<Doughs>
+  <append xpath="/item_modifiers">
+
+    <!-- Mod for Collecting Dark Love Books 1+2
+      Copied from modMeleeSerratedBlade, so you can have a slightly better blade mod, or 2 of them
+    -->
+    <item_modifier name="doughs_modRageBlade" installable_tags="knife,machete,axe,shovel,perkBrawler,perkJavelinMaster" modifier_tags="damage" blocked_tags="noMods,noBlades" type="attachment">
+      <property name="Extends" value="modGeneralMaster"/>
+      <property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+      <property name="CustomIcon" value="modMeleeSerratedBlade"/> <!-- DOUGH: icon-->
+      <property name="CustomIconTint" value="ff0000"/> <!-- DOUGH: RED, like the books its made from -->
+      <effect_group tiered="false">
+        <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="25"/>
+        <requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="@$maxBleedCounter" target="other"/>
+          <triggered_effect trigger="onSelfPrimaryActionRayHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="1"/>
+      </effect_group>
+      <effect_group tiered="false">
+        <requirement name="CVarCompare" cvar="bleedCounter" operation="GT" value="0" target="other"/>
+          <triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleeding"/>
+      </effect_group>
+
+    </item_modifier>
+
+  </append>
+ </Doughs>

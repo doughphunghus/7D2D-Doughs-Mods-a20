@@ -85,10 +85,10 @@ Note: Almost always worse and can dip colder AND hotter than vanilla
 -->
 
 <!-- Purpose: Increase prob of worse weather conditions. Must add up to 100 -->
-<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='default']/@prob">20</set> <!-- DOUGH: Default prob="71" --> 
-<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='fog']/@prob">15</set> <!-- DOUGH: Default prob="7" -->
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='default']/@prob">12</set> <!-- DOUGH: Default prob="71" --> 
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='fog']/@prob">18</set> <!-- DOUGH: Default prob="7" -->
 <set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='rain']/@prob">40</set> <!-- DOUGH: Default prob="7" -->
-<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='storm']/@prob">25</set> <!-- DOUGH: Default prob="3" -->
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='storm']/@prob">30</set> <!-- DOUGH: Default prob="3" -->
 
 <!-- DEFINE SPECTRUM -->
 <append xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather">
@@ -272,8 +272,8 @@ Since strom is a high probability, when it gets nicer, it gets hotter. Maybe rad
 <set xpath="/worldgeneration/biomes/biome[@name='wasteland']/weather[@name='storm']/Temperature/@min">35</set> <!-- DOUGH: Default min="50" max="90" -->
 <set xpath="/worldgeneration/biomes/biome[@name='wasteland']/weather[@name='storm']/Temperature/@max">90</set> <!-- DOUGH: Default min="50" max="90" -->
 
-<!-- Purpose: There are multiple definitions for CloudThickness. Make Cloudier (of course), just adjust the low end. +10 -->
-<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/weather[@name='default']/CloudThickness[@min='0'][@max='0']/@max">10</set> <!-- DOUGH: Default min="0" max="0" -->
+<!-- Purpose: There are multiple definitions for CloudThickness. Make Cloudier (of course), just adjust the low end. +10 seems too dark? -->
+<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/weather[@name='default']/CloudThickness[@min='0'][@max='0']/@max">6</set> <!-- DOUGH: Default min="0" max="0" -->
 
 <!-- Purpose: Precip looks good except for default. just adjust the max end. +10 -->
 <set xpath="/worldgeneration/biomes/biome[@name='wasteland']/weather[@name='default']/Precipitation/@max">40</set> <!-- DOUGH: Default min="0" max="0" -->
@@ -298,7 +298,7 @@ Note: Setting this (and cloud cover, etc) too much makes it impossible to see an
 <!-- 
 ######################################
 BIOME: burnt_forest Spectrum: No spectrum defined: appears to default to <spectrum name="pine_forest"/>
-Note: Sorta a low end as wasteland/desert, but generally hotter/foggier/smokier thatn forest (of course)
+Note: Sorta a low end as wasteland/desert, but generally hotter/foggier/smokier than forest (of course)
 Note: Even though "fog" is gnerally associated with Precip, it can be smoke here
 ######################################
 -->

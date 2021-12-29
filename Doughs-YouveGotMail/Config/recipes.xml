@@ -1,0 +1,434 @@
+<Doughs>
+  <append xpath="/recipes">
+
+    <!--
+      Alternate recipies for standard game items for fun/variance
+      But try to not disrupt craft balance. Always make harder or equal
+      NOTE: material_based="true" means it is for a forge recipe!
+    -->
+
+    <recipe name="ammoJunkTurretRegular" count="1">
+    	<ingredient name="resourceScrapIron" count="1"/>
+      <ingredient name="doughs_BrassBB" count="50"/>
+    </recipe>
+
+    <recipe name="resourceBuckshot" count="1">
+    	<ingredient name="doughs_BrassBB" count="100"/>
+    	<ingredient name="resourceGunPowder" count="2"/>
+    	<ingredient name="resourcePaper" count="1"/>
+    </recipe>
+
+    <recipe name="modArmorWaterPurifier" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+    	<ingredient name="resourceForgedSteel" count="5"/>
+    	<ingredient name="resourceScrapPolymers" count="10"/>
+    	<ingredient name="resourceDuctTape" count="2"/>
+    	<ingredient name="resourceCoal" count="30"/>
+    	<ingredient name="doughs_UselessItem_Cottonball" count="10"/>
+    </recipe>
+
+    <recipe name="armorClothHat" count="1" tags="perkLightArmor">
+    	<ingredient name="resourceCloth" count="5"/>
+      <ingredient name="doughs_UselessItem_VinylTwine" count="3"/>
+    	<ingredient name="doughs_UselessItem_Cottonball" count="20"/>
+      <ingredient name="resourceSewingKit" count="1"/>
+    </recipe>
+
+    <recipe name="candle" count="1">
+    	<ingredient name="doughs_UselessItem_LintFluff" count="10"/>
+      <ingredient name="doughs_UselessItem_IncenseStickBundle" count="1"/>
+      <ingredient name="doughs_UselessItem_CellophaneTape" count="1"/>
+    	<ingredient name="resourceAnimalFat" count="1"/>
+    </recipe>
+
+    <recipe name="meleeWpnKnucklesT0LeatherKnuckles" count="1" tags="perkBrawler">
+    	<ingredient name="resourceScrapIron" count="6"/>
+    	<ingredient name="doughs_UselessItem_FancyChildsBelt" count="1"/>
+    </recipe>
+
+    <recipe name="farmPlotBlockPlayer" count="1" tags="perkLivingOffTheLandCrafting" craft_time="20">
+    	<ingredient name="resourceWood" count="4"/>
+    	<ingredient name="doughs_UselessItem_JarOfPoo" count="4"/> <!-- 10 rotting flesh is default -->
+    	<ingredient name="resourcePotassiumNitratePowder" count="25"/>
+    	<ingredient name="resourceClayLump" count="100"/>
+    	<effect_group>
+    		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="perc_add" value="-.3,-.5,-.5" tags="foodRottingFlesh,resourcePotassiumNitratePowder,resourceClayLump"/>
+    	</effect_group>
+    </recipe>
+
+    <!-- Book stacks -->
+    <recipe name="doughs_BookCollection_Soduku" count="1">
+      <ingredient name="doughs_Book_Game_Soduku_001" count="1"/>
+      <ingredient name="doughs_Book_Game_Soduku_002" count="1"/>
+      <ingredient name="doughs_Book_Game_Soduku_003" count="1"/>
+      <ingredient name="doughs_Book_Game_Soduku_004" count="1"/>
+      <ingredient name="doughs_Book_Game_Soduku_005" count="1"/>
+    </recipe>
+
+    <recipe name="doughs_BookCollection_Nature" count="1">
+      <ingredient name="doughs_BrownBook_010" count="1"/>
+      <ingredient name="doughs_BrownBook_034" count="1"/>
+      <ingredient name="doughs_BrownBook_018" count="1"/>
+    </recipe>
+    <recipe name="doughs_BookCollection_Tips" count="1">
+      <ingredient name="doughs_BrownBook_002" count="1"/>
+      <ingredient name="doughs_BrownBook_001" count="1"/>
+      <ingredient name="doughs_BrownBook_004" count="1"/>
+      <ingredient name="doughs_BrownBook_005" count="1"/>
+      <ingredient name="doughs_BrownBook_008" count="1"/>
+    </recipe>
+    <recipe name="doughs_BookCollection_Computer" count="1">
+      <ingredient name="doughs_BrownBook_006" count="1"/>
+      <ingredient name="doughs_BrownBook_007" count="1"/>
+      <ingredient name="doughs_BrownBook_040" count="1"/>
+    </recipe>
+    <recipe name="doughs_BookCollection_Mystery" count="1">
+      <ingredient name="doughs_BrownBook_011" count="1"/>
+      <ingredient name="doughs_BrownBook_024" count="1"/>
+      <ingredient name="doughs_BrownBook_033" count="1"/>
+      <ingredient name="doughs_BrownBook_037" count="1"/>
+      <ingredient name="doughs_BrownBook_043" count="1"/>
+    </recipe>
+    <recipe name="doughs_BookCollection_Food" count="1">
+      <ingredient name="doughs_BrownBook_015" count="1"/>
+      <ingredient name="doughs_BrownBook_017" count="1"/>
+      <ingredient name="doughs_BrownBook_020" count="1"/>
+      <ingredient name="doughs_BrownBook_025" count="1"/>
+      <ingredient name="doughs_BrownBook_039" count="1"/>
+    </recipe>
+    <recipe name="doughs_BookCollection_Dating" count="1">
+      <ingredient name="doughs_BrownBook_023" count="1"/>
+      <ingredient name="doughs_BrownBook_027" count="1"/>
+    </recipe>
+    <recipe name="doughs_BookCollection_SelfHelp" count="1">
+      <ingredient name="doughs_BrownBook_014" count="1"/>
+      <ingredient name="doughs_BrownBook_021" count="1"/>
+      <ingredient name="doughs_BrownBook_035" count="1"/>
+      <ingredient name="doughs_BrownBook_045" count="1"/>
+    </recipe>
+    <recipe name="doughs_BookCollection_SciFi" count="1">
+      <ingredient name="doughs_BrownBook_029" count="1"/>
+      <ingredient name="doughs_BrownBook_041" count="1"/>
+    </recipe>
+    <recipe name="doughs_BookCollection_BucksAdventures" count="1">
+      <ingredient name="doughs_BrownBook_032" count="1"/>
+      <ingredient name="doughs_BrownBook_022" count="1"/>
+    </recipe>
+    <recipe name="doughs_BookCollection_Medical" count="1">
+      <ingredient name="doughs_BrownBook_030" count="1"/>
+      <ingredient name="doughs_BrownBook_044" count="1"/>
+    </recipe>
+    <recipe name="doughs_BookCollection_Reminisce" count="1">
+      <ingredient name="doughs_BrownBook_031" count="1"/>
+      <ingredient name="doughs_BrownBook_036" count="1"/>
+      <ingredient name="doughs_BrownBook_046" count="1"/>
+    </recipe>
+    <recipe name="doughs_BookCollection_Kids" count="1">
+      <ingredient name="doughs_BrownBook_009" count="1"/>
+      <ingredient name="doughs_BrownBook_016" count="1"/>
+    </recipe>
+
+    <!-- Game bundles -->
+    <recipe name="doughs_Game_Checkers" count="1">
+      <ingredient name="doughs_CheckersBlock_1" count="16"/>
+      <ingredient name="doughs_CheckersBlock_2" count="16"/>
+      <ingredient name="doughs_cntGameBoardChessAndCheckers" count="1"/>
+      <ingredient name="doughs_UselessItem_EmptyCardboardBox" count="1"/>
+      <ingredient name="doughs_UselessItem_CellophaneTape" count="1"/>
+    </recipe>
+
+    <recipe name="doughs_Game_Chess_RedCourt" count="1"> <!-- Minus all the kings -->
+      <ingredient name="doughs_ChessPiece_Queen_Red" count="1"/>
+      <ingredient name="doughs_ChessPiece_Rook_Red" count="2"/>
+      <ingredient name="doughs_ChessPiece_Knight_Red" count="2"/>
+      <ingredient name="doughs_ChessPiece_Bishop_Red" count="2"/>
+      <ingredient name="doughs_ChessPiece_Pawn_Red" count="8"/>
+    </recipe>
+    <recipe name="doughs_Game_Chess_BlueCourt" count="1"> <!-- Minus all the kings -->
+      <ingredient name="doughs_ChessPiece_Queen_Blue" count="1"/>
+      <ingredient name="doughs_ChessPiece_Rook_Blue" count="2"/>
+      <ingredient name="doughs_ChessPiece_Knight_Blue" count="2"/>
+      <ingredient name="doughs_ChessPiece_Bishop_Blue" count="2"/>
+      <ingredient name="doughs_ChessPiece_Pawn_Blue" count="8"/>
+    </recipe>
+
+    <recipe name="doughs_Game_Chess" count="1">
+      <ingredient name="doughs_Game_Chess_RedCourt" count="1"/>
+      <ingredient name="doughs_Game_Chess_BlueCourt" count="1"/>
+      <ingredient name="doughs_cntGameBoardChessAndCheckers" count="1"/>
+      <ingredient name="doughs_UselessItem_EmptyCardboardBox" count="1"/>
+      <ingredient name="doughs_UselessItem_CellophaneTape" count="1"/>
+    </recipe>
+
+    <!-- Counterfeit items mod?  Might be an interesting dynamic.
+    Don't put in default loot, only player crafted stuff.
+    Don't do iron "too hard to work with"
+    Don't do Brass, as we want something we can scrap and mine
+    Also want something we have to "electroplate" in chem station
+    Real life: likely could not be done as brass electroplating is hard
+    more likely? coudl be done like a cooking a penny, but vanilla does not have zinc and copper
+
+    Paint: For any paint in the duke embossing
+    Brass: To make the coins look like brass
+    Coin:  For the master blank
+    resourceScrapLead BAse material/scrap to
+    -->
+    <!--
+    <recipe name="doughs_UselessItem_CounterfeitCasinoCoin" count="20" craft_area="chemistryStation">
+      <ingredient name="resourceScrapLead" count="200"/>
+      <ingredient name="resourcePaint" count="1"/>
+      <ingredient name="resourceScrapBrass" count="10"/>
+      <ingredient name="casinoCoin" count="1"/>
+    </recipe>
+    -->
+
+    <!-- Only these mugs are "drinkable", per localization. Don't want too many
+    Also: random amount of gunpowder, for no reason other than fun, and maybe it saves a newbie
+    in some rare early game.
+    Theyre not easy to find, so not a big deal if 1 or 2 of them are OP in terms of
+    getting a much better crafting deal on 1 drinkJarBlackStrapCoffee once in a rare while.
+    -->
+    <recipe name="drinkJarBlackStrapCoffee" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+    	<ingredient name="resourceCropCoffeeBeans" count="1"/>
+    	<ingredient name="drinkJarBoiledWater" count="1"/>
+    	<ingredient name="resourceGunPowder" count="2"/> <!-- Dough: Lowered, a bit cause it needs a mug-->
+      <ingredient name="doughs_UselessItem_CeramicMug_001" count="1"/>
+    </recipe>
+
+    <recipe name="drinkJarBlackStrapCoffee" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="resourceCropCoffeeBeans" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+      <ingredient name="resourceGunPowder" count="2"/> <!-- Dough: Lowered, a bit cause it needs a mug-->
+      <ingredient name="doughs_UselessItem_CeramicMug_002" count="1"/>
+    </recipe>
+
+    <recipe name="drinkJarBlackStrapCoffee" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="resourceCropCoffeeBeans" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+      <ingredient name="resourceGunPowder" count="3"/> <!-- Dough: Lowered, a bit cause it needs a mug-->
+      <ingredient name="doughs_UselessItem_CeramicMug_003" count="1"/>
+    </recipe>
+
+    <recipe name="drinkJarBlackStrapCoffee" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="resourceCropCoffeeBeans" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+      <ingredient name="resourceGunPowder" count="1"/> <!-- Dough: Lowered, a bit cause it needs a mug-->
+      <ingredient name="doughs_UselessItem_CeramicMug_004" count="1"/>
+    </recipe>
+
+    <recipe name="drinkJarBlackStrapCoffee" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="resourceCropCoffeeBeans" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+      <ingredient name="resourceGunPowder" count="2"/> <!-- Dough: Lowered, a bit cause it needs a mug-->
+      <ingredient name="doughs_UselessItem_CeramicMug_005" count="1"/>
+    </recipe>
+
+    <!-- Custom recipies for my items -->
+
+    <!-- "Mean" notes for other players -->
+    <!-- Mean notes in Pencil -->
+    <recipe name="doughs_StickyNote_PlayerMeanNote001" count="1" >
+      <ingredient name="resourcePaper" count="1"/>
+      <ingredient name="doughs_UselessItem_Pencil" count="1"/>
+    </recipe>
+    <recipe name="doughs_StickyNote_PlayerMeanNote002" count="1" >
+      <ingredient name="resourcePaper" count="1"/>
+      <ingredient name="doughs_UselessItem_Pencil" count="1"/>
+    </recipe>
+    <recipe name="doughs_StickyNote_PlayerMeanNote003" count="1" >
+      <ingredient name="resourcePaper" count="1"/>
+      <ingredient name="doughs_UselessItem_Pencil" count="1"/>
+    </recipe>
+    <recipe name="doughs_StickyNote_PlayerMeanNote004" count="1" >
+      <ingredient name="resourcePaper" count="1"/>
+      <ingredient name="doughs_UselessItem_Pencil" count="1"/>
+    </recipe>
+
+    <!-- "Nice" notes for other players -->
+    <!-- Nice notes in Pen -->
+    <recipe name="doughs_StickyNote_PlayerNiceNote001" count="1" >
+      <ingredient name="resourcePaper" count="1"/>
+      <ingredient name="doughs_UselessItem_Pen" count="1"/>
+    </recipe>
+    <recipe name="doughs_StickyNote_PlayerNiceNote002" count="1" >
+      <ingredient name="resourcePaper" count="1"/>
+      <ingredient name="doughs_UselessItem_Pen" count="1"/>
+    </recipe>
+    <recipe name="doughs_StickyNote_PlayerNiceNote003" count="1" >
+      <ingredient name="resourcePaper" count="1"/>
+      <ingredient name="doughs_UselessItem_Pen" count="1"/>
+    </recipe>
+    <recipe name="doughs_StickyNote_PlayerNiceNote004" count="1" >
+      <ingredient name="resourcePaper" count="1"/>
+      <ingredient name="doughs_UselessItem_Pen" count="1"/>
+    </recipe>
+
+    <!-- Book crafting -->
+    <recipe name="doughs_CraftableBook_001" count="1" >
+      <ingredient name="doughs_PoemNote_001" count="1"/>
+      <ingredient name="doughs_PoemNote_002" count="1"/>
+      <ingredient name="doughs_PoemNote_003" count="1"/>
+      <ingredient name="doughs_PoemNote_004" count="1"/>
+      <ingredient name="doughs_PoemNote_005" count="1"/>
+    </recipe>
+
+    <recipe name="doughs_CraftableBook_002" count="1" >
+      <ingredient name="doughs_PoemNote_006" count="1"/>
+      <ingredient name="doughs_PoemNote_007" count="1"/>
+      <ingredient name="doughs_PoemNote_008" count="1"/>
+      <ingredient name="doughs_PoemNote_009" count="1"/>
+      <ingredient name="doughs_PoemNote_010" count="1"/>
+    </recipe>
+
+    <!-- Mod crafting -->
+    <recipe name="doughs_modRageBlade" count="1" >
+      <ingredient name="doughs_CraftableBook_001" count="1"/>
+      <ingredient name="doughs_CraftableBook_002" count="1"/>
+      <ingredient name="modMeleeSerratedBlade" count="1"/>
+    </recipe>
+
+    <!-- Joke boxes, only for players to craft, gift, leave for others to find, etc
+    NOT in loot groups.
+    All boxes need to be identical, and nondescript
+    -->
+    <recipe name="doughs_Parcel_PlayerGift001" count="1" >
+      <ingredient name="doughs_UselessItem_EmptyCardboardBox" count="1"/>
+      <ingredient name="doughs_UselessItem_JarOfUrine" count="1"/>
+      <ingredient name="doughs_UselessItem_Cottonball" count="10"/> <!-- To safely ship it -->
+      <ingredient name="doughs_UselessItem_CellophaneTape" count="4"/>
+    </recipe>
+
+    <recipe name="doughs_Parcel_PlayerGift002" count="1" >
+      <ingredient name="doughs_UselessItem_EmptyCardboardBox" count="1"/>
+      <ingredient name="doughs_UselessItem_StiffSocks" count="1"/>
+      <ingredient name="resourcePaper" count="5"/> <!-- To nicely wrap it -->
+      <ingredient name="doughs_UselessItem_CellophaneTape" count="4"/>
+    </recipe>
+
+    <recipe name="doughs_Parcel_PlayerGift003" count="1" >
+      <ingredient name="doughs_UselessItem_EmptyCardboardBox" count="1"/>
+      <ingredient name="doughs_UselessItem_BlueberryPieDish" count="1"/>
+      <ingredient name="doughs_UselessItem_Cottonball" count="10"/> <!-- To safely ship it -->
+      <ingredient name="doughs_UselessItem_CellophaneTape" count="4"/>
+    </recipe>
+
+    <recipe name="doughs_Parcel_PlayerGift004" count="1" >
+      <ingredient name="doughs_UselessItem_EmptyCardboardBox" count="1"/>
+      <ingredient name="doughs_UselessItem_Lipstick_001" count="1"/>
+      <ingredient name="doughs_UselessItem_Lubricant" count="1"/>
+      <ingredient name="resourcePaper" count="5"/> <!-- To nicely wrap it -->
+      <ingredient name="doughs_UselessItem_CellophaneTape" count="4"/>
+    </recipe>
+
+    <recipe name="doughs_Parcel_PlayerGift005" count="1" >
+      <ingredient name="doughs_UselessItem_EmptyCardboardBox" count="1"/>
+      <ingredient name="doughs_UselessItem_DollhouseSizedWorkbench" count="1"/>
+      <ingredient name="resourceWood" count="20"/> <!-- For weight, and to hopefully look more real as loot -->
+      <ingredient name="resourceForgedIron" count="2"/> <!-- For weight, and to hopefully look more real as loot -->
+      <ingredient name="doughs_UselessItem_CellophaneTape" count="4"/>
+    </recipe>
+
+    <recipe name="doughs_Parcel_PlayerGift006" count="1" >
+      <ingredient name="doughs_UselessItem_EmptyCardboardBox" count="1"/>
+      <ingredient name="doughs_UselessItem_DollhouseSizedChemistryStation" count="1"/>
+      <ingredient name="resourceCrushedSand" count="20"/> <!-- For weight, and to hopefully look more real as loot -->
+      <ingredient name="resourceForgedIron" count="2"/> <!-- For weight, and to hopefully look more real as loot -->
+      <ingredient name="doughs_UselessItem_CellophaneTape" count="4"/>
+    </recipe>
+
+    <recipe name="doughs_Parcel_PlayerGift007" count="1" >
+      <ingredient name="doughs_UselessItem_EmptyCardboardBox" count="1"/>
+      <ingredient name="doughs_UselessItem_LockPick" count="5"/>
+      <ingredient name="doughs_UselessItem_CellophaneTape" count="4"/>
+    </recipe>
+
+    <recipe name="doughs_Parcel_PlayerGift008" count="1" >
+      <ingredient name="doughs_UselessItem_EmptyCardboardBox" count="1"/>
+      <ingredient name="doughs_StickyNote_PlayerMeanNote001" count="1"/> <!-- Mean -->
+      <ingredient name="doughs_UselessItem_CellophaneTape" count="4"/>
+    </recipe>
+
+    <recipe name="doughs_Parcel_PlayerGift009" count="1" >
+      <ingredient name="doughs_UselessItem_EmptyCardboardBox" count="1"/>
+      <ingredient name="doughs_StickyNote_PlayerMeanNote002" count="1"/> <!-- Mean -->
+      <ingredient name="doughs_UselessItem_CellophaneTape" count="4"/>
+    </recipe>
+
+    <recipe name="doughs_Parcel_PlayerGift010" count="1" >
+      <ingredient name="doughs_UselessItem_EmptyCardboardBox" count="1"/>
+      <ingredient name="doughs_StickyNote_PlayerMeanNote003" count="1"/> <!-- Mean -->
+      <ingredient name="doughs_UselessItem_CellophaneTape" count="4"/>
+    </recipe>
+
+    <recipe name="doughs_BrassBB" count="10" material_based="true" craft_area="forge">
+      <ingredient name="unit_brass" count="1"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_brass"/>
+      </effect_group>
+    </recipe>
+
+    <recipe name="doughs_GameBlock_1" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+      <ingredient name="unit_iron" count="15"/>
+      <ingredient name="unit_clay" count="3"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_clay,unit_iron"/>
+      </effect_group>
+    </recipe>
+    <recipe name="doughs_GameBlock_2" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+      <ingredient name="unit_iron" count="15"/>
+      <ingredient name="unit_clay" count="3"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_clay,unit_iron"/>
+      </effect_group>
+    </recipe>
+    <recipe name="doughs_GameBlock_3" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+      <ingredient name="unit_iron" count="15"/>
+      <ingredient name="unit_clay" count="3"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_clay,unit_iron"/>
+      </effect_group>
+    </recipe>
+    <recipe name="doughs_GameBlock_4" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+      <ingredient name="unit_iron" count="15"/>
+      <ingredient name="unit_clay" count="3"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_clay,unit_iron"/>
+      </effect_group>
+    </recipe>
+    <recipe name="doughs_GameBlock_5" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+      <ingredient name="unit_iron" count="15"/>
+      <ingredient name="unit_clay" count="3"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_clay,unit_iron"/>
+      </effect_group>
+    </recipe>
+    <recipe name="doughs_GameBlock_6" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+      <ingredient name="unit_iron" count="15"/>
+      <ingredient name="unit_clay" count="3"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_clay,unit_iron"/>
+      </effect_group>
+    </recipe>
+    <recipe name="doughs_GameBlock_7" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+      <ingredient name="unit_iron" count="15"/>
+      <ingredient name="unit_clay" count="3"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_clay,unit_iron"/>
+      </effect_group>
+    </recipe>
+    <recipe name="doughs_GameBlock_8" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+      <ingredient name="unit_iron" count="15"/>
+      <ingredient name="unit_clay" count="3"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_clay,unit_iron"/>
+      </effect_group>
+    </recipe>
+    <recipe name="doughs_GameBlock_9" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+      <ingredient name="unit_iron" count="15"/>
+      <ingredient name="unit_clay" count="3"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_clay,unit_iron"/>
+      </effect_group>
+    </recipe>
+
+</append>
+</Doughs>

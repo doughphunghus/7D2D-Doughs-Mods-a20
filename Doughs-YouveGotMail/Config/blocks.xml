@@ -1,0 +1,333 @@
+<Doughs>
+  <append xpath="/blocks">
+
+    <!-- the max cap for lootcontainer (LootList) id is 1023 -->
+
+
+    <!-- DOUGH: 72 = This is where you get returtnable quest item from -->
+    <!--
+    <block name="doughs_cntFetchQuestSatchel">
+    	<property name="Extends" value="cntBackpack01"/>
+    	<property name="Class" value="QuestLoot"/>
+    	<property name="CustomIconTint" value="50ff80"/>
+    	<property name="Shape" value="ModelEntity"/>
+    	<property name="Model" value="#Entities/LootContainers?loot_satchelPrefab.prefab"/>
+    	<property name="Place" value="TowardsPlacerInverted"/>
+    	<property name="MaxDamage" value="500"/>
+    	<property name="LootList" value="72"/>
+    	<property name="CreativeMode" value="None"/>
+    	<property name="IndexName" value="FetchContainer"/>
+    	<property name="StabilityIgnore" value="true"/>
+    </block>
+    -->
+
+    <!-- Game Boards -->
+    <block name="doughs_cntGameBoardTicTacToe">
+      <property name="Extends" value="cntMedicineCabinetFaucetClosed"/>
+      <property name="DescriptionKey" value="doughs_cntGameBoardTicTacToeDesc"/>
+      <property name="CustomIcon" value="cntMedicineCabinetFaucetClosed"/>
+      <property name="CustomIconTint" value="1ac6ff"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Class" value="SecureLoot"/>
+    	<property name="LootList" value="591"/> <!-- DOUGH: CUSTOM loot container -->
+    	<property name="Model" value="#Entities/LootContainers?medicine_cabinet_closedPrefab.prefab"/>
+    </block>
+
+    <block name="doughs_cntGameBoardChessAndCheckers">
+      <property name="Extends" value="cntMedicineCabinetFaucetClosed"/>
+      <property name="DescriptionKey" value="doughs_cntGameBoardChessAndCheckersDesc"/>
+      <property name="CustomIcon" value="cntMedicineCabinetFaucetClosed"/>
+      <property name="CustomIconTint" value="33ffd6"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Class" value="SecureLoot"/>
+      <property name="LootList" value="592"/> <!-- DOUGH: CUSTOM loot container -->
+      <property name="Model" value="#Entities/LootContainers?medicine_cabinet_closedPrefab.prefab"/>
+    </block>
+
+    <block name="doughs_cntGameBoardSoduku">
+      <property name="Extends" value="cntMedicineCabinetFaucetClosed"/>
+      <property name="DescriptionKey" value="doughs_cntGameBoardSodukuDesc"/>
+      <property name="CustomIcon" value="cntMedicineCabinetFaucetClosed"/>
+      <property name="CustomIconTint" value="ff8080"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Class" value="SecureLoot"/>
+      <property name="LootList" value="593"/> <!-- DOUGH: CUSTOM loot container -->
+      <property name="Model" value="#Entities/LootContainers?medicine_cabinet_closedPrefab.prefab"/>
+    </block>
+
+    <!-- Geocaching -->
+    <block name="doughs_cntTreasureChest">
+      <property name="Extends" value="cntLootChestHeroInsecure" param1="DescriptionKey"/>
+      <property name="Tags" value="buriedTreasure"/>
+      <property name="Model" value="#Entities/LootContainers?pursePrefab.prefab"/> <!-- DOUGH: made into purse (small) -->
+      <property name="CustomIconTint" value="a3d8d5"/> <!-- Blue -->
+      <property name="IsTerrainDecoration" value="true"/>
+      <property name="LootList" value="594"/> <!-- DOUGH: CUSTOM loot container -->
+      <property name="CreativeMode" value="None"/>
+    </block>
+
+    <!-- Soduku madness
+   The vanilla numbers are impossible to see in game, and you cannot
+   give just a container a background.  Sigh. Create and recolor blocks
+   ALSO: Dont use the "VarientBlockMaker" to choose the block as its
+   really ugly in a game board, and cannot choose piece colors
+    -->
+    <block name="doughs_GameBlock_1">
+      <property name="Extends" value="metalSignLetter_1"/>
+      <property name="CustomIcon" value="metalSignLetter_1"/>
+      <property name="CustomIconTint" value="ff6600"/>
+      <property name="TintColor" value="255, 102, 0"/> <!-- DOUGH: RGB. Tints the item in the hand -->
+      <property name="Model" value="font_1"/>
+      <property name="Stacknumber" value="9"/>
+      <property name="UnlockedBy" value="doughs_Game_Soduku_Pieces_Schematic"/>
+    </block>
+    <block name="doughs_GameBlock_2">
+      <property name="Extends" value="metalSignLetter_2"/>
+      <property name="CustomIcon" value="metalSignLetter_2"/>
+      <property name="CustomIconTint" value="003300"/>
+      <property name="TintColor" value="0, 51, 0"/> <!-- DOUGH: RGB. Tints the item in the hand -->
+      <property name="Model" value="font_2"/>
+      <property name="Stacknumber" value="9"/>
+      <property name="UnlockedBy" value="doughs_Game_Soduku_Pieces_Schematic"/>
+    </block>
+    <block name="doughs_GameBlock_3">
+      <property name="Extends" value="metalSignLetter_3"/>
+      <property name="CustomIcon" value="metalSignLetter_3"/>
+      <property name="CustomIconTint" value="6666ff"/>
+      <property name="TintColor" value="102, 102, 255"/> <!-- DOUGH: RGB. Tints the item in the hand -->
+      <property name="Model" value="font_3"/>
+      <property name="Stacknumber" value="9"/>
+      <property name="UnlockedBy" value="doughs_Game_Soduku_Pieces_Schematic"/>
+    </block>
+    <block name="doughs_GameBlock_4">
+      <property name="Extends" value="metalSignLetter_4"/>
+      <property name="CustomIcon" value="metalSignLetter_4"/>
+      <property name="CustomIconTint" value="cc3300"/>
+      <property name="TintColor" value="204, 51, 0"/> <!-- DOUGH: RGB. Tints the item in the hand -->
+      <property name="Model" value="font_4"/>
+      <property name="Stacknumber" value="9"/>
+      <property name="UnlockedBy" value="doughs_Game_Soduku_Pieces_Schematic"/>
+    </block>
+    <block name="doughs_GameBlock_5">
+      <property name="Extends" value="metalSignLetter_5"/>
+      <property name="CustomIcon" value="metalSignLetter_5"/>
+      <property name="CustomIconTint" value="99ccff"/>
+      <property name="TintColor" value="153, 204, 255"/> <!-- DOUGH: RGB. Tints the item in the hand -->
+      <property name="Model" value="font_5"/>
+      <property name="Stacknumber" value="9"/>
+      <property name="UnlockedBy" value="doughs_Game_Soduku_Pieces_Schematic"/>
+    </block>
+    <block name="doughs_GameBlock_6">
+      <property name="Extends" value="metalSignLetter_6"/>
+      <property name="CustomIcon" value="metalSignLetter_6"/>
+      <property name="CustomIconTint" value="99ff33"/>
+      <property name="TintColor" value="153, 255, 51"/> <!-- DOUGH: RGB. Tints the item in the hand -->
+      <property name="Model" value="font_6"/>
+      <property name="Stacknumber" value="9"/>
+      <property name="UnlockedBy" value="doughs_Game_Soduku_Pieces_Schematic"/>
+    </block>
+    <block name="doughs_GameBlock_7">
+      <property name="Extends" value="metalSignLetter_7"/>
+      <property name="CustomIcon" value="metalSignLetter_7"/>
+      <property name="CustomIconTint" value="ff33cc"/>
+      <property name="TintColor" value="255, 51, 204"/> <!-- DOUGH: RGB. Tints the item in the hand -->
+      <property name="Model" value="font_7"/>
+      <property name="Stacknumber" value="9"/>
+      <property name="UnlockedBy" value="doughs_Game_Soduku_Pieces_Schematic"/>
+    </block>
+    <block name="doughs_GameBlock_8">
+      <property name="Extends" value="metalSignLetter_8"/>
+      <property name="CustomIcon" value="metalSignLetter_8"/>
+      <property name="CustomIconTint" value="ffbf00"/>
+      <property name="TintColor" value="255, 191, 0"/> <!-- DOUGH: RGB. Tints the item in the hand -->
+      <property name="Model" value="font_8"/>
+      <property name="Stacknumber" value="9"/>
+      <property name="UnlockedBy" value="doughs_Game_Soduku_Pieces_Schematic"/>
+    </block>
+    <block name="doughs_GameBlock_9">
+      <property name="Extends" value="metalSignLetter_9"/>
+      <property name="CustomIcon" value="metalSignLetter_9"/>
+      <property name="CustomIconTint" value="ffff00"/>
+      <property name="TintColor" value="255, 255, 0"/> <!-- DOUGH: RGB. Tints the item in the hand -->
+      <property name="Model" value="font_9"/>
+      <property name="Stacknumber" value="9"/>
+      <property name="UnlockedBy" value="doughs_Game_Soduku_Pieces_Schematic"/>
+    </block>
+
+    <!-- Might as well not exclude any one-->
+    <block name="doughs_ChessPiece_King_Red_001">
+      <property name="Extends" value="paintingDuke"/>
+      <property name="DescriptionKey" value="doughs_ChessPiece_King_RedDesc"/>
+      <property name="CustomIcon" value="paintingDuke"/>
+      <property name="CustomIconTint" value="ff9999"/>
+      <property name="Model" value="Entities/decor/painting_dukePrefab" param1="main_mesh"/>
+      <property name="Stacknumber" value="2"/>
+    </block>
+    <block name="doughs_ChessPiece_King_Red_002">
+      <property name="Extends" value="paintingKen"/>
+      <property name="DescriptionKey" value="doughs_ChessPiece_King_RedDesc"/>
+      <property name="CustomIcon" value="paintingKen"/>
+      <property name="CustomIconTint" value="ff9999"/>
+      <property name="Model" value="Entities/decor/painting_kenPrefab" param1="main_mesh"/>
+      <property name="Stacknumber" value="2"/>
+    </block>
+    <block name="doughs_ChessPiece_King_Red_003">
+      <property name="Extends" value="paintingDerek"/>
+      <property name="DescriptionKey" value="doughs_ChessPiece_King_RedDesc"/>
+      <property name="CustomIcon" value="paintingDerek"/>
+      <property name="CustomIconTint" value="ff9999"/>
+      <property name="Model" value="Entities/decor/painting_derekPrefab" param1="main_mesh"/>
+      <property name="Stacknumber" value="2"/>
+    </block>
+    <block name="doughs_ChessPiece_King_Red_004">
+      <property name="Extends" value="paintingBen"/>
+      <property name="DescriptionKey" value="doughs_ChessPiece_King_RedDesc"/>
+      <property name="CustomIcon" value="paintingBen"/>
+      <property name="CustomIconTint" value="ff9999"/>
+      <property name="Model" value="Entities/decor/painting_benPrefab" param1="main_mesh"/>
+      <property name="Stacknumber" value="2"/>
+    </block>
+    <block name="doughs_ChessPiece_King_Red_005">
+      <property name="Extends" value="paintingNoah"/>
+      <property name="DescriptionKey" value="doughs_ChessPiece_King_RedDesc"/>
+      <property name="CustomIcon" value="paintingNoah"/>
+      <property name="CustomIconTint" value="ff9999"/>
+      <property name="Model" value="Entities/decor/painting_noahPrefab" param1="main_mesh"/>
+      <property name="Stacknumber" value="2"/>
+    </block>
+    <block name="doughs_ChessPiece_Queen_Red">
+      <property name="Extends" value="paintingLorien"/>
+      <property name="DescriptionKey" value="doughs_ChessPiece_Queen_RedDesc"/>
+      <property name="CustomIcon" value="paintingLorien"/>
+      <property name="CustomIconTint" value="ff9999"/>
+      <property name="Model" value="Entities/decor/painting_lorienPrefab" param1="main_mesh"/>
+      <property name="Stacknumber" value="2"/>
+    </block>
+
+    <!-- Might as well not exclude any one-->
+    <block name="doughs_ChessPiece_King_Blue_001">
+      <property name="Extends" value="paintingDuke"/>
+      <property name="DescriptionKey" value="doughs_ChessPiece_King_BlueDesc"/>
+      <property name="CustomIcon" value="paintingDuke"/>
+      <property name="CustomIconTint" value="80ffff"/>
+      <property name="Model" value="Entities/decor/painting_dukePrefab" param1="main_mesh"/>
+      <property name="Stacknumber" value="2"/>
+      <property name="EconomicValue" value="1"/>
+    </block>
+    <block name="doughs_ChessPiece_King_Blue_002">
+      <property name="Extends" value="paintingKen"/>
+      <property name="DescriptionKey" value="doughs_ChessPiece_King_BlueDesc"/>
+      <property name="CustomIcon" value="paintingKen"/>
+      <property name="CustomIconTint" value="80ffff"/>
+      <property name="Model" value="Entities/decor/painting_kenPrefab" param1="main_mesh"/>
+      <property name="Stacknumber" value="2"/>
+      <property name="EconomicValue" value="1"/>
+    </block>
+    <block name="doughs_ChessPiece_King_Blue_003">
+      <property name="Extends" value="paintingDerek"/>
+      <property name="DescriptionKey" value="doughs_ChessPiece_King_BlueDesc"/>
+      <property name="CustomIcon" value="paintingDerek"/>
+      <property name="CustomIconTint" value="80ffff"/>
+      <property name="Model" value="Entities/decor/painting_derekPrefab" param1="main_mesh"/>
+      <property name="Stacknumber" value="2"/>
+      <property name="EconomicValue" value="1"/>
+    </block>
+    <block name="doughs_ChessPiece_King_Blue_004">
+      <property name="Extends" value="paintingBen"/>
+      <property name="DescriptionKey" value="doughs_ChessPiece_King_BlueDesc"/>
+      <property name="CustomIcon" value="paintingBen"/>
+      <property name="CustomIconTint" value="80ffff"/>
+      <property name="Model" value="Entities/decor/painting_benPrefab" param1="main_mesh"/>
+      <property name="Stacknumber" value="2"/>
+      <property name="EconomicValue" value="1"/>
+    </block>
+    <block name="doughs_ChessPiece_King_Blue_005">
+      <property name="Extends" value="paintingNoah"/>
+      <property name="DescriptionKey" value="doughs_ChessPiece_King_BlueDesc"/>
+      <property name="CustomIcon" value="paintingNoah"/>
+      <property name="CustomIconTint" value="80ffff"/>
+      <property name="Model" value="Entities/decor/painting_noahPrefab" param1="main_mesh"/>
+      <property name="Stacknumber" value="2"/>
+      <property name="EconomicValue" value="1"/>
+    </block>
+    <block name="doughs_ChessPiece_Queen_Blue">
+      <property name="Extends" value="paintingLorien"/>
+      <property name="DescriptionKey" value="doughs_ChessPiece_Queen_BlueDesc"/>
+      <property name="CustomIcon" value="paintingLorien"/>
+      <property name="CustomIconTint" value="80ffff"/>
+      <property name="Model" value="Entities/decor/painting_lorienPrefab" param1="main_mesh"/>
+      <property name="Stacknumber" value="2"/>
+      <property name="EconomicValue" value="1"/>
+    </block>
+
+  </append>
+
+  <!-- Add things to get from destroying blocks -->
+  <!-- Seems 5% chance is a good number for all of these -->
+  <!-- tag="salvageHarvest" -->
+  <!--
+  BEDS
+  -->
+  <append xpath="/blocks/block[@name='bunkBedMessy']"> <!-- Downgrades to a frame -->
+    <drop event="Harvest" name="doughs_Parcel_401k_001" count="1" prob="0.05" tag="allHarvest"/>
+    <drop event="Harvest" name="doughs_UselessItem_StiffSocks" count="1" prob="0.05" tag="allHarvest"/>
+  </append>
+  <append xpath="/blocks/block[@name='bed02']"> <!-- Downgrades to a frame -->
+    <drop event="Harvest" name="doughs_Parcel_401k_002" count="1" prob="0.05" tag="allHarvest"/>
+    <drop event="Harvest" name="doughs_UselessItem_StiffSocks" count="1" prob="0.05" tag="allHarvest"/>
+  </append>
+  <append xpath="/blocks/block[@name='mattressCurled']">
+    <drop event="Harvest" name="doughs_Parcel_401k_003" count="1" prob="0.03" tag="allHarvest"/>
+    <drop event="Harvest" name="doughs_Parcel_401k_002" count="1" prob="0.05" tag="allHarvest"/>
+  </append>
+  <append xpath="/blocks/block[@name='bunkBedMattress']">
+    <drop event="Harvest" name="doughs_Parcel_401k_004" count="1" prob="0.05" tag="allHarvest"/>
+    <drop event="Harvest" name="doughs_Parcel_401k_003" count="1" prob="0.05" tag="allHarvest"/>
+  </append>
+  <append xpath="/blocks/block[@name='bunkBedMade']">
+    <drop event="Harvest" name="doughs_Parcel_401k_003" count="1" prob="0.05" tag="allHarvest"/>
+    <drop event="Harvest" name="doughs_Parcel_401k_005" count="1" prob="0.05" tag="allHarvest"/>
+  </append>
+  <append xpath="/blocks/block[@name='mattressFlatThin']">
+    <drop event="Harvest" name="doughs_Parcel_401k_005" count="1" prob="0.05" tag="allHarvest"/>
+    <drop event="Harvest" name="doughs_UselessItem_StiffSocks" count="1" prob="0.05" tag="allHarvest"/>
+  </append>
+
+  <!-- No do: Because not "something at a house": gurneyBed,hospitalBed -->
+
+  <!--
+  BODIES
+  -->
+  <!-- Note: All bodies extend from bodyBagBlack -->
+  <append xpath="/blocks/block[@name='bodyBagBlack']">
+    <drop event="Harvest" name="doughs_Parcel_401k_002" count="1" prob="0.05" tag="allHarvest"/>
+    <drop event="Harvest" name="oldCash" count="6,987" prob="0.05" tag="allHarvest"/>
+    <drop event="Harvest" name="doughs_UselessItem_VajazzlerItems" count="1,5" prob="0.05" tag="allHarvest"/>
+    <drop event="Harvest" name="apparelFacialPiercings" count="1,5" prob="0.05" tag="allHarvest"/>
+    <drop event="Harvest" name="doughs_UselessItem_ColdWheelzBus" count="1,2" prob="0.05" tag="allHarvest"/> <!-- so sad -->
+    <drop event="Harvest" name="doughs_UselessItem_ColdWheelzArmy" count="1,2" prob="0.05" tag="allHarvest"/> <!-- so sad -->
+    <drop event="Harvest" name="doughs_UselessItem_ActionFigure_003" count="1,2" prob="0.05" tag="allHarvest"/> <!-- so sad -->
+    <drop event="Harvest" name="doughs_UselessItem_ActionFigure_004" count="1,2" prob="0.05" tag="allHarvest"/> <!-- so sad -->
+  </append>
+
+  <!--
+  COUCHES
+  -->
+  <!-- Note: All bodies extend from these blocks -->
+  <!-- Money already comes out of these: count="1,3" prob="0.05" -->
+ <append xpath="/blocks/block[@name='sectionalPlaidCouchSofaMiddle']">
+   <drop event="Harvest" name="doughs_UselessItem_ToyExpandingFoam" count="1" prob="0.05" tag="allHarvest"/>
+   <drop event="Harvest" name="doughs_UselessItem_Lipstick_002" count="1" prob="0.05" tag="allHarvest"/>
+   <drop event="Harvest" name="doughs_UselessItem_NippleWeights" count="1" prob="0.05" tag="allHarvest"/>
+   <drop event="Harvest" name="doughs_UselessItem_Pencil" count="1,3" prob="0.05" tag="allHarvest"/>
+   <drop event="Harvest" name="doughs_UselessItem_TinyCandy" count="1,12" prob="0.05" tag="allHarvest"/>
+ </append>
+ <append xpath="/blocks/block[@name='sectionalLeatherCouchSofaArm']">
+   <drop event="Harvest" name="doughs_UselessItem_TinyCandy" count="1,12" prob="0.05" tag="allHarvest"/>
+   <drop event="Harvest" name="doughs_UselessItem_BoardGameMoney" count="1,219" prob="0.05" tag="allHarvest"/>
+   <drop event="Harvest" name="doughs_UselessItem_Lipstick_001" count="1" prob="0.05" tag="allHarvest"/>
+   <drop event="Harvest" name="doughs_UselessItem_ToyWheel" count="1" prob="0.05" tag="allHarvest"/>
+   <drop event="Harvest" name="doughs_UselessItem_ColdWheelzBus" count="1" prob="0.05" tag="allHarvest"/>
+ </append>
+
+</Doughs>
