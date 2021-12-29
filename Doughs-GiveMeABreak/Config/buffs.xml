@@ -1,0 +1,7 @@
+<Doughs>
+
+<!-- Want this right after they pull impactSpeed from _fallSpeed -->
+<insertAfter xpath="/buffs/buff[@name='buffPlayerFallingDamage']/effect_group/triggered_effect[@trigger='onSelfBuffStart'][@value='@_fallSpeed']">
+    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".impactSpeed" operation="add" value=".05656"/> <!-- DOUGH add 4m! -->
+</insertAfter>
+</Doughs>

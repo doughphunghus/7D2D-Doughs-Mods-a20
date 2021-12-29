@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Doughs Give Me A Break" />
+		<Description value="Significantly increases chance of suffering damage to legs when falling. You get more hurt falling, and from lower distances." />
+		<Author value="Doughphunghus" />
+		<Version value="a20.0-b238.1.0.0" />
+    <Website value="https://github.com/doughphunghus" />
+	</ModInfo>
+</xml>
