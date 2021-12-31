@@ -18,7 +18,13 @@ SEE buffx.xml "RandomRoll" docs for a literal reference to this!
 <set xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group/triggered_effect[@trigger='onSelfEnteredGame'][@cvar='$infectionMaxDuration'][@operation='set']/@value">10800</set>
 
 <!-- Set vanilla default buff entry point -->
+<!-- 
 <set xpath="/buffs/buff[@name='buffInfectionMain']/effect_group/triggered_effect[@trigger='onSelfBuffStart'][@cvar='$infectionMaxDuration'][@operation='set']/@value">10800</set>
+-->
+
+<!-- Delete this as were moving it into our own effect group -->
+<remove xpath="/buffs/buff[@name='buffInfectionMain']/effect_group/triggered_effect[@trigger='onSelfBuffStart'][@cvar='$infectionMaxDuration'][@operation='set'][@value='25200']/requirement"/>
+<remove xpath="/buffs/buff[@name='buffInfectionMain']/effect_group/triggered_effect[@trigger='onSelfBuffStart'][@cvar='$infectionMaxDuration'][@operation='set'][@value='25200']"/>
 
 <!--
  Handle "making random of how long it takes to die
@@ -32,7 +38,14 @@ SEE buffx.xml "RandomRoll" docs for a literal reference to this!
 <!-- Add randomness to vanilla default buff entry point
 NOTE: RandomRoll might roll 1 time and the result be applied for all?
 -->
-  <append xpath="/buffs/buff[@name='buffInfectionMain']/effect_group[not(contains(@name, 'main loop')) and not(contains(@name, 'shut down')) and not(contains(@name, 'display % values')) and not(contains(@name, 'signaling buffs')) and not(contains(@name, 'getting hit makes it worse'))]">
+  <!-- <append xpath="/buffs/buff[@name='buffInfectionMain']/effect_group[not(contains(@name, 'main loop')) and not(contains(@name, 'shut down')) and not(contains(@name, 'display % values')) and not(contains(@name, 'signaling buffs')) and not(contains(@name, 'getting hit makes it worse'))]">
+  -->
+  <insertBefore xpath="/buffs/buff[@name='buffInfectionMain']/effect_group[not(contains(@name, 'main loop')) and not(contains(@name, 'shut down')) and not(contains(@name, 'display % values')) and not(contains(@name, 'signaling buffs')) and not(contains(@name, 'getting hit makes it worse'))]">
+
+    <effect_group> <!--Add ours at the beginning to set and calc infectionMaxDuration properly. Must go before all things as this is a major var in calcs -->
+
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$infectionMaxDuration" operation="set" value="10800"> <!-- Duplicate what the game had with our max num  -->
+			<requirement name="CVarCompare" cvar="$infectionMaxDuration" operation="Equals" value="0" /></triggered_effect>
 
     <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$infectionMaxDuration" operation="set" value="7200"> <!-- 2 hours  -->
       <requirement name="CVarCompare" cvar="$infectionMaxDuration" operation="Equals" value="10800"/>
@@ -63,11 +76,14 @@ NOTE: RandomRoll might roll 1 time and the result be applied for all?
     </triggered_effect>
 
     <!-- DEBUGGING -->
-    <!--  <triggered_effect trigger="onSelfBuffStart" action="LogMessage" message="DOUGHS-BUFF_INFECTION DEBUG: Infection timer set to:"/>  -->
-    <!--  <triggered_effect trigger="onSelfBuffStart" action="CVarLogValue" cvar="$infectionMaxDuration"/>  -->
+    <!-- <triggered_effect trigger="onSelfBuffStart" action="LogMessage" message="DOUGHS-BUFF_INFECTION DEBUG: Infection timer set to:"/>-->
+    <!-- <triggered_effect trigger="onSelfBuffStart" action="CVarLogValue" cvar="$infectionMaxDuration"/>-->
 
 
     <!-- cleanup, as it seems to be set to the lowest it hit last time and does not reset -->
     <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$infectionMaxDuration" operation="set" value="10800"/>
-  </append>
+  
+  </effect_group>
+
+  </insertBefore>
 </Doughs>
