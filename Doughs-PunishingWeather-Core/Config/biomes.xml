@@ -52,6 +52,9 @@ Note: Vanillas settings appear very good/reasonable, temp wise.
 <set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='storm']/@prob">36</set> <!-- DOUGH: Default prob="8" -->
 
 <!-- Make visual effectes the most dense -->
+<set xpath="/worldgeneration/biomes/biome[@name='snow']/spectrum[@name='snow']/@name">desert</set>
+
+<!-- Make visual effectes the most dense -->
 <set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='default']/ParticleEffect/@ChunkMargin">1</set>
 
 <!-- Purpose: Make colder -6 -->
@@ -91,8 +94,9 @@ Note: Almost always worse and can dip colder AND hotter than vanilla
 <set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='storm']/@prob">30</set> <!-- DOUGH: Default prob="3" -->
 
 <!-- DEFINE SPECTRUM -->
-<append xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather">
-  <spectrum name="burnt_forest"/> <!-- DOUGH: Did not exist in vanilla -->
+<!-- Make visual effectes the most dense -->
+<append xpath="/worldgeneration/biomes/biome[@name='pine_forest']">
+  <spectrum name="desert"/> <!-- DOUGH: Did not exist in vanilla -->
 </append>
 <!-- only one weather can have ParticleEffects -->
 <append xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='default']">
@@ -140,7 +144,8 @@ Note: When not default, lower temps. It might make nighttime colder and be inter
 <!-- Default "weather probabilities" look good! -->
 
 <!-- Make visual effects the most dense -->
-<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='default']/ParticleEffect/@ChunkMargin">1</set>
+<set xpath="/worldgeneration/biomes/biome[@name='desert']/spectrum[@name='desert']/@name">desert</set>
+<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='default']/ParticleEffect/@ChunkMargin">1</set> 
 
 <!-- Purpose: Much hotter +10 UNLESS rain/storm (then colder) -->
 <set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='default']/Temperature/@max">115</set> <!-- DOUGH: Default min="95" max="105" -->
