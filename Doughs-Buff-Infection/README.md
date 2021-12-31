@@ -30,4 +30,4 @@ Why?
 - An untreated infection during a horde night or early game where you cannot loot or barter/trade can easily prove fatal.
 
 Bug Hunters/Fixers:
-- :clap": [@ate0ate](https://community.7daystodie.com/profile/94874-ate0ate/): a20.0-b238.1.0.0. Discovered infection cure % of items was not accurate.  Fixed in a20.0-b238.1.0.1
+- :clap:: [@ate0ate](https://community.7daystodie.com/profile/94874-ate0ate/): a20.0-b238.1.0.0. Discovered infection cure % of items was not accurate.  Fixed in a20.0-b238.1.0.1
