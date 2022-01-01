@@ -29,7 +29,7 @@
       <property name="CustomIconTint" value="1ac6ff"/>
       <property name="CreativeMode" value="Player"/>
       <property name="Class" value="SecureLoot"/>
-    	<property name="LootList" value="591"/> <!-- DOUGH: CUSTOM loot container -->
+    	<property name="LootList" value="TicTacToeBoard"/> <!-- DOUGH: CUSTOM loot container -->
     	<property name="Model" value="#Entities/LootContainers?medicine_cabinet_closedPrefab.prefab"/>
     </block>
 
@@ -40,7 +40,7 @@
       <property name="CustomIconTint" value="33ffd6"/>
       <property name="CreativeMode" value="Player"/>
       <property name="Class" value="SecureLoot"/>
-      <property name="LootList" value="592"/> <!-- DOUGH: CUSTOM loot container -->
+      <property name="LootList" value="ChessBoard"/> <!-- DOUGH: CUSTOM loot container -->
       <property name="Model" value="#Entities/LootContainers?medicine_cabinet_closedPrefab.prefab"/>
     </block>
 
@@ -51,7 +51,7 @@
       <property name="CustomIconTint" value="ff8080"/>
       <property name="CreativeMode" value="Player"/>
       <property name="Class" value="SecureLoot"/>
-      <property name="LootList" value="593"/> <!-- DOUGH: CUSTOM loot container -->
+      <property name="LootList" value="SodukuBoard"/> <!-- DOUGH: CUSTOM loot container -->
       <property name="Model" value="#Entities/LootContainers?medicine_cabinet_closedPrefab.prefab"/>
     </block>
 
@@ -62,7 +62,7 @@
       <property name="Model" value="#Entities/LootContainers?pursePrefab.prefab"/> <!-- DOUGH: made into purse (small) -->
       <property name="CustomIconTint" value="a3d8d5"/> <!-- Blue -->
       <property name="IsTerrainDecoration" value="true"/>
-      <property name="LootList" value="594"/> <!-- DOUGH: CUSTOM loot container -->
+      <property name="LootList" value="Geocache"/> <!-- DOUGH: CUSTOM loot container -->
       <property name="CreativeMode" value="None"/>
     </block>
 

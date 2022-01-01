@@ -532,30 +532,30 @@
   <!--
   Append these NEW containers ... errr.  at the beginning?
   -->
-  <insertAfter xpath="/lootcontainers/lootcontainer[@id='1']">
+  <append xpath="/lootcontainers">
 
     <!-- 3 by 3 board -->
-    <lootcontainer id="591" name="TicTacToeBoard" count="0" size="3,3" sound_open="UseActions/open_suitcase" sound_close="UseActions/close_suitcase" loot_quality_template="qualBaseTemplate">
+    <lootcontainer id="591" name="TicTacToeBoard" count="0" size="3,3" sound_open="open_suitcase" sound_close="close_suitcase" loot_quality_template="qualBaseTemplate">
     	<item name="cobweb" count="1"/>
     </lootcontainer>
 
     <!-- 8 by 8 board  -->
-    <lootcontainer id="592" name="ChessBoard" count="0" size="8,8" sound_open="UseActions/open_suitcase" sound_close="UseActions/close_suitcase" loot_quality_template="qualBaseTemplate">
+    <lootcontainer id="592" name="ChessBoard" count="0" size="8,8" sound_open="open_suitcase" sound_close="close_suitcase" loot_quality_template="qualBaseTemplate">
     	<item name="cobweb" count="1"/>
     </lootcontainer>
 
     <!-- 9 by 9 board  -->
-    <lootcontainer id="593" name="SodukuBoard" count="0" size="9,9" sound_open="UseActions/open_suitcase" sound_close="UseActions/close_suitcase" loot_quality_template="qualBaseTemplate">
+    <lootcontainer id="593" name="SodukuBoard" count="0" size="9,9" sound_open="open_suitcase" sound_close="close_suitcase" loot_quality_template="qualBaseTemplate">
     	<item name="cobweb" count="1"/>
     </lootcontainer>
 
     <!-- Geocaching: Small container, small chance of good stuff! -->
     <!-- LOOT GROUPS ONLY - so its more random -->
-    <lootcontainer id="594" name="Geocache" count="1,4" size="2,2" sound_open="UseActions/open_suitcase" sound_close="UseActions/close_suitcase" loot_quality_template="qualBaseTemplate">
+    <lootcontainer id="594" name="Geocache" count="1,4" size="2,2" sound_open="open_suitcase" sound_close="close_suitcase" loot_quality_template="qualBaseTemplate">
       <item group="doughs_Geocaching_SmallStuff"/>
       <item group="groupBuriedLootStashTreasure"/> <!-- Vanilla treasure group Maybe add a second, better one to balance out the small size? -->
     </lootcontainer>
 
-  </insertAfter>
+  </append>
 
 </Doughs>
