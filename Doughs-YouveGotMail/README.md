@@ -32,4 +32,5 @@ Other:
 - To encourage "collecting", a lot of items can be crafted into bundles and sold/used for more EXP/Dukes than the individual items. Some of the items (books usually) are color coded in the description so you will know if its collectible and what collection it belongs to without looking at the recipe. Some games can be boxed up for transport/selling.
 
 #### Bug Hunters/Fixers:
-- :clap:: [RBN](https://community.7daystodie.com/profile/56838-rbn/): You've Got Mail, a20.0-b238.1.0.0.  For game board bug report. Fixed in a20.0-b238.1.0.1
+- :clap: [RBN](https://community.7daystodie.com/profile/56838-rbn/): You've Got Mail, a20.0-b238.1.0.1.  For unopened parcel report. Fixed in a20.0-b238.1.0.2
+- :clap: [RBN](https://community.7daystodie.com/profile/56838-rbn/): You've Got Mail, a20.0-b238.1.0.0.  For game board bug report. Fixed in a20.0-b238.1.0.1

@@ -1512,18 +1512,23 @@
       <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
       <property name="Stacknumber" value="25"/> <!-- may be a throwable weapon later on -->
       <effect_group tiered="false" name="Drink Tier 0">
-    		<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+          <requirement name="NotHasBuff" buff="buffIsOnFire"/>
 
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="10"/>
-    		<display_value name="dStaminaRegen" value=".01"/> <!-- DOUGH: want to be negative, but how? -->
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+          <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="10"/>
+          <display_value name="dStaminaRegen" value=".15"/>
+          <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="50"/><display_value name="dDysenteryRisk" value=".50"/> <!-- DOUGH: vanilla river water = 12 -->
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryCatchDrink">
-    			<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
-    		</triggered_effect>
-    	</effect_group>
+          <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="50"/><display_value name="dDysenteryRisk" value=".50"/>
+          <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+          <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryCatchDrink">
+            <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+          </triggered_effect>
+        </effect_group>
+
+        <effect_group tiered="false">
+          <requirement name="HasBuff" buff="buffIsOnFire"/>
+            <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
+        </effect_group>
     </item>
     <!-- Can drink -->
     <item name="doughs_UselessItem_JarOfPoo"> <!-- like drinking drinkJarMurkywater but much MUCH worse -->
@@ -1537,18 +1542,23 @@
       <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
       <property name="Stacknumber" value="25"/> <!-- may be a throwable weapon later on -->
       <effect_group tiered="false" name="Drink Tier 0">
-        <requirement name="NotHasBuff" buff="buffIsOnFire"/>
+          <requirement name="NotHasBuff" buff="buffIsOnFire"/>
 
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="10"/>
-        <display_value name="dStaminaRegen" value=".01"/> <!-- DOUGH: want to be negative, but how? -->
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+          <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="10"/>
+          <display_value name="dStaminaRegen" value=".15"/>
+          <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="98"/><display_value name="dDysenteryRisk" value=".98"/> <!-- DOUGH: vanilla river water = 12. 98 = "always have some hope" -->
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryCatchDrink">
-          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
-        </triggered_effect>
-      </effect_group>
+          <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="98"/><display_value name="dDysenteryRisk" value=".98"/>
+          <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+          <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryCatchDrink">
+            <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+          </triggered_effect>
+        </effect_group>
+
+        <effect_group tiered="false">
+          <requirement name="HasBuff" buff="buffIsOnFire"/>
+            <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
+        </effect_group>
     </item>
 
     <item name="doughs_UselessItem_Empty35mmFilmCanister">
@@ -2497,7 +2507,7 @@
       <property name="CustomIconTint" value="88, 0, 210"/>
       <property name="DescriptionKey" value="doughs_Parcel_Grandma_004Desc"/> <!-- DOUGH: Fun text -->
       <property class="Action0">
-        <property name="Create_item" value="doughs_ParcelNote_Grandma_004,doughs_UselessItem_WrappingPaperRibbon,gunBowWooden,ammoBundleArrowSteelAP,oldCash"/>
+        <property name="Create_item" value="doughs_ParcelNote_Grandma_004,doughs_UselessItem_WrappingPaperRibbon,gunBowT1WoodenBow,ammoBundleArrowSteelAP,oldCash"/>
         <property name="Create_item_count" value="1,1,1,1,70"/>
       </property>
     </item>
@@ -2696,7 +2706,7 @@
       <property name="Extends" value="doughs_Parcel_Base"/>
       <property name="DescriptionKey" value="doughs_Parcel_UnopenedPackage_001Desc"/> <!-- DOUGH: Fun text -->
       <property class="Action0">
-        <property name="Create_item" value="gunToolNailgun,resourceNail,doughs_UselessItem_CellophaneTape"/>
+        <property name="Create_item" value="meleeToolRepairT3Nailgun,resourceNail,doughs_UselessItem_CellophaneTape"/>
         <property name="Create_item_count" value="1,250,1"/>
       </property>
     </item>
