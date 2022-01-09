@@ -2,13 +2,33 @@
   <!-- <lootgroup name="empty"/> -->
   <!-- NOTE: Lootcontainers have an ID.  Make one up and hope no collision -->
 
+  <!-- a20 NEW: 
+    Even "veryLow is a bit too high for all teh stuff in this mod.  Make out own
+    loot "probability" about what we have before the change in a19.
+    
+    Like: some things just need to be empty, etc, not chock full of stuff.
+
+    NOTE: Use vanilla "veryLow" for "uncommon". its like 5% prob (1/20)
+  -->
+  <append xpath="/lootcontainers/lootprobtemplates">
+    <lootprobtemplate name="doughsYGM_Rare"> <!-- For now, make it valilla "veryLow" = 0.05 -->
+		  <loot level="1,999999" prob=".05"/> <!-- .02 = (1/50), 0.05 = 1/20 -->
+	  </lootprobtemplate>
+    <lootprobtemplate name="doughsYGM_VeryRare"> !-- UNUSED -->
+		  <loot level="1,999999" prob=".01"/> <!-- (1/100) -->
+	  </lootprobtemplate>
+    <lootprobtemplate name="doughsYGM_EpicRare"> <!-- UNUSED -->
+		  <loot level="1,999999" prob=".005"/> <!-- (1/200) -->
+	  </lootprobtemplate>
+  </append>
+  
   <!-- #######################################################
   Add my ***lootgroups*** AFTER this special vanilla ***lootgroup***
   #######################################################  -->
 
   <insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
 
-    <lootgroup name="doughs_OldPapers">
+    <lootgroup name="doughs_OldPapers" count="1">
       <item name="doughs_OldPaper_001" count="1" />
       <item name="doughs_OldPaper_002" count="1" />
       <item name="doughs_OldPaper_003" count="1" />
@@ -31,7 +51,7 @@
       <item name="doughs_OldPaper_020" count="1" />
     </lootgroup>
 
-    <lootgroup name="doughs_StickyNotes">
+    <lootgroup name="doughs_StickyNotes" count="1">
       <item name="doughs_StickyNote_001" count="1" />
       <item name="doughs_StickyNote_002" count="1" />
       <item name="doughs_StickyNote_003" count="1" />
@@ -44,7 +64,7 @@
       <item name="doughs_StickyNote_010" count="1" />
     </lootgroup>
 
-    <lootgroup name="doughs_PaperNotes">
+    <lootgroup name="doughs_PaperNotes" count="1">
       <item name="doughs_PaperNote_001" count="1" />
       <item name="doughs_PaperNote_002" count="1" />
       <item name="doughs_PaperNote_003" count="1" />
@@ -57,7 +77,7 @@
       <item name="doughs_PaperNote_010" count="1" />
     </lootgroup>
 
-    <lootgroup name="doughs_GovFlyers">
+    <lootgroup name="doughs_GovFlyers" count="1">
       <item name="doughs_GovFlyer_001" count="1" />
       <item name="doughs_GovFlyer_002" count="1" />
       <item name="doughs_GovFlyer_003" count="1" />
@@ -81,7 +101,7 @@
     </lootgroup>
 
     <!-- DOUGH: Missing books in this list are in parcels -->
-    <lootgroup name="doughs_BrownBooks">
+    <lootgroup name="doughs_BrownBooks" count="1,2">
       <item name="doughs_BrownBook_003" count="1" />
       <item name="doughs_BrownBook_004" count="1" />
       <item name="doughs_BrownBook_005" count="1" />
@@ -129,12 +149,12 @@
       <item name="doughs_Book_Game_Soduku_003" count="1" />
       <item name="doughs_Book_Game_Soduku_004" count="1" />
       <item name="doughs_Book_Game_Soduku_005" count="1" />
-      <item name="doughs_CraftableBook_001" count="1" prob="0.08"/>
-      <item name="doughs_CraftableBook_002" count="1" prob="0.05"/>
+      <item name="doughs_CraftableBook_001" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_CraftableBook_002" count="1" loot_prob_template="veryLow" />
     </lootgroup>
 
     <!-- DOUGH: Missing items in this list are in parcels -->
-    <lootgroup name="doughs_UselessItems">
+    <lootgroup name="doughs_UselessItems" count="1,2">
       <item name="doughs_UselessItem_LockPick" count="1" />
       <item name="doughs_UselessItem_CrazyStraw" count="1,5" />
       <item name="doughs_UselessItem_LintFluff" count="1,10" />
@@ -200,26 +220,26 @@
       <item name="doughs_UselessItem_BadElectricalCord" count="1,3" />
     </lootgroup>
 
-    <lootgroup name="doughs_UselessItems_Toys"> <!-- Collectible? NOTE: Some are in bodybags too!-->
-      <item name="doughs_UselessItem_ActionFigure_001" count="1" prob="0.5"/>
-      <item name="doughs_UselessItem_ActionFigure_002" count="1" prob="0.5"/>!
-      <item name="doughs_UselessItem_ActionFigure_003" count="1" />
-      <item name="doughs_UselessItem_ActionFigure_004" count="1" prob="0.1"/> <!-- rarer -->
-      <item name="doughs_UselessItem_ActionFigure_005" count="1" prob="0.1"/> <!-- rarer -->
-      <item name="doughs_UselessItem_ColdWheelzBus" count="1" />
-      <item name="doughs_UselessItem_ColdWheelzCar" count="1" prob="0.1"/> <!-- rarer -->
+    <lootgroup name="doughs_UselessItems_Toys" count="1"> <!-- Collectible? NOTE: Some are in bodybags too!-->
+      <item name="doughs_UselessItem_ActionFigure_001" count="1" loot_prob_template="med" />
+      <item name="doughs_UselessItem_ActionFigure_002" count="1" loot_prob_template="med" />!
+      <item name="doughs_UselessItem_ActionFigure_003" count="1" loot_prob_template="doughsYGM_Rare" />
+      <item name="doughs_UselessItem_ActionFigure_004" count="1" loot_prob_template="veryLow" /> <!-- rarer -->
+      <item name="doughs_UselessItem_ActionFigure_005" count="1" loot_prob_template="veryLow" /> <!-- rarer -->
+      <item name="doughs_UselessItem_ColdWheelzBus" count="1" loot_prob_template="doughsYGM_Rare" />
+      <item name="doughs_UselessItem_ColdWheelzCar" count="1" loot_prob_template="veryLow" /> <!-- rarer -->
     </lootgroup>
 
-    <lootgroup name="doughs_UselessItems_Medical"> <!-- Collectible? Have effects? -->
-      <item name="doughs_UselessItem_UsedToothpicks" count="9,99" prob="0.1"/>
-      <item name="doughs_UselessItem_Antacids" count="1,4" prob="0.1"/>
-      <item name="doughs_UselessItem_StoolSofteners" count="1,4" prob="0.1"/>
-      <item name="doughs_UselessItem_BirthControlPills" count="1,4" prob="0.1"/>
-      <item name="doughs_UselessItem_BreathMints" count="1,4" prob="0.1"/>
-      <item name="doughs_UselessItem_Cottonball" count="1,40" prob="0.1"/>
+    <lootgroup name="doughs_UselessItems_Medical" count="1"> <!-- Collectible? Have effects? -->
+      <item name="doughs_UselessItem_UsedToothpicks" count="9,99" loot_prob_template="veryLow" />
+      <item name="doughs_UselessItem_Antacids" count="1,4" loot_prob_template="veryLow" />
+      <item name="doughs_UselessItem_StoolSofteners" count="1,4" loot_prob_template="veryLow" />
+      <item name="doughs_UselessItem_BirthControlPills" count="1,4" loot_prob_template="veryLow" />
+      <item name="doughs_UselessItem_BreathMints" count="1,4" loot_prob_template="veryLow" />
+      <item name="doughs_UselessItem_Cottonball" count="1,40" loot_prob_template="veryLow" />
     </lootgroup>
 
-    <lootgroup name="doughs_Parcels_Family">
+    <lootgroup name="doughs_Parcels_Family" count="1">
       <item name="doughs_Parcel_Grandma_001" count="1" />
       <item name="doughs_Parcel_Grandma_002" count="1" />
       <item name="doughs_Parcel_Grandma_003" count="1" />
@@ -237,7 +257,7 @@
       <item name="doughs_Parcel_Birthday_005" count="1" />
     </lootgroup>
 
-    <lootgroup name="doughs_Parcels_ReturnedItem">
+    <lootgroup name="doughs_Parcels_ReturnedItem" count="1">
       <item name="doughs_Parcel_ReturnedItem_001" count="1" />
       <item name="doughs_Parcel_ReturnedItem_002" count="1" />
       <item name="doughs_Parcel_ReturnedItem_003" count="1" />
@@ -245,7 +265,7 @@
       <item name="doughs_Parcel_ReturnedItem_005" count="1" />
     </lootgroup>
 
-    <lootgroup name="doughs_Parcels_UnopenedPackage">
+    <lootgroup name="doughs_Parcels_UnopenedPackage" count="1">
       <item name="doughs_Parcel_UnopenedPackage_001" count="1" />
       <item name="doughs_Parcel_UnopenedPackage_002" count="1" />
       <item name="doughs_Parcel_UnopenedPackage_003" count="1" />
@@ -258,124 +278,124 @@
       <item name="doughs_Parcel_UnopenedPackage_010" count="1" />
     </lootgroup>
 
-    <lootgroup name="doughs_Parcels_BuildKitPackage">
-      <item name="doughs_Parcel_BuildKitPackage_001" count="1" prob="0.01"/>
-      <item name="doughs_Parcel_BuildKitPackage_002" count="1" prob="0.01"/>
-      <item name="doughs_Parcel_BuildKitPackage_003" count="1" prob="0.01"/>
-      <item name="doughs_Parcel_BuildKitPackage_004" count="1" prob="0.01"/>
+    <lootgroup name="doughs_Parcels_BuildKitPackage" count="1">
+      <item name="doughs_Parcel_BuildKitPackage_001" count="1" />
+      <item name="doughs_Parcel_BuildKitPackage_002" count="1" />
+      <item name="doughs_Parcel_BuildKitPackage_003" count="1" />
+      <item name="doughs_Parcel_BuildKitPackage_004" count="1" />
       <item name="resourcePaper" count="1" /> <!-- Used to dilute this out -->
     </lootgroup>
 
     <!-- Missing pages are to be found in Soduku Books -->
     <!-- TODO: Some pages not in books. Make a parser? -->
-    <lootgroup name="doughs_Page_Game_Soduku">
-      <item name="doughs_Page_Game_Soduku_001" count="1" prob="0.01" />
-      <item name="doughs_Page_Game_Soduku_003" count="1" prob="0.02" />
-      <item name="doughs_Page_Game_Soduku_026" count="1" prob="0.01" />
-      <item name="doughs_Page_Game_Soduku_029" count="1" prob="0.02" />
-      <item name="doughs_Page_Game_Soduku_052" count="1" prob="0.01" />
-      <item name="doughs_Page_Game_Soduku_075" count="1" prob="0.02" />
+    <lootgroup name="doughs_Page_Game_Soduku" count="1">
+      <item name="doughs_Page_Game_Soduku_001" count="1" />
+      <item name="doughs_Page_Game_Soduku_003" count="1" />
+      <item name="doughs_Page_Game_Soduku_026" count="1" />
+      <item name="doughs_Page_Game_Soduku_029" count="1" />
+      <item name="doughs_Page_Game_Soduku_052" count="1" />
+      <item name="doughs_Page_Game_Soduku_075" count="1" />
       <item name="resourcePaper" count="1" /> <!-- Used to dilute this out -->
     </lootgroup>
 
-    <lootgroup name="doughs_Pieces_Game_Chess">
-      <item name="doughs_ChessPiece_Pawn_Red" count="1" prob="0.4"/> <!-- --> <!-- Because you need more pawns -->
-      <item name="doughs_ChessPiece_Pawn_Blue" count="1" prob="0.4"/> <!-- --> <!-- Because you need more pawns -->
-      <item name="doughs_ChessPiece_Knight_Red" count="1" prob="0.2"/> <!-- -->
-      <item name="doughs_ChessPiece_Knight_Blue" count="1" prob="0.2"/> <!-- -->
-      <item name="doughs_ChessPiece_Bishop_Red" count="1" prob="0.2"/> <!-- -->
-      <item name="doughs_ChessPiece_Bishop_Blue" count="1" prob="0.2"/> <!-- -->
-      <item name="doughs_ChessPiece_Rook_Red" count="1" prob="0.2"/> <!-- -->
-      <item name="doughs_ChessPiece_Rook_Blue" count="1" prob="0.2"/> <!-- -->
-      <item name="doughs_ChessPiece_King_Red_001" count="1" prob="0.1"/> <!-- Because there are 5 kings -->
-      <item name="doughs_ChessPiece_King_Red_002" count="1" prob="0.1"/> <!-- Because there are 5 kings -->
-      <item name="doughs_ChessPiece_King_Red_003" count="1" prob="0.1"/> <!-- Because there are 5 kings -->
-      <item name="doughs_ChessPiece_King_Red_004" count="1" prob="0.1"/> <!-- Because there are 5 kings -->
-      <item name="doughs_ChessPiece_King_Red_005" count="1" prob="0.1"/> <!-- Because there are 5 kings -->
-      <item name="doughs_ChessPiece_King_Blue_001" count="1" prob="0.1"/> <!-- Because there are 5 kings -->
-      <item name="doughs_ChessPiece_King_Blue_002" count="1" prob="0.1"/> <!-- Because there are 5 kings -->
-      <item name="doughs_ChessPiece_King_Blue_003" count="1" prob="0.1"/> <!-- Because there are 5 kings -->
-      <item name="doughs_ChessPiece_King_Blue_004" count="1" prob="0.1"/> <!-- Because there are 5 kings -->
-      <item name="doughs_ChessPiece_King_Blue_005" count="1" prob="0.1"/> <!-- Because there are 5 kings -->
-      <item name="doughs_ChessPiece_Queen_Red" count="1" prob="0.05"/> <!-- Because queen wil be hard to get -->
-      <item name="doughs_ChessPiece_Queen_Blue" count="1" prob="0.05"/> <!-- Because queen wil be hard to get -->
+    <lootgroup name="doughs_Pieces_Game_Chess" count="1,2">
+      <item name="doughs_ChessPiece_Pawn_Red" count="1" loot_prob_template="medLow" /> <!-- --> <!-- Because you need more pawns -->
+      <item name="doughs_ChessPiece_Pawn_Blue" count="1" loot_prob_template="medLow" /> <!-- --> <!-- Because you need more pawns -->
+      <item name="doughs_ChessPiece_Knight_Red" count="1" loot_prob_template="low" /> <!-- -->
+      <item name="doughs_ChessPiece_Knight_Blue" count="1" loot_prob_template="low" /> <!-- -->
+      <item name="doughs_ChessPiece_Bishop_Red" count="1" loot_prob_template="low" /> <!-- -->
+      <item name="doughs_ChessPiece_Bishop_Blue" count="1" loot_prob_template="low" /> <!-- -->
+      <item name="doughs_ChessPiece_Rook_Red" count="1" loot_prob_template="low" /> <!-- -->
+      <item name="doughs_ChessPiece_Rook_Blue" count="1" loot_prob_template="low" /> <!-- -->
+      <item name="doughs_ChessPiece_King_Red_001" count="1" loot_prob_template="veryLow" /> <!-- Because there are 5 kings -->
+      <item name="doughs_ChessPiece_King_Red_002" count="1" loot_prob_template="veryLow" /> <!-- Because there are 5 kings -->
+      <item name="doughs_ChessPiece_King_Red_003" count="1" loot_prob_template="veryLow" /> <!-- Because there are 5 kings -->
+      <item name="doughs_ChessPiece_King_Red_004" count="1" loot_prob_template="veryLow" /> <!-- Because there are 5 kings -->
+      <item name="doughs_ChessPiece_King_Red_005" count="1" loot_prob_template="veryLow" /> <!-- Because there are 5 kings -->
+      <item name="doughs_ChessPiece_King_Blue_001" count="1" loot_prob_template="veryLow" /> <!-- Because there are 5 kings -->
+      <item name="doughs_ChessPiece_King_Blue_002" count="1" loot_prob_template="veryLow" /> <!-- Because there are 5 kings -->
+      <item name="doughs_ChessPiece_King_Blue_003" count="1" loot_prob_template="veryLow" /> <!-- Because there are 5 kings -->
+      <item name="doughs_ChessPiece_King_Blue_004" count="1" loot_prob_template="veryLow" /> <!-- Because there are 5 kings -->
+      <item name="doughs_ChessPiece_King_Blue_005" count="1" loot_prob_template="veryLow" /> <!-- Because there are 5 kings -->
+      <item name="doughs_ChessPiece_Queen_Red" count="1" loot_prob_template="veryLow" /> <!-- Because queen wil be hard to get -->
+      <item name="doughs_ChessPiece_Queen_Blue" count="1" loot_prob_template="veryLow" /> <!-- Because queen wil be hard to get -->
     </lootgroup>
 
-    <lootgroup name="doughs_Pieces_Game_Checkers">
-      <item name="doughs_CheckersBlock_1" count="1" prob="0.1"/> <!-- -->
-      <item name="doughs_CheckersBlock_2" count="1" prob="0.1"/> <!-- -->
+    <lootgroup name="doughs_Pieces_Game_Checkers" count="1">
+      <item name="doughs_CheckersBlock_1" count="1" loot_prob_template="veryLow" /> <!-- -->
+      <item name="doughs_CheckersBlock_2" count="1" loot_prob_template="veryLow" /> <!-- -->
     </lootgroup>
 
     <!-- Special: make scematics appear in normal places -->
-    <lootgroup name="doughs_Schematics">
-      <item name="doughs_Game_Soduku_Pieces_Schematic" count="1" prob="0.05"/>
-      <item name="doughs_BrassBB_Schematic" count="1" prob="0.05"/>
+    <lootgroup name="doughs_Schematics" count="1">
+      <item name="doughs_Game_Soduku_Pieces_Schematic" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_BrassBB_Schematic" count="1" loot_prob_template="veryLow" />
       <item name="cobweb" count="1" /> <!-- Loot Dilution item -->
     </lootgroup>
 
-    <lootgroup name="doughs_Parcels_Games">
-      <item name="doughs_Parcel_Game_Soduku_001" count="1" prob="0.05"/>
-      <item name="doughs_Parcel_Game_TicTacToe_001" count="1" prob="0.05"/>
-      <item name="doughs_Parcel_Game_Checkers_001" count="1" prob="0.05"/>
-      <item name="doughs_Parcel_Game_Chess_001" count="1" prob="0.05"/>
+    <lootgroup name="doughs_Parcels_Games" count="1">
+      <item name="doughs_Parcel_Game_Soduku_001" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_Parcel_Game_TicTacToe_001" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_Parcel_Game_Checkers_001" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_Parcel_Game_Chess_001" count="1" loot_prob_template="veryLow" />
       <item name="cobweb" count="1"/> <!-- Loot Dilution item -->
     </lootgroup>
 
-    <lootgroup name="doughs_Parcels_Sorry">
-      <item name="doughs_ParcelNote_Sorry_001" count="1" prob="0.1"/>
-      <item name="doughs_ParcelNote_Sorry_002" count="1" prob="0.1"/>
-      <item name="doughs_ParcelNote_Sorry_003" count="1" prob="0.1"/>
-      <item name="doughs_ParcelNote_Sorry_004" count="1" prob="0.1"/>
-      <item name="doughs_ParcelNote_Sorry_005" count="1" prob="0.1"/>
+    <lootgroup name="doughs_Parcels_Sorry" count="1">
+      <item name="doughs_ParcelNote_Sorry_001" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_ParcelNote_Sorry_002" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_ParcelNote_Sorry_003" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_ParcelNote_Sorry_004" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_ParcelNote_Sorry_005" count="1" loot_prob_template="veryLow" />
       <item name="cobweb" count="1"/> <!-- Loot Dilution item -->
     </lootgroup>
 
-    <lootgroup name="doughs_Treasure_Maps">
-      <item name="doughs_treasure_map_001" count="1" prob="0.05"/>
-      <item name="doughs_treasure_map_002" count="1" prob="0.05"/>
+    <lootgroup name="doughs_Treasure_Maps" count="1">
+      <item name="doughs_treasure_map_001" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_treasure_map_002" count="1" loot_prob_template="veryLow" />
     </lootgroup>
 
-    <lootgroup name="doughs_Geocaching_SmallStuff">
+    <lootgroup name="doughs_Geocaching_SmallStuff" count="1,3">
       <item name="cobweb" count="2"/>
-      <item name="doughs_UselessItem_CrazyStraw" count="1"/>
-      <item name="doughs_UselessItem_BoardGameMoney" count="10" prob="0.5"/>
-      <item name="doughs_UselessItem_TinyCandy" count="3"/>
-      <item name="doughs_UselessItem_Empty35mmFilmCanister" count="1"/>
-      <item name="doughs_UselessItem_PetRock" count="1"/>
-      <item name="doughs_UselessItem_ToyExpandingFoam" count="2"/>
-      <item name="oldCash" count="3"/>
-      <item name="casinoCoin" count="2"/>
-      <item group="doughs_Pieces_Game_Checkers"/>
-      <item group="doughs_UselessItems_Toys"/>
+      <item name="doughs_UselessItem_CrazyStraw" count="1" loot_prob_template="low" />
+      <item name="doughs_UselessItem_BoardGameMoney" count="10" loot_prob_template="med"/>
+      <item name="doughs_UselessItem_TinyCandy" count="3" loot_prob_template="low" />
+      <item name="doughs_UselessItem_Empty35mmFilmCanister" count="1" loot_prob_template="low" />
+      <item name="doughs_UselessItem_PetRock" count="1" loot_prob_template="low" />
+      <item name="doughs_UselessItem_ToyExpandingFoam" count="2" loot_prob_template="low" />
+      <item name="oldCash" count="3" loot_prob_template="low" />
+      <item name="casinoCoin" count="2" loot_prob_template="low" />
+      <item group="doughs_Pieces_Game_Checkers" loot_prob_template="low" />
+      <item group="doughs_UselessItems_Toys" loot_prob_template="low" />
     </lootgroup>
 
-    <lootgroup name="doughs_AirdropItems">
-      <item name="doughs_Parcel_UnopenedPackage_007" count="1" prob="0.1"/>
-      <item name="doughs_Parcel_UnopenedPackage_009" count="1" prob="0.1"/>
-      <item name="doughs_Parcel_BuildKitPackage_001" count="1" prob="0.05"/> <!-- good stuff -->
-      <item name="doughs_UselessItem_TeaTowel_002" count="1" prob="0.1"/>
-      <item name="doughs_BrownBook_041" count="1" prob="0.05"/>
-      <item name="doughs_BrownBook_043" count="1" prob="0.05"/>
-      <item name="doughs_BrownBook_046" count="1" prob="0.05"/>
-      <item name="doughs_BrownBook_038" count="1" prob="0.05"/>
-      <item name="doughs_BrownBook_031" count="1" prob="0.05"/>
-      <item name="casinoCoin" count="200" prob="0.2"/> <!-- Loot Dilution item -->
-      <item name="casinoCoin" count="500" prob="0.1"/> <!-- Loot Dilution item -->
-      <item name="casinoCoin" count="800" prob="0.05"/> <!-- Loot Dilution item: but good stuff -->
+    <lootgroup name="doughs_AirdropItems" count="1,2">
+      <item name="doughs_Parcel_UnopenedPackage_007" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_Parcel_UnopenedPackage_009" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_Parcel_BuildKitPackage_001" count="1" loot_prob_template="veryLow" /> <!-- good stuff -->
+      <item name="doughs_UselessItem_TeaTowel_002" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_BrownBook_041" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_BrownBook_043" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_BrownBook_046" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_BrownBook_038" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_BrownBook_031" count="1" loot_prob_template="veryLow" />
+      <item name="casinoCoin" count="200" loot_prob_template="low" /> <!-- Loot Dilution item -->
+      <item name="casinoCoin" count="500" loot_prob_template="veryLow" /> <!-- Loot Dilution item -->
+      <item name="casinoCoin" count="800" loot_prob_template="veryLow" /> <!-- Loot Dilution item: but good stuff -->
       <item name="cobweb" count="1"/> <!-- Loot Dilution item -->
     </lootgroup>
 
-    <lootgroup name="doughs_AirdropNotes">
-      <item name="doughs_AirdropNote_001" count="1" prob="0.05"/>
-      <item name="doughs_AirdropNote_002" count="1" prob="0.05"/>
-      <item name="doughs_AirdropNote_003" count="1" prob="0.05"/>
-      <item name="doughs_AirdropNote_004" count="1" prob="0.05"/>
-      <item name="doughs_AirdropNote_005" count="1" prob="0.05"/>
-      <item name="doughs_AirdropNote_006" count="1" prob="0.05"/>
-      <item name="doughs_AirdropNote_007" count="1" prob="0.05"/>
-      <item name="doughs_AirdropNote_008" count="1" prob="0.05"/>
-      <item name="doughs_AirdropNote_009" count="1" prob="0.05"/>
-      <item name="doughs_AirdropNote_010" count="1" prob="0.05"/>
+    <lootgroup name="doughs_AirdropNotes" count="1">
+      <item name="doughs_AirdropNote_001" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_AirdropNote_002" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_AirdropNote_003" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_AirdropNote_004" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_AirdropNote_005" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_AirdropNote_006" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_AirdropNote_007" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_AirdropNote_008" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_AirdropNote_009" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_AirdropNote_010" count="1" loot_prob_template="veryLow" />
       <item name="cobweb" count="1"/> <!-- Loot Dilution item -->
     </lootgroup>
 
@@ -383,42 +403,42 @@
       Want to split these up so you dont find them easily and all the time
       find somewhat a little later game
     -->
-    <lootgroup name="doughs_PoemNotesDarkLoveA"> <!-- Easy to find early? -->
-      <item name="doughs_PoemNote_001" count="1" prob="0.05"/>
-      <item name="doughs_PoemNote_006" count="1" prob="0.05"/>
-      <item name="doughs_PoemNote_002" count="1" prob="0.05"/>
-      <item name="doughs_PoemNote_007" count="1" prob="0.05"/>
-      <item name="doughs_PoemNote_011" count="1" prob="0.05"/>
-      <item name="cobweb" count="1" prob="0.5"/> <!-- Loot Dilution item -->
+    <lootgroup name="doughs_PoemNotesDarkLoveA" count="1"> <!-- Easy to find early? -->
+      <item name="doughs_PoemNote_001" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_PoemNote_006" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_PoemNote_002" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_PoemNote_007" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_PoemNote_011" count="1" loot_prob_template="veryLow" />
+      <item name="cobweb" count="1" loot_prob_template="med"/> <!-- Loot Dilution item -->
     </lootgroup>
 
-    <lootgroup name="doughs_PoemNotesDarkLoveB"> <!-- Easy to find mid game? -->
-      <item name="doughs_PoemNote_003" count="1" prob="0.05"/>
-      <item name="doughs_PoemNote_008" count="1" prob="0.05"/>
-      <item name="doughs_PoemNote_004" count="1" prob="0.05"/>
-      <item name="doughs_PoemNote_009" count="1" prob="0.05"/>
-      <item name="doughs_PoemNote_012" count="1" prob="0.05"/>
-      <item name="cobweb" count="1" prob="0.5"/> <!-- Loot Dilution item -->
+    <lootgroup name="doughs_PoemNotesDarkLoveB" count="1"> <!-- Easy to find mid game? -->
+      <item name="doughs_PoemNote_003" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_PoemNote_008" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_PoemNote_004" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_PoemNote_009" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_PoemNote_012" count="1" loot_prob_template="veryLow" />
+      <item name="cobweb" count="1" loot_prob_template="med"/> <!-- Loot Dilution item -->
     </lootgroup>
 
-    <lootgroup name="doughs_PoemNotesDarkLoveC"> <!-- Easy to find mid-end game? -->
-      <item name="doughs_PoemNote_005" count="1" prob="0.05"/>
-      <item name="doughs_PoemNote_010" count="1" prob="0.05"/>
-      <item name="doughs_PoemNote_013" count="1" prob="0.05"/>
-      <item name="cobweb" count="1" prob="0.5"/> <!-- Loot Dilution item -->
+    <lootgroup name="doughs_PoemNotesDarkLoveC" count="1"> <!-- Easy to find mid-end game? -->
+      <item name="doughs_PoemNote_005" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_PoemNote_010" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_PoemNote_013" count="1" loot_prob_template="veryLow" />
+      <item name="cobweb" count="1" loot_prob_template="med"/> <!-- Loot Dilution item -->
     </lootgroup>
 
-    <lootgroup name="doughs_GeneralMail">
-      <item name="doughs_SaleNote_006" count="1"/>
-      <item name="doughs_SaleNote_007" count="1"/>
-      <item name="doughs_SaleNote_008" count="1"/>
-      <item name="doughs_SaleNote_009" count="1"/>
-      <item name="doughs_SaleNote_010" count="1"/>
-      <item name="doughs_Mail_Junk_001" count="1"/>
-      <item name="doughs_Mail_Junk_002" count="1"/>
-      <item name="doughs_Mail_Junk_003" count="1"/>
-      <item name="doughs_Mail_Junk_004" count="1"/>
-      <item name="doughs_Mail_Junk_005" count="1"/>
+    <lootgroup name="doughs_GeneralMail" count="1">
+      <item name="doughs_SaleNote_006" count="1" />
+      <item name="doughs_SaleNote_007" count="1" />
+      <item name="doughs_SaleNote_008" count="1" />
+      <item name="doughs_SaleNote_009" count="1" />
+      <item name="doughs_SaleNote_010" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_Mail_Junk_001" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_Mail_Junk_002" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_Mail_Junk_003" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_Mail_Junk_004" count="1" loot_prob_template="veryLow" />
+      <item name="doughs_Mail_Junk_005" count="1" loot_prob_template="veryLow" />
     </lootgroup>
 
   </insertAfter>
@@ -432,21 +452,21 @@
   </append>
 
   <append xpath="/lootcontainers/lootgroup[@name='groupJunk02']">
-    <item group="doughs_OldPapers" loot_prob_template="med"/>
-    <item group="doughs_UselessItems" loot_prob_template="med"/>
-    <item group="doughs_Pieces_Game_Chess" loot_prob_template="low"/>
-    <item group="doughs_Pieces_Game_Checkers" loot_prob_template="low"/>
-    <item group="doughs_Page_Game_Soduku" loot_prob_template="low"/>
-    <item group="doughs_StickyNotes" loot_prob_template="med"/>
-    <item group="doughs_Schematics" loot_prob_template="med"/>
-    <item group="doughs_PoemNotesDarkLoveA" loot_prob_template="low"/>
+    <item group="doughs_OldPapers" loot_prob_template="low" />
+    <item group="doughs_UselessItems" loot_prob_template="low" />
+    <item group="doughs_Pieces_Game_Chess" loot_prob_template="low" />
+    <item group="doughs_Pieces_Game_Checkers" loot_prob_template="veryLow" />
+    <item group="doughs_Page_Game_Soduku" loot_prob_template="low" />
+    <item group="doughs_StickyNotes" loot_prob_template="veryLow" />
+    <item group="doughs_Schematics" loot_prob_template="low" />
+    <item group="doughs_PoemNotesDarkLoveA" loot_prob_template="low" />
   </append>
 
   <append xpath="/lootcontainers/lootgroup[@name='groupMedicalCommon']">
-    <item group="doughs_UselessItems_Medical" loot_prob_template="low"/>
+    <item group="doughs_UselessItems_Medical" loot_prob_template="low" />
   </append>
   <append xpath="/lootcontainers/lootgroup[@name='survivalMedical']">
-    <item group="doughs_UselessItems_Medical" loot_prob_template="low"/>
+    <item group="doughs_UselessItems_Medical" loot_prob_template="low" />
   </append>
 
   <!-- No do: airdropMedicine -->
@@ -463,70 +483,70 @@
   #######################################################  -->
 
   <!-- cars-->
-  <append xpath="/lootcontainers/lootgroup[@name='groupCars']">
-    <item group="doughs_UselessItems_Toys" count="1" loot_prob_template="low"/>
-    <item name="doughs_UselessItem_StiffSocks" count="1" loot_prob_template="low"/>
-    <item name="doughs_UselessItem_JarOfUrine" count="1" loot_prob_template="low"/>
-    <item name="goreBlockHumanCorpse" count="1" loot_prob_template="low"/>
-    <item name="goreBlockHumanCorpse1" count="1" loot_prob_template="low"/>
-    <item name="goreBlockHumanCorpse2" count="1" loot_prob_template="low"/>
-    <item name="decoCarTireFlat" count="1" loot_prob_template="low"/>
-    <item name="decoCarTireSmallFlat" count="1" loot_prob_template="med"/>
-    <item name="decoCarWheelFlat" count="1" loot_prob_template="low"/>
-    <item name="doughs_Mail_Junk_003" loot_prob_template="med"/> <!-- extended warranty -->
+  <append xpath="/lootcontainers/lootgroup[@name='groupCars01']">
+    <item group="doughs_UselessItems_Toys" count="1" loot_prob_template="low" />
+    <item name="doughs_UselessItem_StiffSocks" count="1" loot_prob_template="veryLow" />
+    <item name="doughs_UselessItem_JarOfUrine" count="1" loot_prob_template="veryLow" />
+    <item name="goreBlockHumanCorpse" count="1" loot_prob_template="veryLow" />
+    <item name="goreBlockHumanCorpse1" count="1" loot_prob_template="low" />
+    <item name="goreBlockHumanCorpse2" count="1" loot_prob_template="med" />
+    <item name="decoCarTireFlat" count="1" loot_prob_template="veryLow" />
+    <item name="decoCarTireSmallFlat" count="1" loot_prob_template="med" />
+    <item name="decoCarWheelFlat" count="1" loot_prob_template="low" />
+    <item name="doughs_Mail_Junk_003" loot_prob_template="low" /> <!-- extended warranty -->
   </append>
 
-  <!-- misc metal container mailbox-->
-  <append xpath="/lootcontainers/lootgroup[@name='groupMailbox']">
-    <item group="doughs_Parcels_Sorry" loot_prob_template="low"/>
-    <item group="doughs_Parcels_Games" loot_prob_template="low"/>
-    <item group="doughs_Parcels_UnopenedPackage" loot_prob_template="low"/>
-    <item group="doughs_Parcels_ReturnedItem" loot_prob_template="low"/>
-    <item group="doughs_Parcels_Family" loot_prob_template="low"/>
-    <item group="doughs_GovFlyers" loot_prob_template="med"/>
-    <item group="doughs_PaperNotes" loot_prob_template="low"/>
-    <item group="doughs_Parcels_BuildKitPackage" loot_prob_template="veryLow"/>
-    <item group="doughs_GeneralMail" loot_prob_template="med"/>
+  <!-- misc metal container mailbox -->
+  <append xpath="/lootcontainers/lootgroup[@name='groupMailbox01']">
+    <item group="doughs_Parcels_Sorry" loot_prob_template="low" />
+    <item group="doughs_Parcels_Games" loot_prob_template="low" />
+    <item group="doughs_Parcels_UnopenedPackage" loot_prob_template="low" />
+    <item group="doughs_Parcels_ReturnedItem" loot_prob_template="low" />
+    <item group="doughs_Parcels_Family" loot_prob_template="low" />
+    <item group="doughs_GovFlyers" loot_prob_template="low" />
+    <item group="doughs_PaperNotes" loot_prob_template="low" />
+    <item group="doughs_Parcels_BuildKitPackage" loot_prob_template="low" />
+    <item group="doughs_GeneralMail" loot_prob_template="low" />
   </append>
 
   <!-- metal desk: also books-->
-  <append xpath="/lootcontainers/lootgroup[@name='groupDesks']">
-    <item group="doughs_Pieces_Game_Chess" loot_prob_template="low"/>
+  <append xpath="/lootcontainers/lootgroup[@name='groupDesks01']">
+    <item group="doughs_Pieces_Game_Chess" loot_prob_template="low" />
     <!-- <item group="doughs_Pieces_Game_Checkers" /> -->
-    <item group="doughs_StickyNotes" loot_prob_template="low"/>
-    <item group="doughs_Schematics" loot_prob_template="low"/>
-    <item group="doughs_Treasure_Maps" loot_prob_template="low"/>
-    <item group="doughs_PoemNotesDarkLoveA" loot_prob_template="low"/>
-    <item group="doughs_PoemNotesDarkLoveB" loot_prob_template="low"/>
-    <item group="doughs_PoemNotesDarkLoveC" loot_prob_template="veryLow"/>
+    <item group="doughs_StickyNotes" loot_prob_template="veryLow" />
+    <item group="doughs_Schematics" loot_prob_template="low" />
+    <item group="doughs_Treasure_Maps" loot_prob_template="veryLow" />
+    <item group="doughs_PoemNotesDarkLoveA" loot_prob_template="low" />
+    <item group="doughs_PoemNotesDarkLoveB" loot_prob_template="veryLow" />
+    <item group="doughs_PoemNotesDarkLoveC" loot_prob_template="doughsYGM_Rare" />
   </append>
 
   <!-- cntNightstandClosed and dressers, wooden desk: pistol, ammo, magazines, books -->
-  <append xpath="/lootcontainers/lootgroup[@name='groupNightstand']">
+  <append xpath="/lootcontainers/lootgroup[@name='groupNightstand01']">
     <!-- <item group="doughs_Pieces_Game_Chess" /> -->
-    <item group="doughs_Pieces_Game_Checkers" loot_prob_template="low"/>
-    <item group="doughs_Page_Game_Soduku" loot_prob_template="low"/>
-    <item group="doughs_StickyNotes" loot_prob_template="low"/>
-    <item group="doughs_Schematics" loot_prob_template="low"/>
-    <item group="doughs_PoemNotesDarkLoveA" loot_prob_template="low"/>
-    <item group="doughs_PoemNotesDarkLoveB" loot_prob_template="low"/>
-    <item group="doughs_PoemNotesDarkLoveC" loot_prob_template="veryLow"/>
-    <item group="doughs_Treasure_Maps" loot_prob_template="med"/>
+    <item group="doughs_Pieces_Game_Checkers" loot_prob_template="veryLow" />
+    <item group="doughs_Page_Game_Soduku" loot_prob_template="veryLow" />
+    <item group="doughs_StickyNotes" loot_prob_template="veryLow" />
+    <item group="doughs_Schematics" loot_prob_template="veryLow" />
+    <item group="doughs_PoemNotesDarkLoveA" loot_prob_template="veryLow" />
+    <item group="doughs_PoemNotesDarkLoveB" loot_prob_template="doughsYGM_Rare" />
+    <item group="doughs_PoemNotesDarkLoveC" loot_prob_template="veryLow" />
+    <item group="doughs_Treasure_Maps" loot_prob_template="veryLow" />
   </append>
 
   <!-- Supply Crates -->
-  <append xpath="/lootcontainers/lootgroup[@name='groupAirDrop']">
-    <item group="doughs_AirdropItems" loot_prob_template="low"/>
-    <item group="doughs_AirdropNotes" loot_prob_template="low"/>
-    <item name="doughs_SaleNote_009" loot_prob_template="low"/> <!-- extended warranty -->
-    <item name="doughs_Mail_Junk_003" loot_prob_template="low"/> <!-- extended warranty -->
+  <append xpath="/lootcontainers/lootgroup[@name='groupAirDrop02']">
+    <item group="doughs_AirdropItems" loot_prob_template="doughsYGM_Rare" />
+    <item group="doughs_AirdropNotes" loot_prob_template="veryLow" />
+    <item name="doughs_SaleNote_009" loot_prob_template="doughsYGM_Rare" /> <!-- extended warranty -->
+    <item name="doughs_Mail_Junk_003" loot_prob_template="veryLow" /> <!-- extended warranty -->
   </append>
 
   <!-- toilet -->
   <!-- NOTE: Adding to toilets messes up the 'beloved' default loot weapons chance! Try not to do this! -->
   <append xpath="/lootcontainers/lootgroup[@name='groupToilet01']">
-    <item name="doughs_UselessItem_JarOfUrine" loot_prob_template="low" />
-    <item name="doughs_UselessItem_JarOfPoo" loot_prob_template="low" />
+    <item name="doughs_UselessItem_JarOfUrine" loot_prob_template="veryLow" />
+    <item name="doughs_UselessItem_JarOfPoo" loot_prob_template="veryLow" />
   </append>
 
   <!--
@@ -542,6 +562,7 @@
     <!-- 8 by 8 board  -->
     <lootcontainer id="592" name="ChessBoard" count="0" size="8,8" sound_open="open_suitcase" sound_close="close_suitcase" loot_quality_template="qualBaseTemplate">
     	<item name="cobweb" count="1"/>
+      <item name="doughs_ChessPiece_Pawn_Red" count="1,3"/>
     </lootcontainer>
 
     <!-- 9 by 9 board  -->
@@ -550,7 +571,9 @@
     </lootcontainer>
 
     <!-- Geocaching: Small container, small chance of good stuff! -->
-    <!-- LOOT GROUPS ONLY - so its more random -->
+    <!-- LOOT GROUPS ONLY - so its more random 
+    DONT FORCE PROBability on loot here. want a 
+    -->
     <lootcontainer id="594" name="Geocache" count="1,4" size="2,2" sound_open="open_suitcase" sound_close="close_suitcase" loot_quality_template="qualBaseTemplate">
       <item group="doughs_Geocaching_SmallStuff"/>
       <item group="groupBuriedLootStashTreasure"/> <!-- Vanilla treasure group Maybe add a second, better one to balance out the small size? -->

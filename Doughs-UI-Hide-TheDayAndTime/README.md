@@ -3,6 +3,9 @@
 **Description:**
 This modlet hides the Day and Time info from you in the UI.
 
+NOTE: There is some commented out lines in the windows.xml file and instructions on what to change if
+you want to just have the juse the time OR day displayed.
+
 Why?
 - More "immersion" due to a cleaner UI
 - More "immersion" as you will not have this info readily available to perfectly time events in advance.

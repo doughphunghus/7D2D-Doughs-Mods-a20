@@ -6,7 +6,7 @@
   -->
 
   <!-- stove/oven, cooking pots and pans rotten food -->
-  <append xpath="/lootcontainers/lootgroup[@name='groupOven']"> <!-- Loot probability is high for everything in vanilla -->
+  <append xpath="/lootcontainers/lootgroup[@name='groupOven01']"> <!-- Loot probability is high for everything in vanilla -->
     <item name="doughsFood_RuninedFoodBurned_Scraps" count="1,2" prob="1"/>
     <item name="doughsFood_RuninedFoodBurned_Carcass" count="1,2" prob="0.6"/> <!-- Biggest -->
     <item name="doughsFood_RuninedFoodBurned_Meat" count="1,2" prob="0.8"/>
@@ -82,11 +82,11 @@
 WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWw
 
 <!-- T0_Schematics -->
-  <append xpath="/lootcontainers/lootgroup[@name='perkBooksT0']"> <!-- These are actually books in this mod -->
-    <item name="doughsFoodBasicExtractingSchematic"/>
-    <item name="doughsSeedToastingSchematic"/>
-    <item name="doughsDrinkMilkProcessingSchematic"/>
-    <item name="doughsFoodBreadSchematic"/>
+  <append xpath="/lootcontainers/lootgroup[@name='booksAllScaled']"> <!-- These are actually books in this mod -->
+    <item name="doughsFoodBasicExtractingSchematic" loot_prob_template="low"/>
+    <item name="doughsSeedToastingSchematic" loot_prob_template="low"/>
+    <item name="doughsDrinkMilkProcessingSchematic" loot_prob_template="low"/>
+    <item name="doughsFoodBreadSchematic" loot_prob_template="low"/>
   </append>
 
   <append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT0']"> <!-- All food -->

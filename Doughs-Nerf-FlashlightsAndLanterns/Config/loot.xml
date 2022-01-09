@@ -25,15 +25,15 @@
   </append>
 
   <append xpath="/lootcontainers/lootgroup[@name='groupUtilityItems']">
-    <item name="doughsMeleeToolEmptyFlashlight" loot_prob_template="veryLow"/>
+    <item name="doughsMeleeToolEmptyFlashlight" loot_prob_template="veryLow" force_prob="true"/>
   </append>
 
   <append xpath="/lootcontainers/lootgroup[@name='groupBackpacks02']">
-    <item name="doughsMeleeToolEmptyFlashlight" loot_prob_template="veryLow"/>
+    <item name="doughsMeleeToolEmptyFlashlight" loot_prob_template="veryLow" force_prob="true"/>
   </append>
 
   <append xpath="/lootcontainers/lootgroup[@name='groupDesks02']">
-    <item name="doughsMeleeToolEmptyFlashlight" loot_prob_template="veryLow"/>
+    <item name="doughsMeleeToolEmptyFlashlight" loot_prob_template="veryLow" force_prob="true"/>
   </append>
 
 
@@ -42,25 +42,25 @@
   -->
   <!-- metal desk -->
   <append xpath="/lootcontainers/lootgroup[@name='groupDesks02']">
-    <item name="doughsCellC" count="1,2" loot_prob_template="veryLow"/>
+    <item name="doughsCellC" count="1,2" loot_prob_template="veryLow" force_prob="true"/>
   </append>
 
   <!-- suitcase / luggage -->
   <append xpath="/lootcontainers/lootgroup[@name='groupLuggage01']">
-    <item name="doughsCellC" count="1,2" loot_prob_template="veryLow"/>
+    <item name="doughsCellC" count="1,2" loot_prob_template="veryLow" force_prob="true"/>
   </append>
 
   <!-- cntNightstandClosed and dressers, wooden desk: pistol, ammo, magazines, books -->
   <append xpath="/lootcontainers/lootgroup[@name='groupNightstand02']">
-    <item name="doughsCellC" count="1" loot_prob_template="veryLow"/>
+    <item name="doughsCellC" count="1" loot_prob_template="veryLow" force_prob="true"/>
   </append>
 
   <!--
   Add custom places to find items
   -->
   <append xpath="/lootcontainers/lootgroup[@name='groupChemistryStationLoot03']">
-    <item name="doughsCellC" count="1" loot_prob_template="low"/>
-    <item name="doughsResourceSmallBulb" count="1" loot_prob_template="low"/>
+    <item name="doughsCellC" count="1" loot_prob_template="low" force_prob="true"/>
+    <item name="doughsResourceSmallBulb" count="1" loot_prob_template="low" force_prob="true"/>
   </append>
 
   <append xpath="/lootcontainers/lootgroup[@name='groupRareAutomotive']">
@@ -78,9 +78,9 @@
 
   <!-- cntToolBoxClosed -->
   <append xpath="/lootcontainers/lootgroup[@name='groupRollingToolbox03']">
-    <item name="doughsCellC" count="1,2" loot_prob_template="low"/>
-    <item name="doughsResourceSmallBulb" count="1" loot_prob_template="veryLow"/>
-    <item name="doughsMeleeToolEmptyFlashlight" count="1" loot_prob_template="veryLow"/>
+    <item name="doughsCellC" count="1,2" loot_prob_template="low" force_prob="true"/>
+    <item name="doughsResourceSmallBulb" count="1" loot_prob_template="veryLow" force_prob="true"/>
+    <item name="doughsMeleeToolEmptyFlashlight" count="1" loot_prob_template="veryLow" force_prob="true"/>
   </append>
 
 </Doughs>
