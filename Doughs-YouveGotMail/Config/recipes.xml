@@ -45,7 +45,7 @@
     	<ingredient name="doughs_UselessItem_FancyChildsBelt" count="1"/>
     </recipe>
 
-    <recipe name="farmPlotBlockPlayer" count="1" tags="perkLivingOffTheLandCrafting" craft_time="20">
+    <recipe name="farmPlotBlockVariantHelper" count="1" tags="perkLivingOffTheLandCrafting" craft_time="20">
     	<ingredient name="resourceWood" count="4"/>
     	<ingredient name="doughs_UselessItem_JarOfPoo" count="4"/> <!-- 10 rotting flesh is default -->
     	<ingredient name="resourcePotassiumNitratePowder" count="25"/>

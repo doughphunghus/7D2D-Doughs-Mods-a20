@@ -231,7 +231,8 @@
 
     <recipe name="doughsFoodButter" count="1" craft_area="workbench" tags="perkDoughsSousChef,workbenchCrafting,learnable" >
       <ingredient name="doughsDrinkCream" count="4"/>
-      <ingredient name="resourcePaper" count="1"/>
+      <ingredient name="resourcePaper" count="2"/>
+      <ingredient name="drinkJarEmpty" count="1"/>
     </recipe>
 
     <recipe name="doughsFoodButterOfTheGods" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable" >
