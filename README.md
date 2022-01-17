@@ -5,6 +5,7 @@ I will post my mods that have been converted for a20 here. Please note the versi
 I do not plan on updating any mod during/for a20 "experimental" releases unless by request.  I have a statement about my mods and converting them to a20 here: https://community.7daystodie.com/topic/17197-doughs-modlets/page/10/?tab=comments#comment-451231 but essentially "I'll try to convert by request" and once a20 is "not experimental" I'm begin converting/testing/updating them all to a20 "stable"
 
 #### Bug Hunters/Fixers:
+- :clap: [magejosh](https://community.7daystodie.com/profile/85994-magejosh/): You've Got Mail, a20.0-b238.1.0.5.  For incorrect farmPlotBlock in recipes report. Fixed in a20.0-b238.1.0.6
 - :clap:: [RBN](https://community.7daystodie.com/profile/56838-rbn/): You've Got Mail, a20.0-b238.1.0.0.  For game board bug report. Fixed in a20.0-b238.1.0.1
 - :clap:: [@ate0ate](https://community.7daystodie.com/profile/94874-ate0ate/): Buff-Infection, a20.0-b238.1.0.0. Discovered infection cure % of items was not accurate.  Fixed in a20.0-b238.1.0.1
 #### Additional credits:
