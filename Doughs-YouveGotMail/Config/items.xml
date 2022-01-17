@@ -3297,35 +3297,35 @@
     </item>
     <item name="doughs_Page_Game_Soduku_026">
       <property name="Extends" value="doughs_PaperNote_Base"/>
-      <property name="DescriptionKey" value="doughs_Page_Game_Soduku_004Desc"/>
+      <property name="DescriptionKey" value="doughs_Page_Game_Soduku_026Desc"/>
     </item>
     <item name="doughs_Page_Game_Soduku_027">
       <property name="Extends" value="doughs_PaperNote_Base"/>
-      <property name="DescriptionKey" value="doughs_Page_Game_Soduku_005Desc"/>
+      <property name="DescriptionKey" value="doughs_Page_Game_Soduku_027Desc"/>
     </item>
     <item name="doughs_Page_Game_Soduku_028">
       <property name="Extends" value="doughs_PaperNote_Base"/>
-      <property name="DescriptionKey" value="doughs_Page_Game_Soduku_010Desc"/>
+      <property name="DescriptionKey" value="doughs_Page_Game_Soduku_028Desc"/>
     </item>
     <item name="doughs_Page_Game_Soduku_029">
       <property name="Extends" value="doughs_PaperNote_Base"/>
-      <property name="DescriptionKey" value="doughs_Page_Game_Soduku_011Desc"/>
+      <property name="DescriptionKey" value="doughs_Page_Game_Soduku_029Desc"/>
     </item>
     <item name="doughs_Page_Game_Soduku_051">
       <property name="Extends" value="doughs_PaperNote_Base"/>
-      <property name="DescriptionKey" value="doughs_Page_Game_Soduku_006Desc"/>
+      <property name="DescriptionKey" value="doughs_Page_Game_Soduku_051Desc"/>
     </item>
     <item name="doughs_Page_Game_Soduku_052">
       <property name="Extends" value="doughs_PaperNote_Base"/>
-      <property name="DescriptionKey" value="doughs_Page_Game_Soduku_007Desc"/>
+      <property name="DescriptionKey" value="doughs_Page_Game_Soduku_052Desc"/>
     </item>
     <item name="doughs_Page_Game_Soduku_075">
       <property name="Extends" value="doughs_PaperNote_Base"/>
-      <property name="DescriptionKey" value="doughs_Page_Game_Soduku_008Desc"/>
+      <property name="DescriptionKey" value="doughs_Page_Game_Soduku_075Desc"/>
     </item>
     <item name="doughs_Page_Game_Soduku_076">
       <property name="Extends" value="doughs_PaperNote_Base"/>
-      <property name="DescriptionKey" value="doughs_Page_Game_Soduku_009Desc"/>
+      <property name="DescriptionKey" value="doughs_Page_Game_Soduku_076Desc"/>
     </item>
 
     <item name="doughs_Book_Game_Soduku_001">
