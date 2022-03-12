@@ -3,8 +3,7 @@
 **Description**: This modlet adds a very powerful, feral rabbit.  Run Away! Run Away!
 For those unfamiliar: [Wikipedia](https://en.wikipedia.org/wiki/Rabbit_of_Caerbannog)
 
-NOTE: The rabbit does not spawn very frequently in this modlet. To remedy this, this additional modlet is available if you want to also load it to increase the spawn rate:
-[Doughs-RabbitOfCaerbannog-SpawnsALot](https://github.com/doughphunghus/Doughs-RabbitOfCaerbannog-SpawnsALot)
+NOTE: The rabbit does not spawn rate is usually 1%, and increases up to 3% in the wasteland biome and in certain hordes. If something is set as a "cave" its 5%... which may be excessive if caves come back...
 
 **Special thanks and credit where it's due to**:
 These members of the [7 Days to Die User Forums](https://7daystodie.com/forums)

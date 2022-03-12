@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="Doughs UI Hide HP Bar Info But Show Name"/>
+        <Description value="This modlet hides the HP bar and the hit points info but leaves the zed name"/>
+        <Author value="Doughphunghus"/>
+        <Version value="a20.3-b3.1.0.0"/>
+    </ModInfo>
+</xml>

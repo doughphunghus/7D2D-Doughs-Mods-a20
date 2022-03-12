@@ -6,45 +6,50 @@
 
   <!-- DOUGH: High spawn rates -->
   <append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']">
-    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.07"/>
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.03"/>
   </append>
   <append xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']">
-    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.05"/>
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.03"/>
   </append>
   <append xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight']">
-    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.05"/>
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.03"/>
   </append>
   <append xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight2']">
-    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.05"/>
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.03"/>
   </append>
   <append xpath="/entitygroups/entitygroup[@name='ZombieBadassGroup']">
-    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.05"/>
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.03"/>
   </append>
   <append xpath="/entitygroups/entitygroup[@name='ZombieAnimalsGroup']">
-    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.05"/>
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.02"/>
   </append>
 
   <!-- DOUGH: Med spawn rates -->
   <append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesert']">
-    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.02"/>
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.01"/>
   </append>
+  <!-- 
+    Its white, would be cruel to spawn here
   <append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsSnow']">
-    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.02"/>
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.01"/>
   </append>
+  -->
   <append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsForest']">
-    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.02"/>
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.01"/>
   </append>
   <append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsBurntForest']">
-    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.02"/>
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.01"/>
   </append>
   <append xpath="/entitygroups/entitygroup[@name='ZombiesNight']">
-    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.02"/>
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.01"/>
   </append>
 
   <!-- DOUGH: Low spawn rates -->
+  <!-- Removed as its not a farm animal.
   <append xpath="/entitygroups/entitygroup[@name='AnimalsFarm']">
     <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.01"/>
   </append>
+  -->
   <append xpath="/entitygroups/entitygroup[@name='AnimalsSmall']">
     <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.01"/>
   </append>
@@ -52,12 +57,17 @@
     <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.01"/>
   </append>
 
-  <!-- Caves were removed, but they have promised to bring them back -->
+  <!-- Caves were removed, but they have promised to bring them back. if anything counts as a cave... run away!-->
   <append xpath="/entitygroups/entitygroup[@name='ZombiesCave']">
-    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".2"/>
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".1"/>
   </append>
 
+
+  <!-- DOUGH: Removing all the horde specific stages for now as it causes a lot of errors when other mods
+  mess with the stages. Maybe put back if can make it work better -->
+
   <!-- Add to badassOnlyHordeStage -->
+  <!-- 
   <append xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS3']">
     <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".01"/>
   </append>
@@ -85,8 +95,10 @@
   <append xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS1003']">
     <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".07"/>
   </append>
+ -->
 
   <!-- Add to badassHordeStage -->
+  <!-- 
   <append xpath="/entitygroups/entitygroup[@name='badassHordeStageGS21']">
     <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".01"/>
   </append>
@@ -123,8 +135,10 @@
   <append xpath="/entitygroups/entitygroup[@name='badassHordeStageGS1003']">
     <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".1"/>
   </append>
+  -->
 
   <!-- Add to feralHordeStage -->
+  <!--
   <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS49']">
     <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".01"/>
   </append>
@@ -260,5 +274,5 @@
   <append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS4086']">
     <entity name="doughsAnimalRabbbitOfCaerbannog" prob=".8"/>
   </append>
-
+  -->
 </Doughs>

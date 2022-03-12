@@ -13,7 +13,7 @@
         <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".doughs_drugBreathMintsDisplay" operation="divide" value="@$MetabolismDuration"/>
       </effect_group>
       <effect_group>
-        <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="doughs_drugBreathMintsButts">
+        <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="doughs_buffDrugBreathMints">
           <requirement name="CVarCompare" cvar="$doughs_drugBreathMintsDuration" operation="LTE" value="0"/>
         </triggered_effect>
         <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".doughs_drugBreathMintsDisplay" operation="set" value="0"/>
