@@ -16,3 +16,4 @@ I do not plan on updating any mod during/for a20 "experimental" releases unless 
 - :clap: Electric-CapacitorBank - Inspired by post by [ausbrecher](https://community.7daystodie.com/profile/86060-ausbrecher/)
 - :clap: RabbitOfCaerbannog - Rabbit 3D model/rework and packaging by [Mjoelnir.hh](https://community.7daystodie.com/profile/41908-mjoelnirhh/), [Mumpfy](https://community.7daystodie.com/profile/43889-mumpfy/)
 - :clap: UI-Hide-TheDayAndTime - Is this mod server side safe?: Yes, in a19. confirmed by: [Fanatical_Meat](https://community.7daystodie.com/profile/16619-fanatical_meat/)
+- :clap: WholeLottaFog - Inspired by Donovans nightfog modlet: [Donovans 7D2D mods git repo](https://github.com/Donovan522/donovan-7d2d-modlets/)
