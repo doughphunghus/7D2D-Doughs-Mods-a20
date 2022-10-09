@@ -1,0 +1,11 @@
+<configs>
+
+  <!-- The values are Day,Night 
+  The numbers are not "how much fog" but more of "How much visibility"
+  so a higher number is more visibility. I do noy know if its a percentage but that would make sense
+  Vales go from 0 (no visibilty) to 1 (no fog I guess?)
+  Possibly just a 2 decimal number, I have not tested more decimals
+  Leading 0 is optional.
+  -->
+  <set xpath="/worldglobal/environment/property[@name='fogPower']/@value">.50,0.65</set>
+</configs>

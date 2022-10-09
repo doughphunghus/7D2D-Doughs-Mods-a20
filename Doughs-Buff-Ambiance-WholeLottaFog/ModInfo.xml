@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+  <ModInfo>
+    <Name value="Doughs Buff Ambiance WholeLottaFog" />
+    <Description value="Very thick fog for both day and night. Density varies due to weather but never leaves. Credit to Donovans original nightfog modlet for inspiration" />
+    <Author value="Doughphunghus" />
+		<Version value="a20.6-b6.1.0.0" />
+    <Website value="https://github.com/doughphunghus" />
+  </ModInfo>
+</xml>
